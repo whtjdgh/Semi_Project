@@ -40,4 +40,16 @@ public class test {
 
         return "myPage";
     }
+
+    @RequestMapping("/real_detail")
+    public String real_detail() {
+
+        return "real_detail";
+    }
+
+    @RequestMapping("/real_register")
+    public String real_register() {
+
+        return "real_register";
+    }
 }
