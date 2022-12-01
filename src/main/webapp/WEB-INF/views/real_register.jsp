@@ -13,13 +13,12 @@
     <title>Egan_회원가입</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script defer src="../js/h_f.js"></script>
-    <script defer src="../js/register.js"></script>
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/common_css/h_f.css">
-    <link rel="stylesheet" href="../css/common_css/h_f_r.css">
-    <link rel="stylesheet" href="../css/calendar.css">
-    <link rel="stylesheet" href="../css/register.css">
+    <script defer src="<c:url value='/js/h_f.js'/>"></script>
+    <script defer src="<c:url value='/js/register.js'/>"></script>
+    <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/calendar.css'/>">
+    <link rel="stylesheet" href="<c:url value='/css/register.css'/>">
 
 
 </head>
