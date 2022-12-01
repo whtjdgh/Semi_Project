@@ -1,0 +1,204 @@
+/* html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    margin: 0;
+    padding: 0;
+}
+
+.content_area {
+    width: 1200px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* //////////////////// 반응형 ////////////////////// */
+.ham_btn {
+    display: none;
+    width: 40px;
+    height: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+
+}
+
+.ham_line {
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+}
+
+.ham_line:nth-child(2) {
+    margin: 5px 0;
+}
+
+
+
+/* //////////////     헤더    //////////////// */
+.header {
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background: #FFFEEB;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 99;
+
+}
+
+.logo {
+    font-size: 35px;
+    font-family: 'time';
+    color: #facf0e;
+    height: 100%;
+    width: 200px;
+}
+
+.nav {
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.nav>a {
+    margin: 0 30px;
+}
+
+.menu {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.h_menu>a {
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+.h_menu::after {
+    content: "";
+    margin: 15px;
+    width: 1px;
+    border-right: 1px solid #979286;
+}
+
+.h_icon {
+    width: 55px;
+    height: 100%;
+    display: flex;
+
+}
+
+.shopping {
+    width: 25px;
+    height: 100%;
+    margin: 0;
+    background: url(./포폴/포폴_img/세미_자료/장바구니_black.png)no-repeat center / 20px;
+}
+
+.search {
+    width: 25px;
+    height: 100%;
+    margin-left: 10px;
+    background: url(./포폴/포폴_img/세미_자료/\(헤더\)검색.png)no-repeat center / 20px;
+}
+
+/* //////////// 메인 외부파일 //////////// */
+
+
+/* ////////////// 탑 버튼 ////////////// */
+.top_btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+
+    background-color: #FFE178;
+}
+
+
+/* /////////////  푸터 //////////// */
+.footer {
+    margin-top: 20px;
+    max-width: 1200px;
+    width: 100vw;
+    height: 200px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: #FFFEEB;
+
+}
+
+.f_h_box {
+    box-sizing: border-box;
+    padding: 40px 0 0;
+}
+
+.f_h_txt1 {
+    font-weight: 900;
+}
+
+span {
+    font-weight: 400;
+}
+
+.f_b_box {
+    box-sizing: border-box;
+    padding: 30px 0 0;
+}
+
+
+.f_h_txt,
+.f_b_txt {
+    box-sizing: border-box;
+
+    font-size: 13.5px;
+    margin: 0;
+
+}
+
+.w_box {
+    display: inline-block;
+}
+
+.w_box>.f_b_txt {
+    background-color: #FFE178;
+}

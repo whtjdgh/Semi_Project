@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact name="src">
+    <output-path>$PROJECT_DIR$/out/artifacts/src</output-path>
+    <root id="root" />
+  </artifact>
+</component>
