@@ -199,7 +199,7 @@
                     <div class="item_qna_txt">
                         <div class="item_qna_title">PRODUCT Q&A</div>
                         <div class="item_qna_ex">
-                            <p>· 상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판 관리자에 의해 삭제될 수 있습니다.</p>
+                            <p>· 상품에 대 한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판 관리자에 의해 삭제될 수 있습니다.</p>
                         </div>
                     </div>
                     <div class="qna_box">
