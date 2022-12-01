@@ -11,13 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Egan</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script defer src="../js/h_f.js"></script>
-    <script defer src="../js/deal.js"></script>
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/common_css/h_f.css">
-    <link rel="stylesheet" href="../css/common_css/h_f_r.css">
-    <link rel="stylesheet" href="../css/deal.css">
-    <link rel="stylesheet" href="../css/popup.css">
+    <script defer src="<c:url value='/js/h_f.js'/>"></script>
+    <script defer src="<c:url value='/js/deal.js'/>"></script>
+    <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/deal.css'/>">
+    <link rel="stylesheet" href="<c:url value='/css/popup.css'/>">
 
 </head>
 

@@ -17,6 +17,10 @@ public class test {
         return "detail";
     }
 
+    @RequestMapping("/deal")
+    public String deal() {
+        return "real_detail";
+    }
     @RequestMapping("/list")
     public String list() {
 
