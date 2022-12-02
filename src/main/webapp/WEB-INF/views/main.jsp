@@ -14,8 +14,8 @@
   <script defer src="<c:url value='/js/egan_home_header.js/'/>"></script>
 
   <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
 
   <style>
@@ -117,11 +117,11 @@
         </div>
 
         <div class="best_slide">
-          <img src="../img/skin/16-1.jpg" alt="" class="b_slide_img">
-          <img src="../img/daily/11.jpg" alt="" class="b_slide_img">
-          <img src="../img/food/15-1.jpg" alt="" class="b_slide_img">
-          <img src="../img/skin/7.jpg" alt="" class="b_slide_img">
-          <img src="../img/food/17.jpg" alt="" class="b_slide_img">
+          <img src="<c:url value='/resources/img/skin/16-1.jpg'/>" alt="" class="b_slide_img">
+          <img src="<c:url value='/resources/img/daily/11.jpg'/>" alt="" class="b_slide_img">
+          <img src="<c:url value='/resources/img/food/15-1.jpg'/>" alt="" class="b_slide_img">
+          <img src="<c:url value='/resources/img/skin/7.jpg'/>" alt="" class="b_slide_img">
+          <img src="<c:url value='/resources/img/food/17.jpg'/>" alt="" class="b_slide_img">
         </div>
       </div>
     </div>
