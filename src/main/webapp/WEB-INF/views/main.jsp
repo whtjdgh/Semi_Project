@@ -11,10 +11,9 @@
   <title>Document</title>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script defer src="<c:url value='/js/egan_home_header.js/'/>"></script>
-
-  <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
+  <script defer src="<c:url value='/js/egan_home_header.js/'/>"></script>
+  <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
 
   <style>
