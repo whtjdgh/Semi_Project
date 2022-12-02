@@ -10,27 +10,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="<c:url value='/css/detail.css'/> ">
-  <script defer src="../board_war/js/detail.js"></script>
+  <link rel="stylesheet" href="<c:url value='/css/egan_header_respon.css'/> ">
+
+  <script defer src="<c:url value='/js/detail.js'/>"></script>
+  <script defer src="<c:url value='/js/topBtn.js'/>"></script>
+  <script defer src="<c:url value='/js/h_f.js'/>"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
   <style>
     @font-face {
       font-family: 'time';
       src: local('fonts/TimesNewRomancRegular'),
-      url('../fonts/timesbd.ttf')format('truetype');
+      url('<c:url value='/font/timesbd.ttf'/>')format('truetype');
     }
 
     @font-face {
       font-family: 'nanum';
       src: local('fonts/NanumBarunGothic.ttf'),
-      url('../fonts/NanumBarunGothic.ttf')format('truetype');
+      url('<c:url value='/font/NanumBarunGothic.ttf'/>')format('truetype');
 
     }
 
     @font-face {
       font-family: 'nanum-light';
       src: local('fonts/NanumBarunGothicLight.ttf'),
-      url('../fonts/NanumBarunGothicLight.ttf')format('truetype');
+      url('<c:url value='/font/NanumBarunGothicLight.ttf'/>')format('truetype');
 
     }
 
@@ -106,7 +110,7 @@
 
     <div class="menu_list">
       <div class="menu_item">
-        <img src="../포폴/포폴_img/마켓컬리_스킨케어/4.jpg" alt="">
+        <img src="../img/skin/4.jpg" alt="">
         <button class="menu_basket_btn"></button>
       </div>
       <div class="menu_txt">

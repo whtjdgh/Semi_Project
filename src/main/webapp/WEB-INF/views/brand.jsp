@@ -10,18 +10,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer src="../세미_js/세미_브랜드소개페이지.js"></script>
-    <script defer src="../세미_js/세미.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <link rel="stylesheet" href="../세미_css/세미_공용_브랜드.css">
-    <link rel="stylesheet" href="../세미_css/세미_반응형.css">
-    <link rel="stylesheet" href="../세미_css/세미_브랜드반응형.css">
-    <link rel="stylesheet" href="../세미_css/세미_브랜드소개페이지.css">
+    <script defer src="<c:url value='/js/brand.js'/>"></script>
+    <script defer src="<c:url value='/js/h_f.js'/>"></script>
+    <script defer src="<c:url value='/js/topBtn.js'/>"></script>
+    <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/brand1.css'/> ">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Merriweather&family=Nanum+Pen+Script&family=Stylish&family=Zen+Antique&display=swap'); @font-face {
             font-family: 'time';
             src: local('fonts/TimesNewRomancRegular'),
-            url('../세미_폰트/timesbd.ttf')format('truetype');
+            url('<c:url value='/font/timesbd.ttf'/>')format('truetype');
             font-family: 'Gaegu', cursive;
         }
 
@@ -29,52 +29,61 @@
         @font-face {
             font-family: 'nanum';
             src: local('fonts/NanumBarunGothic.ttf'),
-            url('../세미_폰트/NanumBarunGothic.ttf')format('truetype');
+            url('<c:url value='/font/NanumBarunGothic.ttf'/>')format('truetype');
 
         }
 
         @font-face {
             font-family: 'nanum-light';
             src: local('fonts/NanumBarunGothicLight.ttf'),
-            url('../세미_폰트/NanumBarunGothicLight.ttf')format('truetype');
-
+            url('<c:url value='/font/NanumBarunGothicLight.ttf'/>')format('truetype');
         }
     </style>
 </head>
 
 <body>
-<div class="wrap ">
-    <div class="header">
-        <div class="content_area">
+<!-- 헤더 -->
+<div class="header">
+    <div class="content_area">
+        <!-- 햄버거 버튼 -->
+        <div class="ham_box">
+            <div class="ham_line" id="line_top"></div>
+            <div class="ham_line" id="line_mid"></div>
+            <div class="ham_line" id="line_bot"></div>
+            <div class="ham_menu">
+                <ul class="ham_ul">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li class="hr"></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">BRAND</a></li>
+                    <li><a href="#">COMMUNITY</a></li>
 
-            <div class="ham_btn">
-                <div class="ham_line"></div>
-                <div class="ham_line"></div>
-                <div class="ham_line"></div>
+                </ul>
             </div>
-
-            <!-- <div class="logo">Egan</div> -->
-            <div class="logo"><a href="">Egan</a></div>
-
-            <div class="nav">
-                <a href="">SHOP</a>
-                <a href="">BRAND</a>
-                <a href="">COMMUNITY</a>
-            </div>
-
-            <div class="menu">
-                <div class="h_menu">
-                    <a href="">Login</a>
-                    <a href="">Register</a>
-                </div>
-                <div class="h_icon">
-                    <div class="shopping"></div>
-                    <div class="search"></div>
-                </div>
-            </div>
-
         </div>
+
+        <div class="logo"><a href="#">Egan</a></div>
+
+        <div class="nav">
+            <a href="#">SHOP</a>
+            <a href="#">BRAND</a>
+            <a href="#">COMMUNITY</a>
+        </div>
+
+        <div class="menu">
+            <div class="h_menu">
+                <a href="">Login</a>
+                <a href="">Register</a>
+            </div>
+            <div class="h_icon">
+                <div class="shopping"></div>
+                <div class="search"></div>
+            </div>
+        </div>
+
     </div>
+</div>
 
     <div class="main">
         <div class="box banner ">
