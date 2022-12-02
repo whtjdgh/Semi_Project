@@ -14,7 +14,6 @@
   <script defer src="<c:url value='/js/egan_home_header.js/'/>"></script>
 
   <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
 
@@ -131,7 +130,7 @@
     <div class="chae-sicku_banner">
       <a href="">
         <div class="chea_text">
-          <div>채식: 구</div>
+          <div>채식: 구 </div>
           <div>Egan만의 환경적 가치를 기준으로 한 브랜드와 제품을 소개합니다.</div>
           <div>건강한 소비란, 마음 속에서 시작되고 건강함은 자연에서 시작 된다는 브랜드의 철학이 담겨 있습니다.</div>
         </div>
