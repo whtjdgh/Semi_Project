@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
     <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
     <link rel="stylesheet" href="<c:url value='/css/brand.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/brand_header.css'/> ">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Merriweather&family=Nanum+Pen+Script&family=Stylish&family=Zen+Antique&display=swap'); @font-face {
             font-family: 'time';
