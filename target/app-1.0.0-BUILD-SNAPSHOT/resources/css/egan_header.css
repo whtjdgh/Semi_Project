@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'time';
     src: local('fonts/TimesNewRomancRegular'),
-    url('../../font/timesbd.ttf')format('truetype');
+    url('/font/timesbd.ttf')format('truetype');
 }
 
 @font-face {
@@ -58,7 +58,7 @@ ul {
     z-index: 999;
 
 }
-
+.logo {width:200px; text-align: center}
 .logo a {
     font-size: 35px;
     font-family: 'time';
