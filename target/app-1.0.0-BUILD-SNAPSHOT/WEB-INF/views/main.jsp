@@ -11,12 +11,11 @@
   <title>Document</title>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script defer src="<c:url value='/js/egan_home_header.js/'/>"></script>
-
-  <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
+  <script defer src="<c:url value='/js/egan_home_header.js/'/>"></script>
+  <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/brand.css'/> ">
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Merriweather&family=Nanum+Pen+Script&family=Stylish&family=Zen+Antique&display=swap'); @font-face {
@@ -117,11 +116,11 @@
         </div>
 
         <div class="best_slide">
-          <img src="../img/skin/16-1.jpg" alt="" class="b_slide_img">
-          <img src="../img/daily/11.jpg" alt="" class="b_slide_img">
-          <img src="../img/food/15-1.jpg" alt="" class="b_slide_img">
-          <img src="../img/skin/7.jpg" alt="" class="b_slide_img">
-          <img src="../img/food/17.jpg" alt="" class="b_slide_img">
+          <img src="<c:url value='/resources/img/skin/16-1.jpg'/>" alt="" class="b_slide_img">
+          <img src="<c:url value='/resources/img/daily/11.jpg'/>" alt="" class="b_slide_img">
+          <img src="<c:url value='/resources/img/food/15-1.jpg'/>" alt="" class="b_slide_img">
+          <img src="<c:url value='/resources/img/skin/7.jpg'/>" alt="" class="b_slide_img">
+          <img src="<c:url value='/resources/img/food/17.jpg'/>" alt="" class="b_slide_img">
         </div>
       </div>
     </div>
@@ -131,7 +130,7 @@
     <div class="chae-sicku_banner">
       <a href="">
         <div class="chea_text">
-          <div>채식: 구</div>
+          <div>채식: 구 </div>
           <div>Egan만의 환경적 가치를 기준으로 한 브랜드와 제품을 소개합니다.</div>
           <div>건강한 소비란, 마음 속에서 시작되고 건강함은 자연에서 시작 된다는 브랜드의 철학이 담겨 있습니다.</div>
         </div>
