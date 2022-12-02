@@ -10,9 +10,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <link rel="stylesheet" href="<c:url value='/css/main.css'/> ">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script defer src="<c:url value='/js/egan_home_header'/>"></script>
+  <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/css/egan_header_respon.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
+  <>
 
 
 </head>
