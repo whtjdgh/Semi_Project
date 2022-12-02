@@ -78,7 +78,7 @@ a {
 
 .logo {
     font-size: 35px;
-    font-family: 'time';
+    font-family:'time';
 
     height: 100%;
     width: 200px;
@@ -129,7 +129,7 @@ a {
     width: 25px;
     height: 100%;
     margin: 0;
-    background: url(../img/장바구니_yellow.png) no-repeat center / 20px;
+    background: url(../img/shopping_yellow.png) no-repeat center / 20px;
 }
 
 .search {

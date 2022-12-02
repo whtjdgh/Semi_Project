@@ -11,7 +11,7 @@
   <title>Document</title>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script defer src="<c:url value='/egan_home_header.js/'/>"></script>
+  <script defer src="<c:url value='/js/egan_home_header.js/'/>"></script>
 
   <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
@@ -62,12 +62,12 @@
       </div>
 
       <div class="logo">
-        <a href="#">Egan</a>
+        <a href="http://localhost:8080/egan/main">Egan</a>
       </div>
 
       <div class="nav">
         <a href="">SHOP</a>
-        <a href="">BRAND</a>
+        <a href="http://localhost:8080/egan/brand">BRAND</a>
         <a href="">COMMUNITY</a>
       </div>
 
@@ -94,7 +94,7 @@
 
     <!-- 메인 베너 -->
     <div class="main_bannr">
-      <video src="../video/pexels-roman-odintsov-6666529.mp4" autoplay loop muted> </video>
+      <video src="<c:url value='/video/pexels-roman-odintsov-6666529.mp4'/>" autoplay loop muted> </video>
       <div class="vi_text">
         <div>The value of nature,</div>
         <div>the value of consumption</div>
@@ -117,11 +117,11 @@
         </div>
 
         <div class="best_slide">
-          <img src="../img/프젝_이미지/스킨케어/16-1.jpg" alt="" class="b_slide_img">
-          <img src="../img/프젝_이미지/생활용품/11.jpg" alt="" class="b_slide_img">
-          <img src="../img/프젝_이미지/식품/15-1.jpg" alt="" class="b_slide_img">
-          <img src="../img/프젝_이미지/스킨케어/7.jpg" alt="" class="b_slide_img">
-          <img src="../img/프젝_이미지/식품/17.jpg" alt="" class="b_slide_img">
+          <img src="../img/skin/16-1.jpg" alt="" class="b_slide_img">
+          <img src="../img/daily/11.jpg" alt="" class="b_slide_img">
+          <img src="../img/food/15-1.jpg" alt="" class="b_slide_img">
+          <img src="../img/skin/7.jpg" alt="" class="b_slide_img">
+          <img src="../img/food/17.jpg" alt="" class="b_slide_img">
         </div>
       </div>
     </div>

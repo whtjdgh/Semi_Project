@@ -48,7 +48,7 @@ $(document).ready(function(){
                 color: '#ffbf00'
             })
             $('.shopping').css({
-                background: 'url(./장바구니_yellow.png) no-repeat center / 20px'
+                background: 'url(./shopping_yellow.png) no-repeat center / 20px'
             })
             $('.search').css({
                 background: 'url(./img/header_search_yellow.png) no-repeat center / 20px'
