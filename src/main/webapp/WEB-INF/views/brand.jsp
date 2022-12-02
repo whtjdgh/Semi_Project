@@ -39,6 +39,16 @@
             src: local('fonts/NanumBarunGothicLight.ttf'),
             url('<c:url value='/font/NanumBarunGothicLight.ttf'/>')format('truetype');
         }
+        @font-face {
+            font-family: 'nanum손글씨';
+            src: local('fonts/나눔손글씨 강인한 위로.ttf'),
+            url('<c:url value='/font/나눔손글씨 강인한 위로.ttf'/>')format('truetype');
+        }
+        @font-face {
+            font-family: 'nanum기쁨';
+            src: local('fonts/나눔손글씨 기쁨밝음.ttf'),
+            url('<c:url value='/font//나눔손글씨 기쁨밝음.ttf'/>')format('truetype');
+        }
     </style>
 </head>
 
@@ -86,6 +96,7 @@
     </div>
 </div>
 
+
     <div class="main">
         <div class="box banner ">
             <div class="txt_box">
@@ -117,6 +128,7 @@
                     Assumenda earum ex aperiam qui ab velit molestiae, inventore doloremque sunt, error aliquam! Non
                     quibusdam sequi doloremque perspiciatis, harum molestias! Vero corrupti perferendis porro rem
                     repellendus, odit animi pariatur velit.</p>
+                <div class="abBox"></div>
             </div>
         </div>
 
@@ -125,68 +137,74 @@
 
 
         <div class="brand_color">
-            <div class="color_box">
-                <div class="box1"></div>
-                <div class="box2"></div>
+            <div class="color_wrap color_wrap1">
+                <div class="color_box">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                </div>
+                <div class="main_color main_color1">
+                    _Main color1
+                    <span>#FFBF00</span>
+                </div>
             </div>
-            <div class="main_color main_color1">
-                _Main color1
-                <span>#FFBF00</span>
-            </div>
-
-            <div class="color_box">
-                <div class="box3"></div>
-                <div class="box4"></div>
-            </div>
-            <div class="main_color main_color2">
-                _Main color2
-                <span>#FFE178</span>
+            <div class="color_wrap color_wrap2">
+                <div class="color_box">
+                    <div class="box3"></div>
+                    <div class="box4"></div>
+                </div>
+                <div class="main_color main_color2">
+                    _Main color2
+                    <span>#FFE178</span>
+                </div>
             </div>
         </div>
+        <div class="white_pan"></div>
     </div>
 
 
     <div class="story_info">
-        <div class="info_txt_box">
-            <h2>OUR PHILOSOPHY</h2>
-            <h3>건강은 자연속에서 시작됩니다.</h3>
-            <p>Egan은 건강은 '자연으로부터'라는 모토를 추구하는 브랜드로</p>
-            <p>아래의 철학을 바탕으로 그 가치를 실현합니다.</p>
-        </div>
-        <div class="info_box content_area">
-            <div class="info_img info_img1"></div>
-            <div class="info_txt">
-                <p class="info_title">01. 안심 식품</p>
-                <br>
-                <p class="info_mini_title">생활 속 화학제품에 노출되어 있는 당신의 건강은 안녕하신가요?</p>
-                <br>
-                <p>우리들의 몸은 다양한 생활 속 자극으로 인해 점점 더 예민해져가고 있습니다. Egan은 이러한 문제를 바탕으로 자연속에서 모두가 안심할 수 있는 먹거리, 제품만을 제공합니다.</p>
-                <br>
-                <p>또한 꼭 필요한 유효 성분만 담고 불필용한 성분은 배제하였습니다.</p>
+        <div class="info_wrap">
+            <div class="info_txt_box">
+                <h2>OUR PHILOSOPHY</h2>
+                <h3>건강은 자연속에서 시작됩니다.</h3>
+                <p>Egan은 건강은 '자연으로부터'라는 모토를 추구하는 브랜드로</p>
+                <p>아래의 철학을 바탕으로 그 가치를 실현합니다.</p>
             </div>
-        </div>
-        <div class="info_box content_area">
-            <div class="info_txt">
-                <p class="info_title">02. 비건 프리</p>
-                <br>
-                <p class="info_mini_title">왜 "비건"이어야 할까요?</p>
-                <br>
-                <p>식물 성분을 기반으로 한 100%로 비건제품만으로 유효 성분이 내 몸에 더 잘 흡수되도록 하여 건강한 내 몸을 지킬 수 있습니다.</p>
-                <br>
-                <p>동물성 콜라겐보다 식물성 콜라겐이 더 분자량이 작아 섭취했을 때 더 잘 흡수되는 것과 마찬가지입니다. 동물 실험을 하지 않은 크루얼티 프리의 가치를 실현하고자 합니다.</p>
+            <div class="info_box content_area">
+                <div class="info_img info_img1"></div>
+                <div class="info_txt">
+                    <p class="info_title">01. 안심 식품</p>
+                    <br>
+                    <p class="info_mini_title">생활 속 화학제품에 노출되어 있는 당신의 건강은 안녕하신가요?</p>
+                    <br>
+                    <p>우리들의 몸은 다양한 생활 속 자극으로 인해 점점 더 예민해져가고 있습니다. Egan은 이러한 문제를 바탕으로 자연속에서 모두가 안심할 수 있는 먹거리, 제품만을 제공합니다.</p>
+                    <br>
+                    <p>또한 꼭 필요한 유효 성분만 담고 불필용한 성분은 배제하였습니다.</p>
+                </div>
             </div>
-            <div class="info_img info_img2"></div>
-        </div>
-        <div class="info_box content_area">
-            <div class="info_img info_img3"></div>
-            <div class="info_txt">
-                <p class="info_title">03. 스스로의 건강 균형을 찾을 수 있도록</p>
-                <br>
-                <p class="info_mini_title">건강 고민을 하면서 정작 내 몸 건강을 헤치고 있지는 않은가요?</p>
-                <br>
-                <p>비건 식품이라고해서 더이상 맛없고 보잘 것 없는 제품이 아닙니다. 건강 균형을 찾아가며 균형잡힌 내 몸을 느껴보세요. </p>
-                <br>
-                <p>.또한 꼭 필요한 유효 성분만 담고 불필용한 성분은 배제하였습니다</p>
+            <div class="info_box content_area">
+                <div class="info_txt">
+                    <p class="info_title">02. 비건 프리</p>
+                    <br>
+                    <p class="info_mini_title">왜 "비건"이어야 할까요?</p>
+                    <br>
+                    <p>식물 성분을 기반으로 한 100%로 비건제품만으로 유효 성분이 내 몸에 더 잘 흡수되도록 하여 건강한 내 몸을 지킬 수 있습니다.</p>
+                    <br>
+                    <p>동물성 콜라겐보다 식물성 콜라겐이 더 분자량이 작아 섭취했을 때 더 잘 흡수되는 것과 마찬가지입니다. 동물 실험을 하지 않은 크루얼티 프리의 가치를 실현하고자 합니다.</p>
+                </div>
+                <div class="info_img info_img2"></div>
+            </div>
+            <div class="info_box content_area">
+                <div class="info_img info_img3"></div>
+                <div class="info_txt">
+                    <p class="info_title">03. 스스로의 건강 균형을 찾을 수 있도록</p>
+                    <br>
+                    <p class="info_mini_title">건강 고민을 하면서 정작 내 몸 건강을 헤치고 있지는 않은가요?</p>
+                    <br>
+                    <p>비건 식품이라고해서 더이상 맛없고 보잘 것 없는 제품이 아닙니다. 건강 균형을 찾아가며 균형잡힌 내 몸을 느껴보세요. </p>
+                    <br>
+                    <p>또한 꼭 필요한 유효 성분만 담고 불필용한 성분은 배제하였습니다.</p>
+                </div>
             </div>
         </div>
 
@@ -201,7 +219,7 @@
                         <p class="vegan_title2"> 채식:구 </p>
                         <p>시간이 지나면서 건강이 악화되고 뒤늦게 관리하면 늦는다는 걸 깨닫습니다. </p>
                         <p>왜 건강은 미리 챙겨야만 좋은 걸까요? 참 의아한 일입니다. </p>
-                        <p> 건강은 기본에 충실하고 꾸준한 관리와 나만의 습관을 통해서 얻어집니다. </p>
+                        <p>건강은 기본에 충실하고 꾸준한 관리와 나만의 습관을 통해서 얻어집니다. </p>
                         <p>그것이 Egan이 추구하는 가치입니다.</p>
                     </span>
         </div>
