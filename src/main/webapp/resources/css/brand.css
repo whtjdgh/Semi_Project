@@ -15,6 +15,7 @@ html{
 }
 
 
+
 .banner {
     background: rgba(0, 0, 0, 0.3) url(../img/brand_banner.jpg) no-repeat fixed center / cover;
     background-blend-mode: darken;
@@ -292,10 +293,10 @@ p {
     /* background-color: red; */
 }
 .vegan_title1{
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 600;
-    font-family:'Times New Roman', Times, serif;
-    font-family:'nanum-light';
+    font-family:'nanum손글씨';
+    font-family:'nanum기쁨';
     width: 50%;
     margin-top: 30px;
     
