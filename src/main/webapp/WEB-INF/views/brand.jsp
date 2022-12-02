@@ -40,14 +40,9 @@
             url('<c:url value='/font/NanumBarunGothicLight.ttf'/>')format('truetype');
         }
         @font-face {
-            font-family: 'nanum손글씨';
-            src: local('fonts/나눔손글씨 강인한 위로.ttf'),
-            url('<c:url value='/font/나눔손글씨 강인한 위로.ttf'/>')format('truetype');
-        }
-        @font-face {
-            font-family: 'nanum기쁨';
-            src: local('fonts/나눔손글씨 기쁨밝음.ttf'),
-            url('<c:url value='/font//나눔손글씨 기쁨밝음.ttf'/>')format('truetype');
+            font-family: 'nanum강부장';
+            src: local('fonts/나눔손글씨 강부장님체.ttf'),
+            url('<c:url value='/font/나눔손글씨 강부장님체.ttf'/>')format('truetype');
         }
     </style>
 </head>
