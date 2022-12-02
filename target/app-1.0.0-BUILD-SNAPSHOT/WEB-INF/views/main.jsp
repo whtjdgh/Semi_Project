@@ -15,10 +15,32 @@
   <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/>">
   <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/>">
   <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/>">
-  <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/>">
-  <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/>">
-  
 
+  <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/>">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Merriweather&family=Nanum+Pen+Script&family=Stylish&family=Zen+Antique&display=swap'); @font-face {
+      font-family: 'time';
+      src: local('fonts/TimesNewRomancRegular'),
+      url('<c:url value='/font/timesbd.ttf'/>')format('truetype');
+      font-family: 'Gaegu', cursive;
+    }
+
+
+    @font-face {
+      font-family: 'nanum';
+      src: local('fonts/NanumBarunGothic.ttf'),
+      url('<c:url value='/font/NanumBarunGothic.ttf'/>')format('truetype');
+
+    }
+
+    @font-face {
+      font-family: 'nanum-light';
+      src: local('fonts/NanumBarunGothicLight.ttf'),
+      url('<c:url value='/font/NanumBarunGothicLight.ttf'/>')format('truetype');
+    }
+
+  </style>
 
 </head>
 
