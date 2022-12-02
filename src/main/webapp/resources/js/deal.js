@@ -32,6 +32,15 @@ $(document).ready(function() {
     // 탭 버튼 스크롤 
     let tab_loc = $('.item_ex_tab').offset().top;
     let h_hei = $('.header').height();
+
+    if(h_hei <= $(window).scrollTop()) {
+        $('.item_ex_tab').css({
+            position: 'fixed',
+            // top:'70px'
+            top: $('.header').height()
+        })
+    }
+
     $(window).scroll(function() {
         // 탭 스크롤 이밴트
 
@@ -40,7 +49,8 @@ $(document).ready(function() {
         if(s_top+h_hei > tab_loc) {
             $('.item_ex_tab').css({
                 position:'fixed',
-                top:'70px'
+                // top:'70px'
+                top: $('.header').height()
             })
             $('.detail_item_box').css({
                 paddingTop:'60px'
@@ -66,6 +76,16 @@ $(document).ready(function() {
         
     })
 
+    $(window).resize(function (){
+        $('.item_ex_tab').css({
+            position:'fixed',
+            top: $('.header').height()
+        })
+        //
+        // if($(window).innerWidth() <= 1024) {
+        //
+        // }
+    });
     if (matchMedia("screen and (max-width: 1024px)").matches)  {
         $(window).scroll(function() {
             let s_top = $(window).scrollTop();
