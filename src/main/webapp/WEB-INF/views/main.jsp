@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/>">
 
   <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/>">
-
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Merriweather&family=Nanum+Pen+Script&family=Stylish&family=Zen+Antique&display=swap'); @font-face {
       font-family: 'time';
@@ -38,6 +37,12 @@
       font-family: 'nanum-light';
       src: local('fonts/NanumBarunGothicLight.ttf'),
       url('<c:url value='/font/NanumBarunGothicLight.ttf'/>')format('truetype');
+    }
+
+    @font-face {
+      font-family: 'kopub';
+      src: local('../font/KoPubWorldBatangLight.ttf'),
+      url('<c:url value='/font/KoPubWorldBatangLight.ttf'/>')format('truetype');
     }
 
   </style>
