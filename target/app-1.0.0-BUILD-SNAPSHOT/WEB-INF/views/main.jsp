@@ -12,11 +12,12 @@
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script defer src="<c:url value='/egan_home_header.js/'/>"></script>
-  <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/>">
-  <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/>">
-  <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/>">
 
-  <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/>">
+  <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Merriweather&family=Nanum+Pen+Script&family=Stylish&family=Zen+Antique&display=swap'); @font-face {
       font-family: 'time';
@@ -60,22 +61,28 @@
         <div class="ham_line"></div>
       </div>
 
-      <div class="logo">Egan</div>
+      <div class="logo">
+        <a href="http://localhost:8080/egan/main">Egan</a>
+      </div>
 
       <div class="nav">
         <a href="">SHOP</a>
-        <a href="">BRAND</a>
+        <a href="http://localhost:8080/egan/brand">BRAND</a>
         <a href="">COMMUNITY</a>
       </div>
 
       <div class="menu">
         <div class="h_menu">
-          <a href="">Login</a>
-          <a href="">Register</a>
+          <a href="#">Login</a>
+          <a href="#">Register</a>
         </div>
         <div class="h_icon">
-          <div class="shopping"></div>
-          <div class="search"></div>
+          <a href="#">
+            <div class="shopping"></div>
+          </a>
+          <a href="#">
+            <div class="search"></div>
+          </a>
         </div>
       </div>
 
@@ -84,29 +91,43 @@
 
   <div class="main">
 
+
+    <!-- 메인 베너 -->
     <div class="main_bannr">
       <video src="<c:url value='/video/pexels-roman-odintsov-6666529.mp4'/>" autoplay loop muted> </video>
       <div class="vi_text">
         <div>The value of nature,</div>
         <div>the value of consumption</div>
       </div>
-      <a  href="" class="vi_link">About us</a>
+      <a  href="#" class="vi_link">About us</a>
     </div>
 
-    <div class="best_product">
-      <div class="b_product_img"></div>
-      <div class="b_product">
+
+
+    <!-- Best 상품 -->
+    <div class="best_article">
+      <div class="b_article">
+        <div class="b_article_img"></div>
+      </div>
+
+      <div class="best_product">
         <div class="b_title">
           <div class="best_title title_high" >Best</div>
           <div class="descri">지금 가장 인기 있는 제품을 만나 보세요!</div>
         </div>
-        <!-- 베스트 제품 슬라이드 -->
-        <div class="best_slide">
 
+        <div class="best_slide">
+          <img src="../img/skin/16-1.jpg" alt="" class="b_slide_img">
+          <img src="../img/daily/11.jpg" alt="" class="b_slide_img">
+          <img src="../img/food/15-1.jpg" alt="" class="b_slide_img">
+          <img src="../img/skin/7.jpg" alt="" class="b_slide_img">
+          <img src="../img/food/17.jpg" alt="" class="b_slide_img">
         </div>
       </div>
     </div>
 
+
+    <!-- 채식구 베너 -->
     <div class="chae-sicku_banner">
       <a href="">
         <div class="chea_text">
@@ -123,12 +144,16 @@
         <div class="descri">추천상품을 이용해 보세요!</div>
       </div>
 
-      <!-- funtion 이용해 보기 -->
+
+
+      <!-- MD 상품 -->
       <div class="md_Pro">
 
         <div class="mdPro_article">
           <div class="mdProArticle_img">
-            <div class="mdimg1"></div>
+            <a href="#">
+              <div class="mdimg1"></div>
+            </a>
           </div>
           <div class="md_descri">
             <a href="" class="mdDes">
@@ -140,7 +165,7 @@
 
         <div class="mdPro_article">
           <div class="mdProArticle_img mdimg2">
-            <div class="mdimg2"></div>
+            <a href="#"><div class="mdimg2"></div></a>
           </div>
           <div class="md_descri">
             <a href="" class="mdDes">
@@ -152,7 +177,7 @@
 
         <div class="mdPro_article">
           <div class="mdProArticle_img mdimg3">
-            <div class="mdimg3"></div>
+            <a href="#"><div class="mdimg3"></div></a>
           </div>
           <div class="md_descri">
             <a href="" class="mdDes">
@@ -213,11 +238,6 @@
 
 
 </div>
-
-<script src="">
-
-</script>
-
 
 </body>
 </html>
