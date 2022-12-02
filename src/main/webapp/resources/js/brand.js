@@ -29,7 +29,7 @@ $(document).ready(function () {
 
         })
             $('.search').css({
-                background: 'url(./img/h_검색.png.png) no-repeat center / 20px'
+                background: 'url(./img/h_검색.png) no-repeat center / 20px'
             })
             $('.ham_line').css({
                 backgroundColor: '#000'
