@@ -11,13 +11,13 @@
   <title>Document</title>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script defer src="<c:url value='/js/egan_home_header'/>"></script>
-  <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
-  <>
+  <script defer src="<c:url value='/egan_home_header.js/'/>"></script>
+  <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/>">
+  <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/>">
+  <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/>">
+  <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/>">
+  <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/>">
+  
 
 
 </head>
@@ -58,7 +58,7 @@
   <div class="main">
 
     <div class="main_bannr">
-      <video src="/video/pexels-roman-odintsov-6666529.mp4" autoplay loop muted> </video>
+      <video src="<c:url value='/video/pexels-roman-odintsov-6666529.mp4'/>" autoplay loop muted> </video>
       <div class="vi_text">
         <div>The value of nature,</div>
         <div>the value of consumption</div>
