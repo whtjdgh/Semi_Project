@@ -34,8 +34,7 @@ $(document).ready(function(){
         }
         else if (s_top === 0 ) {
             $('.header').css({
-                background: 'transparent',
-                borderBottom: '1px solid rgb(137, 137, 137)'
+                background: 'transparent'
             })
             $('.logo > a').css({
                 color: '#ffbf00',
