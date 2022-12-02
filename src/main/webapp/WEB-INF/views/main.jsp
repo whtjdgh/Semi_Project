@@ -15,6 +15,7 @@
   <script defer src="<c:url value='/js/egan_home_header.js/'/>"></script>
   <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/brand.css'/> ">
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Merriweather&family=Nanum+Pen+Script&family=Stylish&family=Zen+Antique&display=swap'); @font-face {
@@ -50,6 +51,7 @@
 
 <body>
 <div class="wrap ">
+  <button class="top_btn">TOP</button>
   <div class="header">
     <div class="content_area">
 
