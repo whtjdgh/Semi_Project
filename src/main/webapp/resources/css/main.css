@@ -54,7 +54,7 @@ video {
 .b_product_img{
     width: 30%;
     height: 100%;
-    /*background-image: url(../img/프젝_이미지/green/pexels-alesia-kozik-7796309.jpg);*/
+    background-image: url(../img/skin/pexels-alesia-kozik-7796309.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,7 +95,7 @@ video {
 .chae-sicku_banner{
     width: 100%;
     height: 350px;
-    /*background-image: url(../img/green-1710328_1280.jpg);*/
+    background-image: url(../img/food/21.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -158,7 +158,7 @@ video {
 .mdimg1 {
     width: 100%;
     height: 100%;
-    /*background-image: url(../img/프젝_이미지/생활용품/9.jpg);*/
+    background-image: url(../img/daily/9.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -167,7 +167,7 @@ video {
 .mdimg2 {
     width: 100%;
     height: 100%;
-    /*background-image: url(../img/프젝_이미지/스킨케어/9-1.JPG);*/
+    background-image: url(../img/skin/9-1.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -176,7 +176,7 @@ video {
 .mdimg3 {
     width: 100%;
     height: 100%;
-    /*background-image: url(../img/프젝_이미지/식품/19-1.jpg);*/
+    background-image: url(../img/food/19-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

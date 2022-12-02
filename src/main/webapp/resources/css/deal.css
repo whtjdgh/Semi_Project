@@ -119,7 +119,7 @@ img {
 .btn_qty {
     width: 30px;
     height: 30px;
-    border: 1px solid #515151;
+    border: 1px solid #515151; 
     color: #515151;
     line-height: 30px;
     float: left;
@@ -132,7 +132,7 @@ img {
     height: 26px;
     color: #515151;
     text-align: center;
-    border: 1px solid #515151;
+    border: 1px solid #515151; 
     float: left;
 }
 .pay_box {
@@ -460,4 +460,4 @@ img {
     .qna_rt {
         width: 200px;
     }
-}
+    }

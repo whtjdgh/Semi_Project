@@ -6,6 +6,7 @@ $(document).ready(function () {
     $(window).scroll(function () {
         let s_top = $(window).scrollTop();
 
+        // 헤더
         if (s_top > 0) {
             $('.header').css({
                 background: '#FFFEEB',
@@ -29,7 +30,7 @@ $(document).ready(function () {
 
         })
             $('.search').css({
-                background: 'url(./img/h_검색.png.png) no-repeat center / 20px'
+                background: 'url(./img/h_검색.png) no-repeat center / 20px'
             })
             $('.ham_line').css({
                 backgroundColor: '#000'
@@ -65,6 +66,8 @@ $(document).ready(function () {
             })
 
         }
+
+        // 메인
         if (s_top > 200) {
             $('.logo_box').css({
                 opacity: '1'
@@ -97,7 +100,6 @@ $(document).ready(function () {
 
 
         }
-        console.log(s_top)
     });
 
 });
