@@ -24,10 +24,10 @@ $(document).ready(function () {
                 borderRight: '1px solid black'
             })
             $('.shopping').css({
-                background: 'url(../img/장바구니_black.png)no-repeat center / 20px'
+                background: 'url(./img/장바구니_black.png)no-repeat center / 20px'
             })
             $('.search').css({
-                background: 'url(../img/h_검색.png)no-repeat center / 20px'
+                background: 'url(./img/h_검색.png)no-repeat center / 20px'
             })
             $('.ham_line').css({
                 backgroundColor: '#000'
