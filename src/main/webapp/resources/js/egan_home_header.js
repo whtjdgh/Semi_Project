@@ -9,15 +9,10 @@ $(document).ready(function(){
         // 최상단으로 부터 현재의 스크롤 위치 값
 
         //스크롤 내리면 헤더 불투명
-        if(s_top === 0 ) {
+        if(s_top > 0 ) {
             $('.header').css({
                 background :'#FFFEEB'
             })
-
-            // $('.logo > a').css({
-            //     color: '#ffbf00'
-            // })
-
             $('.nav > a').css({
                 color: 'black'
             })
@@ -35,7 +30,7 @@ $(document).ready(function(){
             })
             
         }  // 헤더 위치와 브라우저 스크롤 위취 값 같으면 헤더 투명
-        else if (s_top > 0 ) {
+        else if (s_top === 0 ) {
             $('.header').css({
                 background :'transparent'
             })
