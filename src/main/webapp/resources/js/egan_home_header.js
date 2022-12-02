@@ -27,27 +27,34 @@ $(document).ready(function(){
             $('.search').css({
                 background: 'url(./img/h_검색.png) no-repeat center / 20px'
             })
+            $('.ham_line').css({
+                backgroundColor: '#000'
+            })
 
         }
         else if (s_top === 0 ) {
             $('.header').css({
-                background :'transparent'
+                background: 'transparent',
+                borderBottom: '1px solid rgb(137, 137, 137)'
             })
+            $('.logo > a').css({
+                color: '#ffbf00',
 
+            })
             $('.nav > a').css({
                 color: '#ffbf00'
             })
             $('.h_menu > a').css({
                 color: '#ffbf00'
             })
-            $('.h_menu::after').css({
-                borderRight: '1px solid ffbf00'
-            })
             $('.shopping').css({
-                background: 'url(../img/장바구니_yellow.png)no-repeat center / 20px'
+                background: 'url(./장바구니_yellow.png) no-repeat center / 20px'
             })
             $('.search').css({
-                background: 'url(../img/header_search_yellow.png)no-repeat center / 20px'
+                background: 'url(./img/header_search_yellow.png) no-repeat center / 20px'
+            })
+            $('.ham_line').css({
+                backgroundColor: '#ffbf00',
             })
         }
     })
