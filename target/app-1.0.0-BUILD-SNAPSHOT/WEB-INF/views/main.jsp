@@ -62,7 +62,7 @@
       </div>
 
       <div class="logo">
-        <a href="#">Egan</a>
+        <a href="http://localhost:8080/egan/main">Egan</a>
       </div>
 
       <div class="nav">
