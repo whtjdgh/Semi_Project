@@ -49,6 +49,15 @@
 
 </head>
 
+<script>
+  // 마우스 우클릭, 드래그 ,이미지 드래그 금지
+  history.scrollRestoration = "manual"
+  document.oncontextmenu = function(){return false;}
+  document.onselectstart = function(){return false;}
+  document.ondragstart = function(){return false;}
+
+</script>
+
 <body>
 <div class="wrap ">
   <button class="top_btn">TOP</button>
