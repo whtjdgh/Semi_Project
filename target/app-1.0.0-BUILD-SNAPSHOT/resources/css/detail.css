@@ -175,7 +175,7 @@ a{
     width: 100%;
     height: 100%;
 
-    background:rgba(0, 0, 0, 0.1)  url(../img/\(상품나열\)레몬1\ \(2\).jpg)no-repeat center / cover;
+    background:rgba(0, 0, 0, 0.1)  url(../img/detail_main.jpg)no-repeat center / cover;
     background-blend-mode: darken;
 }
 .search_box{
@@ -221,7 +221,7 @@ input::placeholder {
     height: 100%;
     float: right;
 
-    background: url(../img/\(상품나열\)검색창돋보기.png)no-repeat center / 50px;
+    background: url(../img/detail_search.png)no-repeat center / 50px;
 
 
 }
@@ -307,7 +307,7 @@ input::placeholder {
     box-sizing: border-box;
     overflow: hidden;
 
-    /* background-color: red; */
+     /*background-color: red;*/
 }
 
 .menu_item{
@@ -315,7 +315,7 @@ input::placeholder {
     width: 100%;
 
 
-    /* background-color: blue; */
+     /*background-color: blue; */
     transform: scale(1);
     overflow: hidden;
 
@@ -330,6 +330,7 @@ input::placeholder {
 
     transition: all 0.3s;
     display: block;
+    background: pink;
 
 }
 .menu_item:hover > img{
@@ -382,7 +383,7 @@ input::placeholder {
     bottom: 15px;
     right: 15px;
     /* background-color: red; */
-    background: url(../img/장바구니.png) no-repeat center / cover;
+    background: url(../img/detail_basket.png) no-repeat center / cover;
 
 
 }
@@ -516,11 +517,11 @@ button{
 
 }
 #minus{
-    background: url(../img/\(수량-\)minus.png) no-repeat center / 13px;
+    background: url(../img/Btn_minus.png) no-repeat center / 13px;
 
 }
 #plus{
-    background: url(../img/\(수량+\)plus.png) no-repeat center / 10px;
+    background: url(../img/Btn_plus.png) no-repeat center / 10px;
 }
 .total_box{
 
