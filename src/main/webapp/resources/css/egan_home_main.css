@@ -1,4 +1,6 @@
 
+
+
 .main{
   width: 100%;
   background-color: white;
@@ -79,9 +81,6 @@ video {
   box-sizing: border-box;
 }
 
-.b_title {
- 
-}
 
 .best_title {
   width: 50px;
@@ -130,7 +129,7 @@ video {
   position: absolute;
   top:30%; left: 25%;
   color: #ffff;
-  font-family: 'kopub';
+  font-family:'kopub','serif';
   font-size: 13px;
 }
 
