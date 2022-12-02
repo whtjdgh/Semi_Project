@@ -9,7 +9,7 @@ $(document).ready(function(){
         // 최상단으로 부터 현재의 스크롤 위치 값
 
         //스크롤 내리면 헤더 불투명
-        if(s_top == 0 ) {
+        if(s_top === 0 ) {
             $('.header').css({
                 background :'#FFFEEB'
             })
@@ -57,12 +57,7 @@ $(document).ready(function(){
             $('.search').css({
                 background: 'url(../img/header_search_yellow.png)no-repeat center / 20px'
             })
-        } else {
-            $('.header').css({
-                background :'#FFFEEB'
-            })
         }
-
     })
 })
 
