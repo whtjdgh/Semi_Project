@@ -67,7 +67,7 @@
 
       <div class="nav">
         <a href="">SHOP</a>
-        <a href="">BRAND</a>
+        <a href="http://localhost:8080/egan/brand">BRAND</a>
         <a href="">COMMUNITY</a>
       </div>
 
