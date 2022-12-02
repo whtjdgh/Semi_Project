@@ -11,13 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Egan</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script defer src="../js/h_f.js"></script>
-    <script defer src="../js/deal.js"></script>
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/common_css/h_f.css">
-    <link rel="stylesheet" href="../css/common_css/h_f_r.css">
-    <link rel="stylesheet" href="../css/deal.css">
-    <link rel="stylesheet" href="../css/popup.css">
+    <script defer src="<c:url value='/js/h_f.js'/>"></script>
+    <script defer src="<c:url value='/js/deal.js'/>"></script>
+    <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/deal.css'/>">
+    <link rel="stylesheet" href="<c:url value='/css/popup.css'/>">
 
 </head>
 
@@ -200,7 +199,7 @@
                     <div class="item_qna_txt">
                         <div class="item_qna_title">PRODUCT Q&A</div>
                         <div class="item_qna_ex">
-                            <p>· 상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판 관리자에 의해 삭제될 수 있습니다.</p>
+                            <p>· 상품에 대 한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판 관리자에 의해 삭제될 수 있습니다.</p>
                         </div>
                     </div>
                     <div class="qna_box">

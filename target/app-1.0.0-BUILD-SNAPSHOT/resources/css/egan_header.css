@@ -1,22 +1,32 @@
-/* html,
+@font-face {
+    font-family: 'time';
+    src: local('fonts/TimesNewRomancRegular'),
+    url('../../font/timesbd.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'nanum';
+    src: local('fonts/NanumBarunGothic.ttf'),
+    url('../../font/NanumBarunGothic.ttf')format('truetype');
+
+}
+
+@font-face {
+    font-family: 'nanum-light';
+    src: local('fonts/NanumBarunGothicLight.ttf'),
+    url('../../font/NanumBarunGothicLight.ttf')format('truetype');
+
+}
+html,
 body {
     max-width: 100%;
     overflow-x: hidden;
-} */
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
 }
-
+a {
+    text-decoration: none; color: inherit;
+}
 ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.wrap {
     margin: 0;
     padding: 0;
 }
@@ -24,36 +34,9 @@ ul {
 .content_area {
     width: 1200px;
     max-width: 100%;
-    height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-
-/* //////////////////// 반응형 ////////////////////// */
-.ham_btn {
-    display: none;
-    width: 40px;
-    height: 100%;
-    padding: 15px 0;
-    box-sizing: border-box;
-
-}
-
-.ham_line {
-    width: 20px;
-    height: 2px;
-    background-color: #000;
-}
-
-.ham_line:nth-child(2) {
-    margin: 5px 0;
 }
 
 
@@ -71,12 +54,12 @@ a {
     left: 0;
     top: 0;
     right: 0;
-    overflow: hidden;
-    z-index: 99;
+    /* overflow: hidden; */
+    z-index: 999;
 
 }
 
-.logo {
+.logo a {
     font-size: 35px;
     font-family: 'time';
     color: #facf0e;
@@ -108,6 +91,7 @@ a {
 
 .h_menu::after {
     content: "";
+
     margin: 15px;
     width: 1px;
     border-right: 1px solid #979286;
@@ -124,17 +108,65 @@ a {
     width: 25px;
     height: 100%;
     margin: 0;
-    background: url(./포폴/포폴_img/세미_자료/장바구니_black.png)no-repeat center / 20px;
+    background: url(../img/장바구니_black.png)no-repeat center / 20px;
 }
 
 .search {
     width: 25px;
     height: 100%;
     margin-left: 10px;
-    background: url(./포폴/포폴_img/세미_자료/\(헤더\)검색.png)no-repeat center / 20px;
+    background: url(../img/검색.png)no-repeat center / 20px;
 }
 
-/* //////////// 메인 외부파일 //////////// */
+/* //////////////////// 반응형 ////////////////////// */
+.ham_box {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    /* background-color: #979286; */
+    display: none;
+}
+.ham_line {
+    width: 100%;
+    height: 3px;
+    background-color:black;
+    margin: 7px 0;
+}
+
+.ham_menu {
+    width: 250px;
+    height: 70vh;
+    background-color: #fff;
+    box-shadow: 0px 1px 5px #ddd;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    left: -50%;
+    transition: all 1.5s;
+    z-index: 99999;
+}
+.ham_active {
+    left:0 !important;
+}
+.ham_ul {
+    font-size: 17px;
+    color: #2e2e2e;
+    text-align: center;
+    line-height: 40px;
+}
+.ham_ul li:nth-child(1),
+.ham_ul li:nth-child(2) {
+    font-size: 15px;
+}
+.hr {
+    width: 80%;
+    height: 1px;
+    margin:5px  auto;
+    background-color: #a1a1a1;
+}
+/* ////////////// 각자 메인 ////////////// */
 
 
 /* ////////////// 탑 버튼 ////////////// */
@@ -158,7 +190,6 @@ a {
 /* /////////////  푸터 //////////// */
 .footer {
     margin-top: 20px;
-    max-width: 1200px;
     width: 100vw;
     height: 200px;
     padding: 0 10px;
@@ -176,7 +207,7 @@ a {
     font-weight: 900;
 }
 
-span {
+.f_h_txt span {
     font-weight: 400;
 }
 
@@ -201,4 +232,7 @@ span {
 
 .w_box>.f_b_txt {
     background-color: #FFE178;
+}
+.main {
+    min-height: 400px;
 }
