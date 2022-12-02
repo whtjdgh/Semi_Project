@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'D2Coding';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: D2Coding;
+}
 #wrap {
     position: relative;
     margin-top: 200px;
@@ -20,6 +29,10 @@
     height: 600px;
     border: 1px solid;
     box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: 100%;
 }
 .detail_imfo {
     width: 40%;
@@ -106,7 +119,7 @@
 .btn_qty {
     width: 30px;
     height: 30px;
-    border: 1px solid #515151; 
+    border: 1px solid #515151;
     color: #515151;
     line-height: 30px;
     float: left;
@@ -119,7 +132,7 @@
     height: 26px;
     color: #515151;
     text-align: center;
-    border: 1px solid #515151; 
+    border: 1px solid #515151;
     float: left;
 }
 .pay_box {
@@ -195,28 +208,23 @@
 #item_ex {
     width: 100%;
     min-height: 400px;
-    height: 900px;
-    border: 1px solid #4b4b4b;
 }
 #item_ex_dt {
     width: 100%;
     min-height: 400px;
-    height: 900px;
-    border: 1px solid #4b4b4b;
+    margin: 150px 0;
 }
 #item_review {
     width: 100%;
     min-height: 400px;
     margin: 100px 0;
     position: relative;
-    /* border: 1px solid #4b4b4b; */
 }
 #item_qna {
     position: relative;
     width: 100%;
     min-height: 400px;
     margin: 200px 0;
-    /* border: 1px solid #4b4b4b; */
 }
 /* 리뷰 스타일 */
 
@@ -401,6 +409,7 @@
     }
     .item_ex_tab {
         max-width: 660px;
+        top:50px;
     }
     .review_txt_title {
         font-size: 24px;
@@ -451,4 +460,4 @@
     .qna_rt {
         width: 200px;
     }
-    }
+}
