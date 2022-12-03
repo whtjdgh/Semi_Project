@@ -30,7 +30,7 @@ $(document).ready(function() {
     })
 
     // 탭 버튼 스크롤 
-    let tab_loc = $('.item_ex_tab').offset().top;
+    let tab_loc = $('.item_ex_main').offset().top;
     let h_hei = $('.header').height();
 
     if(h_hei <= $(window).scrollTop()) {
