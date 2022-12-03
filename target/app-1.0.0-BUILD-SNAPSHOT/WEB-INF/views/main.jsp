@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/brand.css'/> ">
 
+  
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Merriweather&family=Nanum+Pen+Script&family=Stylish&family=Zen+Antique&display=swap'); @font-face {
       font-family: 'time';
@@ -49,8 +51,18 @@
 
 </head>
 
+<script>
+  // 마우스 우클릭, 드래그 ,이미지 드래그 금지
+  history.scrollRestoration = "manual"
+  document.oncontextmenu = function(){return false;}
+  document.onselectstart = function(){return false;}
+  document.ondragstart = function(){return false;}
+
+</script>
+
 <body>
 <div class="wrap ">
+  <button class="top_btn">TOP</button>
   <div class="header">
     <div class="content_area">
 
