@@ -174,7 +174,7 @@ img {
     height: 60px;
     display: flex;
     flex-wrap: wrap;
-    z-index: 999;
+    z-index: 99;
 }
 .tab {
     width: calc(100%/4);
@@ -208,6 +208,7 @@ img {
 #item_ex {
     width: 100%;
     min-height: 400px;
+    margin: 100px 0;
 }
 #item_ex_dt {
     width: 100%;
@@ -452,7 +453,7 @@ img {
         width: 80%;
     }
     .item_ex_main {
-        width: 450px;
+        width: 420px;
     }
     .rv_rt {
         width: 200px;
