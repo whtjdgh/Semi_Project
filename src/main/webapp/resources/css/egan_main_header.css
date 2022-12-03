@@ -155,8 +155,9 @@ a {
     color: white;
     font-size: 20px;
     font-weight: 400;
-
-    background-color: #FFE178;
+    border: none;
+    cursor: pointer;
+    background-color: #ffbf00;
 }
 
 
