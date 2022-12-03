@@ -128,11 +128,30 @@
         </div>
 
         <div class="best_slide">
-          <img src="<c:url value='/resources/img/skin/16-1.jpg'/>" alt="" class="b_slide_img">
-          <img src="<c:url value='/resources/img/daily/11.jpg'/>" alt="" class="b_slide_img">
-          <img src="<c:url value='/resources/img/food/15-1.jpg'/>" alt="" class="b_slide_img">
-          <img src="<c:url value='/resources/img/skin/7.jpg'/>" alt="" class="b_slide_img">
-          <img src="<c:url value='/resources/img/food/17.jpg'/>" alt="" class="b_slide_img">
+          <div class="slide_wrap">
+            <div class="b_slide_img">
+              <div class="slide1"></div>
+            </div>
+            <div class="b_slide_img">
+              <div class="slide2"></div>
+            </div>
+            <div class="b_slide_img">
+              <div class="slide3"></div>
+            </div>
+            <div class="b_slide_img">
+              <div class="slide4"></div>
+            </div>
+            <div class="b_slide_img">
+              <div class="slide5"></div>
+            </div>
+            <div class="b_slide_img">
+              <div class="slide6"></div>
+            </div>
+          </div>
+
+          <div class="prev_btn"></div>
+          <div class="next_btn"></div>
+
         </div>
       </div>
     </div>
