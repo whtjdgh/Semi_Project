@@ -11,12 +11,15 @@
   <title>Document</title>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script defer src="${pageContext.request.contextPath}/resources/js/egan_home_header.js"></script>
-  <script defer src="${pageContext.request.contextPath}/resources/js/topBtn.js"></script>
-  <script defer src="${pageContext.request.contextPath}/resources/js/h_f.js"></script>
-  <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
+  <script defer src="<c:url value='/js/h_f.js'/>"></script>
+  <script defer src="<c:url value='/js/topBtn.js'/>"></script>
+  <script defer src="<c:url value='/js/egan_home_header.js'/>"></script>
+<%--  <script defer src="${pageContext.request.contextPath}/resources/js/egan_home_header.js"></script>--%>
+<%--  <script defer src="${pageContext.request.contextPath}/resources/js/topBtn.js"></script>--%>
+<%--  <script defer src="${pageContext.request.contextPath}/resources/js/h_f.js"></script>--%>
+  <link rel="stylesheet" href="<c:url value='/resources/css/h_f_r.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/resources/css/egan_home_main.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/resources/css/egan_main_header.css'/> ">
 
 <%--  <link rel="stylesheet" type="text/css" href= "C:\Users\ehowl\IdeaProjects\Semi_Project\src\main\webapp\resources\css\egan_home_main.css"/>--%>
 <%--  <link rel="stylesheet" type="text/css" href="C:\Users\ehowl\IdeaProjects\Semi_Project\src\main\webapp\resources\css\egan_main_header.css">--%>
@@ -28,7 +31,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Merriweather&family=Nanum+Pen+Script&family=Stylish&family=Zen+Antique&display=swap'); @font-face {
       font-family: 'time';
       src: local('fonts/TimesNewRomancRegular'),
-      url(/resources/font/timesbd.ttf)format('truetype');
+      url('<c:url value='/font/timesbd.ttf'/>')format('truetype');
       font-family: 'Gaegu', cursive;
     }
 
@@ -36,20 +39,20 @@
     @font-face {
       font-family: 'nanum';
       src: local('fonts/NanumBarunGothic.ttf'),
-      url(/resources/font/NanumBarunGothic.ttf)format('truetype');
+      url('<c:url value='/font/NanumBarunGothic.ttf'/>')format('truetype');
 
     }
 
     @font-face {
       font-family: 'nanum-light';
       src: local('fonts/NanumBarunGothicLight.ttf'),
-      url(/resources/font/NanumBarunGothicLight.ttf)format('truetype');
+      url('<c:url value='/font/NanumBarunGothicLight.ttf'/>')format('truetype');
     }
 
     @font-face {
       font-family: 'kopub';
       src: local('../font/KoPubWorldBatangLight.ttf'),
-      url(/resources/font/KoPubWorldBatangLight.ttf)format('truetype');
+      url('<c:url value='/font/KoPubWorldBatangLight.ttf'/>')format('truetype');
     }
 
   </style>
@@ -121,7 +124,7 @@
 
     <!-- 메인 베너 -->
     <div class="main_bannr">
-      <video src="${pageContext.request.contextPath}/resources/video/pexels-roman-odintsov-6666529.mp4" autoplay loop muted> </video>
+      <video src="<c:url value='/video/pexels-roman-odintsov-6666529.mp4'/> autoplay loop muted> </video>
       <div class="vi_text">
         <div>The value of nature,dkssud</div>
         <div>the value of consumption</div>
