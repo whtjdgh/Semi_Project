@@ -17,7 +17,7 @@
   <script defer src="${pageContext.request.contextPath}/js/egan_home_header.js"></script>
   <script defer src="${pageContext.request.contextPath}/js/topBtn.js"></script>
   <script defer src="${pageContext.request.contextPath}/js/h_f.js"></script>
-  script defer src="${pageContext.request.contextPath}/js/egan_home)imgSlide.js"></script>
+  <script defer src="${pageContext.request.contextPath}/js/egan_home_imgSlide.js"></script>
   <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
@@ -125,7 +125,7 @@
 
     <!-- 메인 베너 -->
     <div class="main_bannr">
-      <video src="<c:url value='/video/pexels-roman-odintsov-6666529.mp4'/> autoplay loop muted> </video>
+      <video src="<c:url value='/video/pexels-roman-odintsov-6666529.mp4'/>" autoplay loop muted> </video>
       <div class="vi_text">
         <div>The value of nature,dkssud</div>
         <div>the value of consumption</div>
