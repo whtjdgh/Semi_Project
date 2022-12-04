@@ -11,12 +11,11 @@
   <title>Document</title>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
   <script defer src="<c:url value='/js/egan_home_header.js/'/>"></script>
   <script defer src="<c:url value='/js/topBtn.js'/>"></script>
+  <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/css/brand.css'/> ">
 
 
 
@@ -66,10 +65,22 @@
   <div class="header">
     <div class="content_area">
 
-      <div class="ham_btn">
-        <div class="ham_line"></div>
-        <div class="ham_line"></div>
-        <div class="ham_line"></div>
+      <!-- 햄버거 버튼 -->
+      <div class="ham_box">
+        <div class="ham_line" id="line_top"></div>
+        <div class="ham_line" id="line_mid"></div>
+        <div class="ham_line" id="line_bot"></div>
+        <div class="ham_menu">
+          <ul class="ham_ul">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li class="hr"></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">BRAND</a></li>
+            <li><a href="#">COMMUNITY</a></li>
+
+          </ul>
+        </div>
       </div>
 
       <div class="logo">
