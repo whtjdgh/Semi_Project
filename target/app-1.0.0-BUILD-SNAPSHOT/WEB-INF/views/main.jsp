@@ -17,6 +17,7 @@
   <script defer src="${pageContext.request.contextPath}/js/egan_home_header.js"></script>
   <script defer src="${pageContext.request.contextPath}/js/topBtn.js"></script>
   <script defer src="${pageContext.request.contextPath}/js/h_f.js"></script>
+  script defer src="${pageContext.request.contextPath}/js/egan_home)imgSlide.js"></script>
   <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
