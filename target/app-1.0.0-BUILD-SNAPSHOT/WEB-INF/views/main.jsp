@@ -11,15 +11,15 @@
   <title>Document</title>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script defer src="<c:url value='/js/h_f.js'/>"></script>
-  <script defer src="<c:url value='/js/topBtn.js'/>"></script>
-  <script defer src="<c:url value='/js/egan_home_header.js'/>"></script>
-<%--  <script defer src="${pageContext.request.contextPath}/resources/js/egan_home_header.js"></script>--%>
-<%--  <script defer src="${pageContext.request.contextPath}/resources/js/topBtn.js"></script>--%>
-<%--  <script defer src="${pageContext.request.contextPath}/resources/js/h_f.js"></script>--%>
-  <link rel="stylesheet" href="<c:url value='/resources/css/h_f_r.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/resources/css/egan_home_main.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/resources/css/egan_main_header.css'/> ">
+<%--  <script defer src="<c:url value='/js/h_f.js'/>"></script>--%>
+<%--  <script defer src="<c:url value='/js/topBtn.js'/>"></script>--%>
+<%--  <script defer src="<c:url value='/js/egan_home_header.js'/>"></script>--%>
+  <script defer src="${pageContext.request.contextPath}/resources/js/egan_home_header.js"></script>
+  <script defer src="${pageContext.request.contextPath}/resources/js/topBtn.js"></script>
+  <script defer src="${pageContext.request.contextPath}/resources/js/h_f.js"></script>
+  <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
 
 <%--  <link rel="stylesheet" type="text/css" href= "C:\Users\ehowl\IdeaProjects\Semi_Project\src\main\webapp\resources\css\egan_home_main.css"/>--%>
 <%--  <link rel="stylesheet" type="text/css" href="C:\Users\ehowl\IdeaProjects\Semi_Project\src\main\webapp\resources\css\egan_main_header.css">--%>
