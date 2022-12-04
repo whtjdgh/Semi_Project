@@ -38,25 +38,52 @@ a {
 
 /* //////////////////// 반응형 ////////////////////// */
 .ham_box {
-    display: none;
-    width: 40px;
-    height: 100%;
-    padding: 15px 0;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
     box-sizing: border-box;
-
+    cursor: pointer;
+    /* background-color: #979286; */
+    display: none;
 }
-
 .ham_line {
-    width: 20px;
-    height: 2px;
-    background-color: #000;
+    width: 100%;
+    height: 3px;
+    background-color:black;
+    margin: 7px 0;
 }
 
-.ham_line:nth-child(2) {
-    margin: 5px 0;
+.ham_menu {
+    width: 250px;
+    height: 70vh;
+    background-color: #fff;
+    box-shadow: 0 1px 5px #ddd;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    left: -50%;
+    transition: all 1.5s;
+    z-index: 99999;
 }
-
-
+.ham_active {
+    left:0 !important;
+}
+.ham_ul {
+    font-size: 17px;
+    color: #2e2e2e;
+    text-align: center;
+    line-height: 40px;
+}
+.ham_ul li:nth-child(1),
+.ham_ul li:nth-child(2) {
+    font-size: 15px;
+}
+.hr {
+    width: 80%;
+    height: 1px;
+    margin: 5px auto;
+    background-color: #a1a1a1;
+}
 
 /* //////////////     헤더    //////////////// */
 .header {
