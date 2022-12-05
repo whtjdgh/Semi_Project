@@ -16,9 +16,9 @@
   <script defer src="${pageContext.request.contextPath}/js/topBtn.js"></script>
   <script defer src="${pageContext.request.contextPath}/js/h_f.js"></script>
   <script defer src="${pageContext.request.contextPath}/js/egan_home_imgSlide.js"></script>
-  <link rel="stylesheet" href="<c:url value='/resources/css/h_f_r.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/resources/css/egan_home_main.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/resources/css/egan_main_header.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
 
 
 
@@ -126,7 +126,7 @@
         <div>The value of nature,dkssud</div>
         <div>the value of consumption</div>
       </div>
-      <a  href="#" class="vi_link">About us</a>
+      <a  href="http://localhost:8080/egan/brand" class="vi_link">About us</a>
     </div>
 
 
