@@ -1,4 +1,6 @@
 
+
+
 .main{
   width: 100%;
   background-color: white;
@@ -65,7 +67,7 @@ video {
 .b_article_img {
   width: 100%;
   height: 100%;
-  background-image: url(../img/skin/pexels-alesia-kozik-7796309.jpg);
+  background-image: url(../img/skin/21.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,9 +81,6 @@ video {
   box-sizing: border-box;
 }
 
-.b_title {
- 
-}
 
 .best_title {
   width: 50px;
@@ -107,11 +106,89 @@ video {
 }
 
 .best_slide {
-
+  width: 100%;
+  height: 250px;
+  /* display: flex;
+  flex-wrap: nowrap; */
+  position: relative;
+  user-select: none;
+  overflow: hidden;
 }
 
-.best_slide img {
-  
+.slide_wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slide_wrap.animated {
+  transition : all 0.5s ease-out;
+}
+
+.b_slide_img {
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin: 5px 0;
+  margin-right: 30px;
+}
+
+.slide_wrap div:last-child{
+  margin: 0;
+  /* 슬라이드의 마지막에게는 마진 뺌
+      다른 슬라이드들은 마진 30px 줌
+  */
+}
+
+.b_slide_img > div {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide1{
+  background: url(../img/skin/16-1.jpg);
+}
+.slide2 {
+  background: url(../img/daily/16.jpg);
+}
+.slide3 {
+  background: url(../img/daily/11-1.jpg);
+}
+.slide4 {
+  background: url(../img/skin/7.jpg);
+}
+.slide5 {
+  background: url(../img/food/17.jpg);
+}
+.slide6 {
+  background: url(../img/food/15-1.jpg)
+}
+
+.prev_btn,.next_btn {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: transparent;
+  /* color: transparent; */
+  cursor: pointer;
+}
+
+.prev_btn {
+  left: 0;
+  top: 50%;
+}
+
+.next_btn {
+  right: 0;
+  top: 50%;
+}
+
+.prev_btn:hover,.next_btn:hover {
+  background-color: #fcd64c;
 }
 
 /* 채식구 베너 */
@@ -130,7 +207,7 @@ video {
   position: absolute;
   top:30%; left: 25%;
   color: #ffff;
-  font-family: 'kopub';
+  font-family:'kopub','serif';
   font-size: 13px;
 }
 

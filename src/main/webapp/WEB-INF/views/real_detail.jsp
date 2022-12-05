@@ -12,6 +12,7 @@
     <title>Egan</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script defer src="<c:url value='/js/h_f.js'/>"></script>
+    <script defer src="<c:url value='/js/topBtn.js'/>"></script>
     <script defer src="<c:url value='/js/deal.js'/>"></script>
     <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
     <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
@@ -42,18 +43,18 @@
             </div>
         </div>
 
-        <div class="logo"><a href="#">Egan</a></div>
+        <div class="logo"><a href="http://localhost:8080/egan/main">Egan</a></div>
 
         <div class="nav">
-            <a href="#">SHOP</a>
-            <a href="#">BRAND</a>
-            <a href="#">COMMUNITY</a>
+            <a href="http://localhost:8080/egan/detail">SHOP</a>
+            <a href="http://localhost:8080/egan/brand">BRAND</a>
+            <a href="http://localhost:8080/egan/main">COMMUNITY</a>
         </div>
 
         <div class="menu">
             <div class="h_menu">
-                <a href="">Login</a>
-                <a href="">Register</a>
+                <a href="http://localhost:8080/egan/login">Login</a>
+                <a href="http://localhost:8080/egan/real_register">Register</a>
             </div>
             <div class="h_icon">
                 <div class="shopping"></div>
@@ -68,7 +69,7 @@
     <div class="container">
         <div class="detail_box">
             <div class="detail_img">
-                <img src="" alt="">
+                <img src="<c:url value='/img/daily/1.jpg'/>" alt="비닐장갑">
             </div>
             <div class="detail_imfo">
                 <div class="d_txt">
@@ -77,8 +78,8 @@
                         <div class="o_price o_p_c"><del>30,000원</del></div>
                         <div class="s_price s_p_c">10,000원</div>
                     </div>
-                    <p class="dt_title_txt">촉촉한 립밤 Lorem ipsum dolor sit amet consectetur</p>
-                    <p class="dt_title_txt">촉촉한 립밤 Lorem ipsum dolor sit amet consectetur</p>
+                    <p class="dt_title_txt">Lorem ipsum dolor sit amet consectetur</p>
+                    <p class="dt_title_txt">Lorem ipsum dolor sit amet consectetur</p>
                 </div>
                 <table class="detail_tb">
                     <tr>
@@ -124,8 +125,12 @@
                 <div class="tab"><a href="#item_qna">문의</a></div>
             </div>
             <div class="detail_item_box">
-                <div class="tb_dt" id="item_ex"></div>
-                <div class="tb_dt" id="item_ex_dt"></div>
+                <div class="tb_dt" id="item_ex">
+                    <img src="<c:url value='/img/daily/1-1.jpg'/>" alt="비닐장갑">
+                </div>
+                <div class="tb_dt" id="item_ex_dt">
+                    <img src="<c:url value='/img/daily/1-2.jpg'/>" alt="비닐장갑">
+                </div>
                 <!-- 리뷰 -->
                 <div class="tb_dt" id="item_review">
                     <div class="review_txt">
@@ -395,7 +400,7 @@
 <!-- 레이어 -->
 <div class="layer"></div>
 <!-- 탑 버튼 -->
-<div class="top_btn"><a href="#">TOP</a></div>
+<button class="top_btn top_show">TOP</button>
 </body>
 
 </html>

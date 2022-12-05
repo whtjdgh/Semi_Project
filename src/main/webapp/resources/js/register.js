@@ -25,7 +25,7 @@ $(document).ready(function(){
             // ,changeYear: true //콤보박스에서 년 선택 가능
             // ,changeMonth: true //콤보박스에서 월 선택 가능                
             ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
-            ,buttonImage: "../img/calendar.png" //버튼 이미지 경로
+            ,buttonImage: "./img/calendar.png" //버튼 이미지 경로
             ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
             ,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트   
             
@@ -93,6 +93,7 @@ $(document).ready(function(){
             }
             if(id.value.trim() == "" || id.value.trim() == undefined) {
                 alert("아이디를 입력하세요")
+                id.focus();
                 return false;
             }
             if(id.value.trim().length < 4 || id.value.trim().length > 12) {
@@ -103,6 +104,7 @@ $(document).ready(function(){
             // //비번 체크
             if(pw.value.trim() == "" || pw.value.trim() == undefined) {
                 alert("비밀번호를 입력하세요")
+                pw.focus();
                 return false;
             }
             if(pw.value.trim().length < 4 || pw.value.trim().length > 12) {
@@ -133,19 +135,23 @@ $(document).ready(function(){
             // 공백확인
             if(number.value.trim() == "" || number.value.trim() == undefined) {
                 alert("전화번호를 입력하세요.")
+                number.focus();
                 return false;
             }
             if(number.value.trim().length != 11) {
                 alert("전화번호는 11글자로 입력하세요")
+                number.focus();
                 return false;
             }
             if(isNaN(number.value.trim())) {
                 alert("전화번호는 숫자만 입력하세요.")
+                number.focus();
                 return false;
             }
            // 생년월일 확인
            if(birth.value == "" || birth.value == undefined) {
                 alert("생년월일을 입력하세요")
+               birth.focus();
                 return false;
            }
         }
