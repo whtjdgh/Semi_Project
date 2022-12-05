@@ -1,5 +1,63 @@
 $(document).ready(function() {
-   // 리뷰내용
+
+    // 장바구니 버튼
+    $(document).on('click', '#btn_cart', function() {
+        alert("11")
+    })
+
+    // 구매버튼
+    $(document).on('click', '#btn_pay', function() {
+        alert("22")
+    })
+
+    // 리뷰 버튼
+    $(document).on('click', '#rev_btn', function() {
+        alert("33")
+    })
+
+    // 문의 버튼
+    $(document).on('click', '#qna_btn', function() {
+        alert("44")
+    })
+
+    // 작성중인 글 버튼
+    $(document).on('click', '#wrt_cancle_btn', function() {
+        alert("11")
+    })
+    $(document).on('click', '#wrt_keep_going_btn', function() {
+        alert("11")
+    })
+    // 로그인 버튼
+    $(document).on('click', '#log_cancle_btn', function() {
+        alert("ff")
+    })
+    $(document).on('click', '#logChk_commit_btn', function() {
+        alert("ff")
+    })
+    // 장바구니 팝업
+    $(document).on('click', '#cart_stay_btn', function() {
+        alert("ff")
+    })
+    $(document).on('click', '#cart_commit_btn', function() {
+        alert("ff")
+    })
+    // 리뷰 팝업
+    $(document).on('click', '#review_cancle_btn', function() {
+        alert("ff")
+    })
+    $(document).on('click', '#review_commit_btn', function() {
+        alert("ff")
+    })
+    // 문의 팝업
+    $(document).on('click', '#qna_cancle_btn', function() {
+        alert("ff")
+    })
+    $(document).on('click', '#qna_commit_btn', function() {
+        alert("ff")
+    })
+
+
+    // 리뷰내용
    $('.move_tr').click(function() {
         if($(this).next('.tab_content').hasClass('dis_block')) {
             $(this).next('.tab_content').removeClass('dis_block');
