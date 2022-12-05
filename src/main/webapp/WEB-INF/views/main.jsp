@@ -180,11 +180,12 @@
           <div class="prev_btn">◀</div>
           <div class="next_btn">▶</div>
 
-        </div> //best slide
+        </div>
 
 
-      </div> // best pro
-    </div> //best arti
+      </div>
+
+    </div>
 
 
     <!-- 채식구 베너 -->

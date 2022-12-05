@@ -172,7 +172,7 @@
             </div>
             <div class="b_slide_img">
               <div id = "b_img" class="slide6" onclick="location.href='http://localhost:8080/egan/real_detail'">
-                div class="text6">칠레산 유레카 블루베리 1kg</div>
+                <div class="text6">칠레산 유레카 블루베리 1kg</div>
               </div>
             </div>
           </div>
@@ -180,9 +180,11 @@
           <div class="prev_btn">◀</div>
           <div class="next_btn">▶</div>
 
-        </div>
-      </div>
-    </div>
+        </div> //best slide
+
+
+      </div> // best pro
+    </div> //best arti
 
 
     <!-- 채식구 베너 -->
