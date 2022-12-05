@@ -114,8 +114,8 @@
 
       <div class="menu">
         <div class="h_menu">
-          <a href="">Login</a>
-          <a href="">Register</a>
+          <a href="http://localhost:8080/egan/login">Login</a>
+          <a href="http://localhost:8080/egan/real_register">Register</a>
         </div>
         <div class="h_icon">
           <div class="shopping"></div>
@@ -200,7 +200,7 @@
 
     <!-- 채식구 베너 -->
     <div class="chae-sicku_banner">
-      <a href="">
+      <a href="http://localhost:8080/egan/brand">
         <div class="chea_text">
           <div>채식: 구 </div>
           <div>Egan만의 환경적 가치를 기준으로 한 브랜드와 제품을 소개합니다.</div>
