@@ -16,6 +16,8 @@
   <script defer src="${pageContext.request.contextPath}/js/topBtn.js"></script>
   <script defer src="${pageContext.request.contextPath}/js/h_f.js"></script>
   <script defer src="${pageContext.request.contextPath}/js/egan_home_imgSlide.js"></script>
+  <script defer src="<c:url value='/js/header_search.js'/>"></script>
+  <link rel="stylesheet" href="<c:url value='/css/header_search.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
@@ -67,6 +69,18 @@
 
 <body>
 <div class="wrap ">
+  <div class="model_background">
+    <div class="close" ></div>
+    <div class="model_content">
+      <div class="search_box search_box2">
+        <input type="text" placeholder="검색" class="txt_search">
+        <a href="">
+          <div class="icon"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
   <div class="header">
     <div class="content_area">
 
