@@ -243,9 +243,6 @@
 
   <div class="footer">
     <div class="content_area">
-
-
-
       <div class="f_txt1">
         <div class="f_h_box">
           <p class="f_h_txt f_h_txt1">1:1상담하기<span> | Q & A 바로가기</span></p>
