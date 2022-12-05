@@ -146,22 +146,22 @@
         <div class="best_slide">
           <div class="slide_wrap">
             <div class="b_slide_img">
-              <div id = "b_img" class="slide1" onclick="http://localhost:8080/egan/real_detail"></div>
+              <div id = "b_img" class="slide1" onclick="location.href='http://localhost:8080/egan/real_detail'"></div>
             </div>
             <div class="b_slide_img">
-              <div id = "b_img" class="slide2" onclick="http://localhost:8080/egan/real_detail"></div>
+              <div id = "b_img" class="slide2" onclick="location.href='http://localhost:8080/egan/real_detail'"></div>
             </div>
             <div class="b_slide_img">
-              <div id = "b_img" class="slide3" onclick="http://localhost:8080/egan/real_detail"></div>
+              <div id = "b_img" class="slide3" onclick="location.href='http://localhost:8080/egan/real_detail'"></div>
             </div>
             <div class="b_slide_img">
-              <div id = "b_img" class="slide4" onclick="http://localhost:8080/egan/real_detail"></div>
+              <div id = "b_img" class="slide4" onclick="location.href='http://localhost:8080/egan/real_detail'"></div>
             </div>
             <div class="b_slide_img">
-              <div id = "b_img" class="slide5" onclick="http://localhost:8080/egan/real_detail"></div>
+              <div id = "b_img" class="slide5" onclick="location.href='http://localhost:8080/egan/real_detail'"></div>
             </div>
             <div class="b_slide_img">
-              <div id = "b_img" class="slide6" onclick="http://localhost:8080/egan/real_detail"></div>
+              <div id = "b_img" class="slide6" onclick="location.href='http://localhost:8080/egan/real_detail'"></div>
             </div>
           </div>
 
