@@ -1,14 +1,61 @@
 
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    <link rel="stylesheet" href="<c:url value='/css/egan_header.css.css'/>">
+    <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/>">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_base.css'/>">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_product _inquiry.css'/>">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_popup_ inquiry_delect.css'/>">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_popup_inquiry_correct.css.css'/>">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_infomation.css'/>">
+    <link rel="stylesheet" href="<c:url value='/css/button.css'/>">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_coupon.css'/>">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_review.css'/>">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_product _inquiry.js'/>">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_shopping basket.js'/>">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_alert.js'/>">
+
 </head>
 <body>
+    <div class="wrap ">
+        <div class="header">
+            <div class="content_area">
+
+                <div class="ham_btn">
+                    <div class="ham_line"></div>
+                    <div class="ham_line"></div>
+                    <div class="ham_line"></div>
+                </div>
+
+                <div class="logo">Egan</div>
+
+                    <div class="nav">
+                        <a href="">SHOP</a>
+                        <a href="">BRAND</a>
+                        <a href="">COMMUNITY</a> 
+                    </div>
+
+                <div class="menu">
+                    <div class="h_menu">
+                        <a href="">Login</a>
+                        <a href="">Register</a>
+                    </div>
+                    <div class="h_icon">
+                        <div class="shopping"></div>
+                        <div class="search"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="top_btn">TOP</div>
+
 <div class="main_box">
     <div class="contain">
         <div class="main">
@@ -46,7 +93,7 @@
 
                     <div class="infomation">
                         <!-- 제품사진 클릭시 이동 -->
-                        <a href="#"><img src="../프젝 이미지/생활용품/1-1.jpg" class="img" onclick="img_alert()">
+                        <a href="#"><img src="/img/daily/1-1.jpg" class="img" onclick="img_alert()">
                         </a>
 
                         <div class="infomation_box">
@@ -80,8 +127,8 @@
                             배송완료
                         </div>
                     </div>
-                    <a href="#"><img src="../프젝 이미지/btn_page_prev.gif" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="../프젝 이미지/btn_page_next.gif" class="btn_right" alt="다음 버튼"></a>
+                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
                 </div>
 
 <!-- 상품 후기 -->
@@ -103,7 +150,7 @@
                     </div>
 
                     <div class="review_content">
-                        <img src="../프젝 이미지/스킨케어/1-1.jpg" class="review_content_img" alt="">
+                        <img src="/img/daily/1-1.jpg" class="review_content_img" alt="">
                         <div class="review_product"> 제품명</div>
                         <label type="button" id="modal-open" >
                             <div class="review_content_botton">작성하기</div>
@@ -117,7 +164,7 @@
                                     <div class="head-title">
                                         PRODUCT REVIEW</div>
                                     <div class="product_box">
-                                        <img src="../프젝 이미지/생활용품/1-1.jpg" class="img_size" alt="">
+                                        <img src="/img/daily/1-1.jpg" class="img_size" alt="">
                                         <div class="product_name">
                                             리뷰할 제품명
                                         </div>
@@ -140,8 +187,8 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#"><img src="../프젝 이미지/btn_page_prev.gif" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="../프젝 이미지/btn_page_next.gif" class="btn_right" alt="다음 버튼"></a>
+                   <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
                 </div>
 
 <!-- 상품 문의 -->
@@ -161,7 +208,7 @@
                         <label for="toggle" class="toggleSwitch">
                             <div class="content_area " id="content_area_tep">
                                 <a href="#">
-                                    <img src="../프젝 이미지/생활용품/1-1.jpg" class="img" onclick="img_alert()">
+                                    <img src="<c:url value='/img/daily/1-1.jpg'/>" class="img" onclick="img_alert()">
                                 </a>
                                 <div class="contact_information">
                                     문의사항 제목
@@ -191,8 +238,8 @@
                                     <div class="popup-head">
                                         <div class="head-title">
                                             PRODUCT Q&A</div>
-                                        <div class="product_box">
-                                            <img src="../프젝 이미지/생활용품/1-1.jpg" class="img_size" alt="">
+                                        <div class="product_box">  
+                                            <img src="<c:url value='/img/daily/1-1.jpg'/>" class="img_size" alt="">                
                                             <div class="product_name">
                                                 문의할 제품명
                                             </div>
@@ -268,9 +315,8 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#"><img src="../프젝 이미지/btn_page_prev.gif" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="../프젝 이미지/btn_page_next.gif" class="btn_right" alt="다음 버튼"></a>
-
+                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
                 </div>
 
 <!-- 쿠폰 -->
@@ -296,8 +342,8 @@
                             <li class="coupon_li_2">미사용</li>
                         </ul>
                     </div>
-                    <a href="#"><img src="../프젝 이미지/btn_page_prev.gif" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="../프젝 이미지/btn_page_next.gif" class="btn_right" alt="다음 버튼"></a>
+                  <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
 
                 </div>
 
@@ -315,7 +361,7 @@
                         <input type="checkbox" class="chk input_block">
                         <!-- 제품사진 -->
                         <a href="">
-                            <img src="../프젝 이미지/생활용품/1-1.jpg" alt="" class="img">
+                            <img src="<c:url value='/img/daily/1-1.jpg'/>" alt="" class="img">
                         </a>
                         <!-- 계산 -->
                         <div class="box">
@@ -335,8 +381,8 @@
                     <!-- 총 합계 -->
                     <div class="sum">총 합계 : </div>
                     <a href="#"><div class="payment" onclick="payment_alert()">결제하기</div></a>
-                    <a href="#"><img src="../프젝 이미지/btn_page_prev.gif" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="../프젝 이미지/btn_page_next.gif" class="btn_right" alt="다음 버튼"></a>
+                   <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
                 </div>
 
 <!-- 개인정보 수정 -->
