@@ -193,7 +193,7 @@ video {
 }
 
 .prev_btn:hover,.next_btn:hover {
-  background-color: #fcd64c;
+  font-size: large;
 }
 
 /* 채식구 베너 */
