@@ -94,7 +94,7 @@
         padding:  0;
     }
     .search_box {
-        max-width: 65%;
+        width: 65%;
     }
 
 }
