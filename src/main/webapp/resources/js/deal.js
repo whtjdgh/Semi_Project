@@ -94,7 +94,6 @@ $(document).ready(function() {
     if(h_hei <= $(window).scrollTop()) {
         $('.item_ex_tab').css({
             position: 'fixed',
-            // top:'70px'
             top: $('.header').height()
         })
     }
@@ -134,30 +133,43 @@ $(document).ready(function() {
         
     })
 
-    $(window).resize(function (){
-        $('.item_ex_tab').css({
-            position:'fixed',
-            top: $('.header').height()
-        })
-        //
-        // if($(window).innerWidth() <= 1024) {
-        //
-        // }
-    });
-    if (matchMedia("screen and (max-width: 1024px)").matches)  {
-        $(window).scroll(function() {
-            let s_top = $(window).scrollTop();
-             if(s_top+h_hei > tab_loc) {
-                 $('.item_ex_tab').css({
-                     position:'fixed',
-                     top:'50px'
-                 })
-                 $('.detail_item_box').css({
-                     paddingTop:'60px'
-                 })
-             }
-        })
-    }
+    // $(window).resize(function (){
+    //     if($(window).innerWidth() <= 1024) {
+    //         $('.item_ex_tab').css({
+    //             position: 'fixed',
+    //             top: $('.header').height()
+    //         })
+    //     }
+    //     //
+    //     if($(window).innerWidth() <= 1024) {
+    //         $(window).scroll(function() {
+    //             let s_top = $(window).scrollTop();
+    //             if(s_top+h_hei > tab_loc) {
+    //                 $('.item_ex_tab').css({
+    //                     position:'fixed',
+    //                     top:'50px'
+    //                 })
+    //                 $('.detail_item_box').css({
+    //                     paddingTop:'60px'
+    //                 })
+    //             }
+    //         })
+    //     }
+    // });
+    // if (matchMedia("screen and (max-width: 1024px)").matches)  {
+    //     $(window).scroll(function() {
+    //         let s_top = $(window).scrollTop();
+    //          if(s_top+h_hei > tab_loc) {
+    //              $('.item_ex_tab').css({
+    //                  position:'fixed',
+    //                  top:'50px'
+    //              })
+    //              $('.detail_item_box').css({
+    //                  paddingTop:'60px'
+    //              })
+    //          }
+    //     })
+    // }
     
     // 탭 스크롤 부드럽게 이동
     let tab_hei = $('.item_ex_tab').innerHeight();
@@ -185,4 +197,4 @@ function aa(item_price) {
 }
 
 // 새로고침
-//    history.scrollRestoration = "manual"
+   history.scrollRestoration = "manual"
