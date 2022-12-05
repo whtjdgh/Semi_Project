@@ -16,8 +16,8 @@
     <script defer src="<c:url value='/js/topBtn.js'/>"></script>
     <script defer src="<c:url value='/js/header_search.js'/>"></script>
     <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
-    <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
     <link rel="stylesheet" href="<c:url value='/css/header_search.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
     <link rel="stylesheet" href="<c:url value='/css/brand.css'/> ">
     <link rel="stylesheet" href="<c:url value='/css/brand_r.css'/> ">
     <link rel="stylesheet" href="<c:url value='/css/brand_header.css'/> ">
