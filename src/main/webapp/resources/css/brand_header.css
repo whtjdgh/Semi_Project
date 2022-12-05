@@ -5,6 +5,9 @@
     border-bottom: 1px solid rgb(137, 137, 137);
     transition: background 0.3s;
 }
+.ham_line{
+    color: white;
+}
 .logo {
     color: white;
 
