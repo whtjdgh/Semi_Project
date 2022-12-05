@@ -139,6 +139,7 @@ ul {
 .ham_line {
     width: 75%;
     height: 2.5px;
+    border-radius: 10px;
     background-color: black;
     margin: 6px 0;
 }
