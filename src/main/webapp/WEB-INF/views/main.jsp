@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/egan_main_respon.css'/> ">
 
 
 
