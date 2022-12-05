@@ -12,6 +12,7 @@
     <title>Egan</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script defer src="<c:url value='/js/h_f.js'/>"></script>
+    <script defer src="<c:url value='/js/topBtn.js'/>"></script>
     <script defer src="<c:url value='/js/deal.js'/>"></script>
     <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
     <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
@@ -47,13 +48,13 @@
         <div class="nav">
             <a href="http://localhost:8080/egan/detail">SHOP</a>
             <a href="http://localhost:8080/egan/brand">BRAND</a>
-            <a href="#">COMMUNITY</a>
+            <a href="http://localhost:8080/egan/main">COMMUNITY</a>
         </div>
 
         <div class="menu">
             <div class="h_menu">
-                <a href="">Login</a>
-                <a href="">Register</a>
+                <a href="http://localhost:8080/egan/login">Login</a>
+                <a href="http://localhost:8080/egan/real_register">Register</a>
             </div>
             <div class="h_icon">
                 <div class="shopping"></div>

@@ -45,18 +45,18 @@
             </div>
         </div>
 
-        <div class="logo"><a href="#">Egan</a></div>
+        <div class="logo"><a href="http://localhost:8080/egan/main">Egan</a></div>
 
         <div class="nav">
-            <a href="#">SHOP</a>
-            <a href="#">BRAND</a>
-            <a href="#">COMMUNITY</a>
+            <a href="http://localhost:8080/egan/detail">SHOP</a>
+            <a href="http://localhost:8080/egan/brand">BRAND</a>
+            <a href="http://localhost:8080/egan/main">COMMUNITY</a>
         </div>
 
         <div class="menu">
             <div class="h_menu">
-                <a href="">Login</a>
-                <a href="">Register</a>
+                <a href="http://localhost:8080/egan/login">Login</a>
+                <a href="http://localhost:8080/egan/real_register">Register</a>
             </div>
             <div class="h_icon">
                 <div class="shopping"></div>
