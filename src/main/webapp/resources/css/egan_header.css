@@ -199,7 +199,9 @@ ul {
     border: none;
 
 }
-
+.top_show{
+    visibility: visible;
+}
 
 /* /////////////  푸터 //////////// */
 .footer {
