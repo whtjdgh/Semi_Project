@@ -1,0 +1,76 @@
+.border{
+    border: none;
+}
+.period_search{
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+.period_search_li{
+    width: 100px;
+    height: 30px;
+    border: 1px solid;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+}
+.period_search_li_border{
+    border-right: none;
+}
+.review{
+    width:calc(100% - 200px);
+    height: 70px;
+    float: left;
+    margin-left: 50px;
+    border: 1px solid grey;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 600;
+}
+.review_can{
+    border-right: 1px solid grey;
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+}
+.review_done{
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+}
+.review_content{
+    width:calc(100% - 200px);
+    height: 100px;
+    float: left;
+    margin-left: 50px;
+    position: relative;
+}
+.review_content_img{
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+    display: inline-block;
+}
+.review_product{
+    width: 500px;
+    height: 100px;
+    line-height:100px;
+    position: absolute;
+    display: inline-block;
+    left: 160px;
+    padding-left:30px ;
+}
+.review_content_botton{
+    top:35px;
+    left: 850px;
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgb(202, 199, 199);
+    line-height: 40px;
+    text-align: center;
+    font-weight: 600;
+}
