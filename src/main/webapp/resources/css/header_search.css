@@ -17,16 +17,12 @@
         text-align: center;
     }
 .search_box{
-
     width:  50%;
     height: 50px;
-
-
+    max-width: 50%;
     margin:0 auto;
     border-bottom: 1px solid white;
-
     box-sizing: border-box;
-    /* background-color: red; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -47,6 +43,7 @@
     font-size: 25px;
     font-family: 'nanum';
     /* background-color: pink; */
+
 
 
 }
