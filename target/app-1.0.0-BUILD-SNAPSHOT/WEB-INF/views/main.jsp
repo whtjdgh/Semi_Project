@@ -126,7 +126,7 @@
         <div>The value of nature,dkssud</div>
         <div>the value of consumption</div>
       </div>
-      <a  href="#" class="vi_link">About us</a>
+      <a  href="http://localhost:8080/egan/brand" class="vi_link">About us</a>
     </div>
 
 
@@ -146,27 +146,27 @@
         <div class="best_slide">
           <div class="slide_wrap">
             <div class="b_slide_img">
-              <div class="slide1"></div>
+              <div id = "b_img" class="slide1" onclick="http://localhost:8080/egan/real_detail"></div>
             </div>
             <div class="b_slide_img">
-              <div class="slide2"></div>
+              <div id = "b_img" class="slide2" onclick="http://localhost:8080/egan/real_detail"></div>
             </div>
             <div class="b_slide_img">
-              <div class="slide3"></div>
+              <div id = "b_img" class="slide3" onclick="http://localhost:8080/egan/real_detail"></div>
             </div>
             <div class="b_slide_img">
-              <div class="slide4"></div>
+              <div id = "b_img" class="slide4" onclick="http://localhost:8080/egan/real_detail"></div>
             </div>
             <div class="b_slide_img">
-              <div class="slide5"></div>
+              <div id = "b_img" class="slide5" onclick="http://localhost:8080/egan/real_detail"></div>
             </div>
             <div class="b_slide_img">
-              <div class="slide6"></div>
+              <div id = "b_img" class="slide6" onclick="http://localhost:8080/egan/real_detail"></div>
             </div>
           </div>
 
-          <div class="prev_btn"></div>
-          <div class="next_btn"></div>
+          <div class="prev_btn">◀</div>
+          <div class="next_btn">▶</div>
 
         </div>
       </div>
