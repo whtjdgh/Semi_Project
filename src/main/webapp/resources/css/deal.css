@@ -1,12 +1,4 @@
-@font-face {
-    font-family: 'D2Coding';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-body {
-    font-family: D2Coding;
-}
+
 #wrap {
     position: relative;
     margin-top: 200px;
@@ -368,7 +360,8 @@ img {
     }
 
     .item_ex_main {
-        width: 900px;
+        width:100%;
+        max-width: 900px;
         margin: 0 auto;
     }
     .item_ex_tab {
@@ -406,7 +399,8 @@ img {
         padding: 0px;
     }
     .item_ex_main {
-        width: 660px;
+        width: 100%;
+        max-width: 660px;
     }
     .item_ex_tab {
         max-width: 660px;
@@ -453,7 +447,8 @@ img {
         width: 80%;
     }
     .item_ex_main {
-        width: 420px;
+        width: 100%;
+        max-width: 420px;
     }
     .rv_rt {
         width: 200px;
