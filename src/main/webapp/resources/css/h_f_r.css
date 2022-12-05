@@ -1,6 +1,7 @@
  @media screen and (max-width: 1024px){
     .content_area{
         width: 1200px;
+        max-width: 90vw;
     }
 
     .ham_box{
