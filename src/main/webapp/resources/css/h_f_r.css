@@ -93,7 +93,9 @@
     .f_b_box{
         padding:  0;
     }
-    
+    .search_box {
+        width: 65%;
+    }
 
 }
 
