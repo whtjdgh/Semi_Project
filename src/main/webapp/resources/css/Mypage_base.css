@@ -1,0 +1,111 @@
+/* nav  */
+.contain{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.main{
+    height: 100%;
+    margin-top:60px;
+}
+.show_info{
+    width: 100%;
+    height: 300px;
+    background-color: #FFE178;
+    text-align: center;
+}
+.show_info_box{
+    width: calc((100% - 20px *4) / 4);
+    height: 200px;
+    background-color: white;
+    display: inline-block;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 150px;
+    font-weight: 700;
+}
+/* aside  */
+.info{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.info::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+.info > ul{
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+    border: 1px solid slategray;
+    float: left;
+    margin-top:50px;
+}
+.info > ul > label{
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    border-bottom:1px solid slategray ;
+}
+.box1_last{
+    border-bottom:none ;
+}
+
+/* 탭으로 나타나는 부분 */
+.content{
+    /* position:relative; */
+    width: 100%;
+    height: 100%;
+}
+.name{
+    width:calc(100% - 200px);
+    margin-top:50px;
+    padding-bottom: 20px;
+    border-bottom:1px solid;
+    float: right;
+    font-weight: 900;
+    font-size: 20px;
+    display: inline-block;
+}
+.text_button{
+    width: 130px;
+    height: 40px;
+    float: right;
+}
+.infomation{
+    float: right;
+    width:calc(100% - 200px);
+    height: 150px;
+}
+.img{
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+.infomation_box{
+    float: left;
+
+    line-height: 35px;
+    margin-left: 10px;
+}
+.diriver{
+    float: right;
+    margin-right: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150px;
+}
+/* 탭 연결 부분*/
+input[name="rd"]:checked + .pan {
+    display: block;
+}
+.pan{
+    display: none;
+    position:relative;
+}
+input {display: none;}
+.input_block{
+    display:inline-block;
+}
