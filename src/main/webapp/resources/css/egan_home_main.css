@@ -108,8 +108,6 @@ video {
 .best_slide {
   width: 100%;
   height: 250px;
-  /* display: flex;
-  flex-wrap: nowrap; */
   position: relative;
   user-select: none;
   overflow: hidden;
@@ -131,6 +129,7 @@ video {
   float: left;
   margin: 5px 0;
   margin-right: 30px;
+  cursor: pointer;
 }
 
 .slide_wrap div:last-child{
@@ -146,6 +145,10 @@ video {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.b_slide_img:hover #b_img {
+  filter: brightness(70%);
 }
 
 .slide1{
@@ -173,9 +176,11 @@ video {
   height: 25px;
   border-radius: 50%;
   background-color: transparent;
-  /* color: transparent; */
+  text-shadow: 5px 2px 2px darkgrey;
+  color: #fcd64c;
   cursor: pointer;
 }
+
 
 .prev_btn {
   left: 0;
