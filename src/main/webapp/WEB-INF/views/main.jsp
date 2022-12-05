@@ -68,7 +68,7 @@
 </script>
 
 <body>
-<div class="wrap ">
+
   <div class="model_background">
     <div class="close" ></div>
     <div class="model_content">
@@ -83,7 +83,6 @@
 
   <div class="header">
     <div class="content_area">
-
       <!-- 햄버거 버튼 -->
       <div class="ham_box">
         <div class="ham_line" id="line_top"></div>
@@ -114,16 +113,12 @@
 
       <div class="menu">
         <div class="h_menu">
-          <a href="#">Login</a>
-          <a href="#">Register</a>
+          <a href="">Login</a>
+          <a href="">Register</a>
         </div>
         <div class="h_icon">
-          <a href="#">
-            <div class="shopping"></div>
-          </a>
-          <a href="#">
-            <div class="search"></div>
-          </a>
+          <div class="shopping"></div>
+          <div class="search"></div>
         </div>
       </div>
 
@@ -311,7 +306,7 @@
 
 
 
-</div>
+
 
 </body>
 </html>
