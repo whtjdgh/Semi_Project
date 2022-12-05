@@ -279,7 +279,11 @@ input::placeholder {
     margin: 10px 0 30px;
 
     font-family: 'nanum';
-
+    border-bottom: 2px solid;
+    width: 1200px;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 
@@ -291,10 +295,10 @@ input::placeholder {
 
     margin: 0 auto 50px;
 
-    border-top: 2px solid;
-    /* width: 100vw; */
+
     margin: 0 auto 150px;
     padding: 50px 0 0;
+    max-width: 90vw;
 
 }
 

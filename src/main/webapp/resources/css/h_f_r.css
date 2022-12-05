@@ -1,6 +1,7 @@
  @media screen and (max-width: 1024px){
     .content_area{
         width: 1200px;
+        max-width: 90vw;
     }
 
     .ham_box{
@@ -92,7 +93,9 @@
     .f_b_box{
         padding:  0;
     }
-    
+    .search_box {
+        width: 65%;
+    }
 
 }
 
