@@ -11,13 +11,18 @@
   <title>Document</title>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
-  <script defer src="<c:url value='/js/egan_home_header.js/'/>"></script>
-  <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/css/brand.css'/> ">
 
-  
+  <script defer src="${pageContext.request.contextPath}/js/egan_home_header.js"></script>
+  <script defer src="${pageContext.request.contextPath}/js/topBtn.js"></script>
+  <script defer src="${pageContext.request.contextPath}/js/h_f.js"></script>
+  <script defer src="${pageContext.request.contextPath}/js/egan_home_imgSlide.js"></script>
+  <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
+
+
+
+
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Merriweather&family=Nanum+Pen+Script&family=Stylish&family=Zen+Antique&display=swap'); @font-face {
@@ -62,14 +67,25 @@
 
 <body>
 <div class="wrap ">
-  <button class="top_btn">TOP</button>
   <div class="header">
     <div class="content_area">
 
-      <div class="ham_btn">
-        <div class="ham_line"></div>
-        <div class="ham_line"></div>
-        <div class="ham_line"></div>
+      <!-- 햄버거 버튼 -->
+      <div class="ham_box">
+        <div class="ham_line" id="line_top"></div>
+        <div class="ham_line" id="line_mid"></div>
+        <div class="ham_line" id="line_bot"></div>
+        <div class="ham_menu">
+          <ul class="ham_ul">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li class="hr"></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">BRAND</a></li>
+            <li><a href="#">COMMUNITY</a></li>
+
+          </ul>
+        </div>
       </div>
 
       <div class="logo">
@@ -77,7 +93,7 @@
       </div>
 
       <div class="nav">
-        <a href="">SHOP</a>
+        <a href="http://localhost:8080/egan/detail">SHOP</a>
         <a href="http://localhost:8080/egan/brand">BRAND</a>
         <a href="">COMMUNITY</a>
       </div>
@@ -107,7 +123,7 @@
     <div class="main_bannr">
       <video src="<c:url value='/video/pexels-roman-odintsov-6666529.mp4'/>" autoplay loop muted> </video>
       <div class="vi_text">
-        <div>The value of nature,</div>
+        <div>The value of nature,dkssud</div>
         <div>the value of consumption</div>
       </div>
       <a  href="#" class="vi_link">About us</a>
@@ -128,11 +144,30 @@
         </div>
 
         <div class="best_slide">
-          <img src="<c:url value='/resources/img/skin/16-1.jpg'/>" alt="" class="b_slide_img">
-          <img src="<c:url value='/resources/img/daily/11.jpg'/>" alt="" class="b_slide_img">
-          <img src="<c:url value='/resources/img/food/15-1.jpg'/>" alt="" class="b_slide_img">
-          <img src="<c:url value='/resources/img/skin/7.jpg'/>" alt="" class="b_slide_img">
-          <img src="<c:url value='/resources/img/food/17.jpg'/>" alt="" class="b_slide_img">
+          <div class="slide_wrap">
+            <div class="b_slide_img">
+              <div class="slide1"></div>
+            </div>
+            <div class="b_slide_img">
+              <div class="slide2"></div>
+            </div>
+            <div class="b_slide_img">
+              <div class="slide3"></div>
+            </div>
+            <div class="b_slide_img">
+              <div class="slide4"></div>
+            </div>
+            <div class="b_slide_img">
+              <div class="slide5"></div>
+            </div>
+            <div class="b_slide_img">
+              <div class="slide6"></div>
+            </div>
+          </div>
+
+          <div class="prev_btn"></div>
+          <div class="next_btn"></div>
+
         </div>
       </div>
     </div>
@@ -203,6 +238,8 @@
     </div>
 
   </div>
+
+  <button class="top_btn">TOP</button>
 
   <div class="footer">
     <div class="content_area">
