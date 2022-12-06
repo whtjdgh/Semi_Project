@@ -66,15 +66,23 @@ input {outline: none;}
     cursor: pointer;
     padding: 0;
 }
-#address_search {
-    width: 290px;
-    height: 50px;
+#address {
+    width: 280px;
+    height: 20px;
+    margin-top: 15px;
+}
+#postcode {height: 20px}
+#address_btn {
+    width: 96px;
+    height: 30px;
     background: #fff;
     color: #FFE178;
     border: 1px solid #FFE178;
     border-radius: 3px;
     box-sizing: border-box;
     cursor: pointer;
+    padding: 0px;
+    margin: 3px 0;
 }
 #register_btn {
     display: block;
@@ -107,7 +115,7 @@ input[type=radio] {
 }
 /* 반응형 */
 @media screen and (max-width: 1024px){
-    
+
 }
 
 @media screen and (max-width: 768px){
@@ -132,9 +140,16 @@ input[type=radio] {
         font-size: 11px;
         font-weight: 900;
     }
-    #address_search {
+    #address {
         width: 225px;
-        height: 40px;
+        height: 20px;
+    }
+    #postcode {
+        height: 20px;
+    }
+    #address_btn {
+        width: 65px;
+        height: 30px;
     }
     #from_date {
         width: 225px;
@@ -151,10 +166,10 @@ input[type=radio] {
     }
     input::-webkit-input-placeholder {
         font-size: 12px;
-      }
-      input:-ms-input-placeholder {
+    }
+    input:-ms-input-placeholder {
         font-size: 12px;
-      }
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -176,10 +191,12 @@ input[type=radio] {
         font-size: 10px;
         font-weight: 900;
     }
-    #address_search {
+    #address {
         width: 155px;
-        height: 40px;
+        height: 20px;
     }
+    #postcode {width: 85px}
+
     #from_date {
         width: 155px;
         height: 30px;
@@ -189,8 +206,8 @@ input[type=radio] {
     }
     input::-webkit-input-placeholder {
         font-size: 11px;
-      }
-      input:-ms-input-placeholder {
-        font-size: 11px;
-      }
     }
+    input:-ms-input-placeholder {
+        font-size: 11px;
+    }
+}
