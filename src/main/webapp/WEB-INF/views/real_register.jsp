@@ -88,71 +88,69 @@
                 <p><span class="redStar">*</span>필수입력사항</p>
             </div>
             <div class="registerForm">
-                <form action="" id="reg_form" name="myform" method="">
-                    <table class="rgs_tb">
-                        <tbody>
-                        <tr>
-                            <td class="reg_txt"><span class="redStar">*</span>아이디</td>
-                            <td class="reg_input">
-                                <input type="text" value="" class="reg_input_txt" id="register_id" name="register_id" placeholder="아이디를 입력하세요.">
-                                <button id="id_chk" name="id_chk" onclick="idChk()">중복확인</button>
-                                <div class="msg id_msg"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="reg_txt"><span class="redStar">*</span>비밀번호</td>
-                            <td class="reg_input">
-                                <input type="password" class="reg_input_txt" id="register_pw" name="register_pw" placeholder="비밀번호를 입력하세요.">
-                                <div class="msg id_msg"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="reg_txt"><span class="redStar">*</span>비밀번호 확인</td>
-                            <td class="reg_input">
-                                <input type="password" class="reg_input_txt" id="register_pw_chk" name="register_pw_chk" placeholder="비밀번호를 한번 더 입력하세요.">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="reg_txt"><span class="redStar">*</span>이메일</td>
-                            <td class="reg_input">
-                                <input type="email" class="reg_input_txt" id="register_email" name="register_email" placeholder="이메일을 입력하세요.">
-                                <button id="email_chk" name="email_chk">중복확인</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="reg_txt"><span class="redStar">*</span>휴대폰</td>
-                            <td class="reg_input">
-                                <input type="text" class="reg_input_txt" id="register_phone_number" name="register_phone_number" placeholder="숫자만 입력하세요.">
-                                <button id="number_chk" name="number_chk">인증번호 받기</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="reg_txt"><span class="redStar">*</span>주소</td>
-                            <td class="reg_input">
-                                <button id="address_search" name="adress_search">주소검색</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="reg_txt">성별</td>
-                            <td class="reg_input">
-                                <input type="radio" name="gender" value="gender_woman" id="gender_woman">
-                                <label for="gender_woman">여자</label>
-                                <input type="radio" name="gender" value="gender_man" id="gender_man">
-                                <label for="gender_man">남자</label>
-                                <input type="radio" name="gender" value="gender_nothing" id="gender_nothing" checked>
-                                <label for="gender_nothing">선택안함</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="reg_txt">생년월일</td>
-                            <td class="reg_input">
-                                <input type="text" id="from_date" class="date_pick" name="birth_date" readonly>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <input type="submit" id="register_btn" name="register_btn"  value="회원가입" onclick="return formChk()">
-                </form>
+                <table class="rgs_tb">
+                    <tbody>
+                    <tr>
+                        <td class="reg_txt"><span class="redStar">*</span>아이디</td>
+                        <td class="reg_input">
+                            <input type="text" value="" class="reg_input_txt" id="register_id" name="register_id" placeholder="아이디를 입력하세요.">
+                            <button id="id_chk" name="id_chk" onclick="idChk()">중복확인</button>
+                            <div class="msg id_msg"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="reg_txt"><span class="redStar">*</span>비밀번호</td>
+                        <td class="reg_input">
+                            <input type="password" class="reg_input_txt" id="register_pw" name="register_pw" placeholder="비밀번호를 입력하세요.">
+                            <div class="msg id_msg"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="reg_txt"><span class="redStar">*</span>비밀번호 확인</td>
+                        <td class="reg_input">
+                            <input type="password" class="reg_input_txt" id="register_pw_chk" name="register_pw_chk" placeholder="비밀번호를 한번 더 입력하세요.">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="reg_txt"><span class="redStar">*</span>이메일</td>
+                        <td class="reg_input">
+                            <input type="email" class="reg_input_txt" id="register_email" name="register_email" placeholder="이메일을 입력하세요.">
+                            <button id="email_chk" name="email_chk">중복확인</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="reg_txt"><span class="redStar">*</span>휴대폰</td>
+                        <td class="reg_input">
+                            <input type="text" class="reg_input_txt" id="register_phone_number" name="register_phone_number" placeholder="숫자만 입력하세요.">
+                            <button id="number_chk" name="number_chk">인증번호 받기</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="reg_txt"><span class="redStar">*</span>주소</td>
+                        <td class="reg_input">
+                            <button id="address_search" name="adress_search">주소검색</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="reg_txt">성별</td>
+                        <td class="reg_input">
+                            <input type="radio" name="gender" value="gender_woman" id="gender_woman">
+                            <label for="gender_woman">여자</label>
+                            <input type="radio" name="gender" value="gender_man" id="gender_man">
+                            <label for="gender_man">남자</label>
+                            <input type="radio" name="gender" value="gender_nothing" id="gender_nothing" checked>
+                            <label for="gender_nothing">선택안함</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="reg_txt">생년월일</td>
+                        <td class="reg_input">
+                            <input type="text" id="from_date" class="date_pick" name="birth_date" readonly>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <input type="submit" id="register_btn" name="register_btn"  value="회원가입">
             </div>
         </div>
     </div>
@@ -193,6 +191,48 @@
 
     </div>
 </div>
+
+
+<script>
+    $(document).ready(function() {
+        $("#register_btn").click(function() {
+
+            alert("회원가입");
+
+            let form = {
+                m_id: $("#register_id").val(),
+                m_pwd: $("#register_pw").val(),
+                m_email: $("#register_email").val(),
+                m_phone: $("#register_phone_number").val(),
+                m_birth: $("#from_date").val()
+            };
+            console.log(form);
+            console.log(form);
+            $.ajax({
+                url: '/egan/insertlogin',
+                type: 'POST',
+                data: form,
+                success: function(data){
+                    if(data = true){
+                        alert("회원가입 성공");
+                    }else if(date = false){
+                        alert("회원가입 실패");
+                    }
+
+
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    console.log(jqXHR);
+                    console.log(textStatus);
+                    console.log(errorThrown);
+                    console.log("111");
+                    alert("아이디와 비밀번호를 확인해주세요.");
+                }
+            });
+
+        });
+    });
+</script>
 
 <!-- 탑 버튼 -->
 <div class="top_btn"><a href="#">TOP</a></div>

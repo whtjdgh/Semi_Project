@@ -48,7 +48,7 @@
 </head>
 <body>
 <div class="model_background">
-  <div class="close" onclick="close"></div>
+  <div class="close" ></div>
   <div class="model_content">
     <div class="search_box search_box2">
       <input type="text" placeholder="검색" class="txt_search">

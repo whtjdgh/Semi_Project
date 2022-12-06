@@ -1,6 +1,7 @@
 package com.bitstudy.app.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -47,9 +48,10 @@ public class test {
         return "real_detail";
     }
 
-    @RequestMapping("/real_register")
-    public String real_register() {
 
-        return "real_register";
+    @RequestMapping("/payment")
+    public String payment() {
+
+        return "payment";
     }
 }
