@@ -18,10 +18,10 @@
   <script defer src="${pageContext.request.contextPath}/js/egan_home_imgSlide.js"></script>
   <script defer src="<c:url value='/js/header_search.js'/>"></script>
   <link rel="stylesheet" href="<c:url value='/css/header_search.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_main_respon.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
 
 
 
