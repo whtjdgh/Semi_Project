@@ -49,11 +49,12 @@ public class LoginController {
     }
 
     //로그인 로직
-
     @RequestMapping("login_check.do")
     public ModelAndView login_check(@ModelAttribute LoginDto dto, HttpSession session) {
         String name = loginService.loginCheck(dto, session);
+        session.setAttribute("m_id", name);
         ModelAndView mav = new ModelAndView();
+
         if (name != null) { // 로그인 성공 시
             mav.setViewName("main"); // 뷰의 이름
         } else { // 로그인 실패 시
@@ -61,6 +62,13 @@ public class LoginController {
             mav.addObject("message", "error");
         }
         return mav;
+    }
+
+    //로그아웃 로직
+    @RequestMapping("logout.do")
+    public String logout(HttpSession session) {
+        session.invalidate();
+        return "redirect:main";
     }
 
 }
