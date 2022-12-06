@@ -18,11 +18,9 @@
 }
 .detail_img {
     width: 40%;
-    height: 600px;
 }
 img {
     width: 100%;
-    height: 100%;
 }
 .detail_imfo {
     width: 40%;
@@ -350,13 +348,32 @@ img {
 /* 반응형 */
 @media screen and (max-width: 1024px){
     #wrap {
-        margin-top: 100px;
+        margin-top: 150px;
     }
-
+    .price_txt_box {
+         padding:0;
+    }
+    .dt_title_txt:nth-child(1) {
+        margin-bottom: 0;
+    }
+    .dt_title_txt:nth-child(2) {
+        margin-top: 0;
+    }
+    .d_txt {
+         margin-bottom: 0px;
+    }
+    .detail_tb {
+         padding:0;
+    }
     .dt_title_txt {
         font-size: 15px;
+        margin: 0 0 10px 0;
     }
 
+    .total_price {
+        font-size: 26px;
+         margin: 0;
+    }
     .item_ex_main {
         width:100%;
         max-width: 900px;
@@ -390,7 +407,6 @@ img {
 @media screen and (max-width: 768px){
     .detail_img {
         width: 70%;
-        height: 550px;
     }
     .detail_imfo {
         width: 70%;
@@ -439,7 +455,6 @@ img {
 @media screen and (max-width: 480px){
     .detail_img {
         width: 80%;
-        height: 470px;
     }
     .detail_imfo {
         width: 80%;
