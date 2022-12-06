@@ -36,7 +36,7 @@ ul {
 
 .content_area {
     width: 1200px;
-    max-width: 100%;
+    max-width: 90vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -68,9 +68,9 @@ ul {
 .logo a {
     font-size: 35px;
     font-family:'time', sans-serif;
-    color: #facf0e;
     height: 100%;
     width: 200px;
+    color: #ffbf00;
 }
 
 .nav {
@@ -115,6 +115,7 @@ ul {
     height: 100%;
     margin: 0;
     background: url(../img/장바구니_black.png)no-repeat center / 20px;
+    cursor: pointer;
 }
 
 .search {
@@ -122,11 +123,12 @@ ul {
     height: 100%;
     margin-left: 10px;
     background: url(../img/검색.png)no-repeat center / 20px;
+    cursor: pointer;
 }
 
 /* //////////////////// 반응형 ////////////////////// */
 .ham_box {
-    width: 50px;
+    width: 55px;
     height: 50px;
     padding: 10px;
     box-sizing: border-box;
@@ -135,10 +137,10 @@ ul {
     display: none;
 }
 .ham_line {
-    width: 100%;
-    height: 3px;
-    background-color:black;
-    margin: 7px 0;
+    width: 75%;
+    height: 2.5px;
+    background-color: black;
+    margin: 6px 0;
 }
 
 .ham_menu {
@@ -199,11 +201,15 @@ ul {
     border: none;
 
 }
+.top_show{
+    opacity:1;
+    visibility:visible;
+
+}
 
 
 /* /////////////  푸터 //////////// */
 .footer {
-    margin-top: 20px;
     width: 100vw;
     height: 200px;
     padding: 0 10px;
