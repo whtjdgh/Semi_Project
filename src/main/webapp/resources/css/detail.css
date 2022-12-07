@@ -647,7 +647,7 @@ button{
     margin: 0;
     margin-bottom: 9px;
     text-align: center;
-    font-family: 'nanum';
+    font-family: 'nanum-light';
     font-size: 16px;
     color: #686662;
 
@@ -670,6 +670,7 @@ button{
     color: #ffbf00;
     font-weight: 600;
        border-radius: 5px;
+        font-family: 'nanum';
 }
 
 #check{
