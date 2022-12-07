@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Egan_MyPage</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
     <script defer src="<c:url value='/js/Mypage_shopping_basket.js'/>"></script>
     <script defer src="<c:url value='/js/Mypage_alert.js'/>"></script>
@@ -73,7 +73,6 @@
 
     </div>
 </div>
-<div class="top_btn">TOP</div>
 
 <div class="main_box">
     <div class="contain">
@@ -401,8 +400,8 @@
 
 
                     </div>
-                    <a href="#"><img src="../프젝 이미지/btn_page_prev.gif" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="../프젝 이미지/btn_page_next.gif" class="btn_right" alt="다음 버튼"></a>
+                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
 
                 </div>
 
@@ -444,7 +443,7 @@
                     <!-- 총 합계 -->
                     <!-- 몇개를 입력받을지 모르고 같은 변수에 값을 더해서 총합을 만든다. -->
                     <div class="sum">총 합계 : </div>
-                    <a href="#"><div class="payment" onclick="payment_alert()">결제하기</div></a>
+                    <a href="http://localhost:8080/egan/payment"><div class="payment">결제하기</div></a>
                     <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
                     <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
                 </div>
@@ -518,6 +517,6 @@
 </div>
 
 </div>
-
+<button class="top_btn">TOP</button>
 </body>
 </html>
