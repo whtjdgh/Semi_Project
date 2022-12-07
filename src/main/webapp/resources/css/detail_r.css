@@ -342,7 +342,9 @@
   .basket_btn > button {
     width: 112px;
     height: 42px;
+      font-size: 12px;
 }
+
     .footer{
         height: 320px;
         padding: 20px;
