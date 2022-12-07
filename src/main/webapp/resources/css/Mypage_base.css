@@ -13,6 +13,7 @@
     height: 300px;
     background-color: #FFE178;
     text-align: center;
+    font-family: 'nanum';
 }
 
 .show_info_box{
@@ -35,21 +36,22 @@
 .info::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera*/
 }
-.info > ul{
+.info > ul {
     width: 150px;
     text-align: center;
     line-height: 50px;
     font-weight: 700;
-    border: 1px solid slategray;
+    border: 1px solid ##eaeaea
     float: left;
-    margin-top:50px;
+    margin-top: 50px;
 }
 .info > ul > label{
     display: inline-block;
     width: 100%;
     height: 50px;
-    border-bottom:1px solid slategray ;
+    border-bottom:1px solid #eaeaea
     font-family: 'nanum-light';
+     font-size: 14px;
 }
 td{
        font-family: 'nanum';
