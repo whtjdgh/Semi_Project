@@ -2,11 +2,12 @@
 /* //////////////     헤더    //////////////// */
 .header {
     background: transparent;
-    border-bottom: 1px solid rgb(137, 137, 137);
+    /*border-bottom: 1px solid rgb(137, 137, 137);*/
     transition: background 0.3s;
 }
+
 .ham_line{
-    color: white;
+    background-color: white;
 }
 .logo {
     color: white;
@@ -24,7 +25,7 @@
 }
 
 .h_menu::after {
-    border-right: 1px solid white;
+    border-right: 1px solid #989898;
 }
 
 
