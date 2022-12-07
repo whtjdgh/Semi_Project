@@ -1,29 +1,100 @@
 
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    <script defer src="<c:url value='/js/Mypage_shopping basket.js'/>"></script>
+    <script defer src="<c:url value='/js/Mypage_alert.js'/>"></script>
+    <script defer src="<c:url value='/js/Mypage_product _inquiry.js'/>"></script>
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_shopping basket.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/h_f.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/h_f_c.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_base.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_product _inquiry.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_infomation.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_popup_inquiry_correct.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_popup_ inquiry_delect.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/button.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_coupon.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_review.css'/> ">
 </head>
 <body>
+<!-- <div class="wrap "> -->
+<!-- 돋보기 -->
+<div class="model_background">
+    <div class="close" ></div>
+    <div class="model_content">
+        <div class="search_box search_box2">
+            <input type="text" placeholder="검색" class="txt_search">
+            <a href="">
+                <div class="icon"></div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="header">
+    <div class="content_area">
+
+        <div class="ham_btn">
+            <div class="ham_line"></div>
+            <div class="ham_line"></div>
+            <div class="ham_line"></div>
+        </div>
+
+        <div class="logo"><a href="http://localhost:8080/egan/main">Egan</a></div>
+        <div class="nav">
+            <a href="http://localhost:8080/egan/detail">SHOP</a>
+            <a href="http://localhost:8080/egan/brand">BRAND</a>
+            <a href="http://localhost:8080/egan/brand">COMMUNITY</a>
+        </div>
+
+        <div class="menu">
+            <div class="h_menu">
+                <a href="http://localhost:8080/egan/login">Login</a>
+                <a href="http://localhost:8080/egan/real_register">Register</a>
+            </div>
+            <div class="h_icon">
+                <div class="shopping"></div>
+                <div class="search"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="top_btn">TOP</div>
+
 <div class="main_box">
     <div class="contain">
         <div class="main">
             <div class="show_info">
-                <div class="show_info_box"><a href="">(등급)김종일님</a></div>
-                <div class="show_info_box"><a href="">쿠폰</a></div>
-                <div class="show_info_box"><a href="">다음달 예상등급 ></a></div>
-                <div class="show_info_box"><a href="">주문내역 ></a></div>
+
+                <div class="show_info_box">
+                    <label for="rd7" >
+                        <div class="rd7_box">
+                            (골드) 김종일님
+                        </div>
+                    </label>
+                    <!-- <div class="rd7_txt"> 김종일님</div>
+                    <div class="rd7_txt">회원정보 변경</div>
+                    <div class="rd7_txt">배송지 관리</div> -->
+                </div>
+
+                <div class="show_info_box"><label for="rd5">쿠폰</label></div>
+                <div class="show_info_box">다음달 예상등급 ></div>
+                <div class="show_info_box"><label for="rd1">주문내역</label></div>
             </div>
 
-<!-- aside -->
+
+            <!-- 제품내역 -->
             <div class="info">
                 <ul>
                     <label for="rd1" class="box1">주문내역</label>
-                    <label for="" class="box1" onclick="diriver_alert()">배송지 관리</label>
+                    <label for="rd2" class="box1" onclick="diriver_alert()">배송지 관리</label>
                     <label for="rd3" class="box1">상품 후기</label>
                     <label for="rd4" class="box1">상품 문의</label>
                     <label for="rd5" class="box1">쿠폰</label>
@@ -31,7 +102,7 @@
                     <label for="rd7" class="box1">개인정보 수정</label>
                 </ul>
 
-<!--   주문내역 -->
+                <!--   주문내역 -->
                 <input type="radio" name="rd" id="rd1" checked >
                 <div class="pan">
                     <p class="name">
@@ -42,13 +113,15 @@
                             <option value="web3" >6개월</option>
                             <option value="web4" >1년</option>
                         </select>
+
                     </p>
 
                     <div class="infomation">
                         <!-- 제품사진 클릭시 이동 -->
-                        <a href="#"><img src="../프젝 이미지/생활용품/1-1.jpg" class="img" onclick="img_alert()">
+                        <a href="#"><img src="<c:url value='/img/daily/1.jpg'/>" class="img" onclick="img_alert()">
                         </a>
 
+                        <!-- 제품내역 -->
                         <div class="infomation_box">
                             <table>
                                 <colgroup>
@@ -80,11 +153,11 @@
                             배송완료
                         </div>
                     </div>
-                    <a href="#"><img src="../프젝 이미지/btn_page_prev.gif" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="../프젝 이미지/btn_page_next.gif" class="btn_right" alt="다음 버튼"></a>
+                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
                 </div>
 
-<!-- 상품 후기 -->
+                <!-- 상품 후기 -->
                 <input type="radio" name="rd" id="rd3" >
                 <div class="pan">
                     <p class="name border">
@@ -103,7 +176,7 @@
                     </div>
 
                     <div class="review_content">
-                        <img src="../프젝 이미지/스킨케어/1-1.jpg" class="review_content_img" alt="">
+                        <img src="<c:url value='/img/daily/1.jpg'/>" class="review_content_img" alt="">
                         <div class="review_product"> 제품명</div>
                         <label type="button" id="modal-open" >
                             <div class="review_content_botton">작성하기</div>
@@ -111,19 +184,23 @@
                     </div>
 
                     <div class="container">
+                        <div class="modal-btn-box">
+
+                        </div>
                         <div class="popup-wrap" id="popup_product">
                             <div class="popup">
+
                                 <div class="popup-head">
                                     <div class="head-title">
                                         PRODUCT REVIEW</div>
                                     <div class="product_box">
-                                        <img src="../프젝 이미지/생활용품/1-1.jpg" class="img_size" alt="">
+                                        <img src="<c:url value='/img/daily/1.jpg'/>" class="img_size" alt="">
                                         <div class="product_name">
                                             리뷰할 제품명
                                         </div>
                                     </div>
-                                </div>
 
+                                </div>
                                 <div class="popup-body">
                                     <div class="body-content">
                                         <div class="body-content_text">제목</div>
@@ -131,6 +208,8 @@
                                         <div class="body-content_text">내용</div>
                                         <input type="text" class="body-contentbox input_block" name="">
                                     </div>
+
+
                                 </div>
 
                                 <div class="popup-foot">
@@ -140,11 +219,12 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#"><img src="../프젝 이미지/btn_page_prev.gif" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="../프젝 이미지/btn_page_next.gif" class="btn_right" alt="다음 버튼"></a>
+                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
                 </div>
 
-<!-- 상품 문의 -->
+
+                <!-- 상품 문의 -->
                 <input type="radio" name="rd" id="rd4" >
                 <div class="pan">
                     <p class="name">
@@ -158,10 +238,11 @@
                             <li class="infomation_li_2 font">답변상태</li>
                         </ul>
 
+
                         <label for="toggle" class="toggleSwitch">
                             <div class="content_area " id="content_area_tep">
                                 <a href="#">
-                                    <img src="../프젝 이미지/생활용품/1-1.jpg" class="img" onclick="img_alert()">
+                                    <img src="<c:url value='/img/daily/1.jpg'/>" class="img" onclick="img_alert()">
                                 </a>
                                 <div class="contact_information">
                                     문의사항 제목
@@ -172,18 +253,21 @@
                                 <div class="answer">
                                     답변대기
                                 </div>
+
                             </div>
 
                             <div class="questions_tab toggleButton">
                                 Q.문의 내용입니다.
                                 <div class="questions_tab_answer">A.답변</div>
+
                                 <label type="button" id="modal_open_correction" class="questions_tab_correction" >수정</label>
                                 <label type="button" id="modal-open2" class="questions_tab_delete" >삭제</label>
+
                             </div >
 
                         </label>
 
-    <!-- 수정 팝업 -->
+                        <!-- 수정 팝업 -->
                         <div class="container">
                             <div class="popup-wrap" id="popup_correction">
                                 <div class="popup">
@@ -192,7 +276,7 @@
                                         <div class="head-title">
                                             PRODUCT Q&A</div>
                                         <div class="product_box">
-                                            <img src="../프젝 이미지/생활용품/1-1.jpg" class="img_size" alt="">
+                                            <img src="<c:url value='/img/daily/1.jpg'/>" class="img_size" alt="">
                                             <div class="product_name">
                                                 문의할 제품명
                                             </div>
@@ -232,8 +316,15 @@
                                 </div>
                             </div>
                         </div>
-    <!-- 삭제  팝업 -->
+
+
+
+                        <!-- 삭제  팝업 -->
                         <div class="container">
+
+                            <!-- <button type="button" id="modal-open">확인</button>   -->
+
+
                             <div class="popup-wrap2" id="popup3">
                                 <div class="popup2">
                                     <div class="popup-body2">
@@ -251,7 +342,10 @@
                             </div>
                         </div>
 
+
+
                         <div class="container">
+
                             <div class="popup-wrap2" id="popup4">
                                 <div class="popup2">
                                     <div class="popup-body2">
@@ -268,17 +362,19 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#"><img src="../프젝 이미지/btn_page_prev.gif" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="../프젝 이미지/btn_page_next.gif" class="btn_right" alt="다음 버튼"></a>
+                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
 
                 </div>
 
-<!-- 쿠폰 -->
+                <!-- 쿠폰 -->
+
                 <input type="radio" name="rd" id="rd5" >
                 <div class="pan">
                     <p class="name">
                         쿠폰
                     </p>
+
                     <div class="infomation">
                         <ul class="infomation_ul">
                             <li class="infomation_li_1 font">쿠폰명</li>
@@ -295,13 +391,19 @@
                                 22.10.30</li>
                             <li class="coupon_li_2">미사용</li>
                         </ul>
+
+
                     </div>
                     <a href="#"><img src="../프젝 이미지/btn_page_prev.gif" class="btn_left" alt="이전 버튼"></a>
                     <a href="#"><img src="../프젝 이미지/btn_page_next.gif" class="btn_right" alt="다음 버튼"></a>
 
                 </div>
 
-<!-- 장바구니-->
+
+
+
+
+                <!-- 장바구니-->
                 <input type="radio" name="rd" id="rd6" >
                 <div class="pan">
                     <p class="name">
@@ -315,7 +417,7 @@
                         <input type="checkbox" class="chk input_block">
                         <!-- 제품사진 -->
                         <a href="">
-                            <img src="../프젝 이미지/생활용품/1-1.jpg" alt="" class="img">
+                            <img src="<c:url value='/img/daily/1.jpg'/>" alt="" class="img">
                         </a>
                         <!-- 계산 -->
                         <div class="box">
@@ -333,17 +435,21 @@
                         </div>
                     </div>
                     <!-- 총 합계 -->
+                    <!-- 몇개를 입력받을지 모르고 같은 변수에 값을 더해서 총합을 만든다. -->
                     <div class="sum">총 합계 : </div>
                     <a href="#"><div class="payment" onclick="payment_alert()">결제하기</div></a>
-                    <a href="#"><img src="../프젝 이미지/btn_page_prev.gif" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="../프젝 이미지/btn_page_next.gif" class="btn_right" alt="다음 버튼"></a>
+                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
                 </div>
 
-<!-- 개인정보 수정 -->
+
+
+                <!-- 개인정보 수정 -->
                 <input type="radio" name="rd" id="rd7" >
                 <div class="pan">
                     <div class="personal_information">
                         <form action="#">
+
                             <div class="font_1" >비밀번호 재확인
                                 <br>
                                 <div class="login_text">회원님의 정보를 안전하게 보호하기 위해 비밀번호를 다시 한번 확인해주세요.</div>
@@ -354,6 +460,7 @@
                                 <input type="text" class="id input_block" placeholder="아이디를 입력 해주세요." autocomplete autofocus>
                                 <div class="pw_text input_block">비밀번호 : </div>
                                 <input type="text" class="pw input_block" placeholder="비밀번호를 입력 해주세요." >
+
                                 <input type="submit" class= "login input_block"value="로그인" onclick="login_alert()">
                             </div>
                         </form>
@@ -366,5 +473,44 @@
         </div>
     </div>
 </div>
+<!-- 푸터 -->
+<div class="footer">
+    <div class="content_area">
+        <div class="f_txt1">
+            <div class="f_h_box">
+                <p class="f_h_txt f_h_txt1">1:1상담하기<span> | Q & A 바로가기</span></p>
+                <p class="f_h_txt">MON-FRI | AM 10:00 ~ PM 05:00</p>
+                <p class="f_h_txt">(SAT. SUN. HOLIDAY CLOSED)</p>
+            </div>
+            <div class="f_b_box">
+                <p class="f_b_txt f_h_txt1">해외 제휴 / 수출 문의</p>
+                <p class="f_b_txt">khedu123@naver.con</p>
+            </div>
+        </div>
+
+        <div class="f_txt2">
+            <div class="f_h_box">
+                <p class="f_h_txt f_h_txt1">BANK INFO</p>
+                <p class="f_h_txt">농협 123345-14-259372</p>
+                <p class="f_h_txt">예금주 : EGAN</p>
+            </div>
+        </div>
+
+        <div class="f_txt3">
+            <div class="f_h_box">
+                <p class="f_h_txt f_h_txt1">COMPANY INFO</p>
+                <p class="f_h_txt">회사명 : EGAN | 대표 : 홍길동 | 개인정보관리책임자 : 홍길동</p>
+                <p class="f_h_txt">사업자등록번호 : 123-00-00321 | 통신판매업신고 : 제 2022-경기남양-1204호</p>
+            </div>
+            <div class="f_b_box w_box">
+                <p class="f_b_txt">COPYRIGHT @ EGAN . ALL RIGHTS</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+
 </body>
 </html>
