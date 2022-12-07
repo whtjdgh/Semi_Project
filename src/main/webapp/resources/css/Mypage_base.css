@@ -101,6 +101,10 @@ td{
     font-size: 20px;
     display: inline-block;
 }
+.boder_bot{
+    border-bottom: 1px solid;
+    margin-top: 5px;
+}
 .text_button{
     width: 130px;
     height: 40px;
