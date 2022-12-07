@@ -53,6 +53,10 @@
     border-bottom:1px solid #eaeaea;
     font-family: 'nanum-light';
      font-size: 14px;
+      padding: 0 20px;
+}
+.info > ul > label:last-child{
+    border-bottom:none;
 }
 td{
        font-family: 'nanum';
