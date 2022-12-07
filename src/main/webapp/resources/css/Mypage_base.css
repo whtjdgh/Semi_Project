@@ -103,7 +103,8 @@ td{
 }
 .boder_bot{
     border-bottom: 1px solid;
-    margin-top: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
 }
 .text_button{
     width: 130px;
