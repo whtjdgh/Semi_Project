@@ -266,7 +266,7 @@
 
                                 <div class="popup-foot">
                                     <span class="pop-btn confirm" id="cancel_product">취소</span>
-                                    <span class="pop-btn close" id="new_popup_product">등록하기</span>
+                                    <span class="pop-btn close7" id="new_popup_product">등록하기</span>
                                 </div>
                             </div>
                         </div>
@@ -346,7 +346,7 @@
 
                                     <div class="popup-foot">
                                         <span class="pop-btn confirm" id="cancel_correction">취소</span>
-                                        <span class="pop-btn close" id="new_popup">등록하기</span>
+                                        <span class="pop-btn close7" id="new_popup">등록하기</span>
                                     </div>
                                 </div>
                             </div>
