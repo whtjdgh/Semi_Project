@@ -64,6 +64,9 @@
 .info > ul > label:last-child{
     border-bottom:none;
 }
+.next{
+    background: url(../img/next.png) no-repeat center / cover;
+}
 td{
        font-family: 'nanum';
 }
