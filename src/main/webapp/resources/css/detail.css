@@ -636,9 +636,10 @@ button{
 
     display: none;
 }
-.basket_popup > div{
-    width: 100%;
+.basket_popup > div {
+    width: 95%;
     height: 50%;
+    margin: 0 auto;
     /* background-color: red; */
 }
 
@@ -653,14 +654,11 @@ button{
 }
 
 
-.basket_btn{
+.basket_btn {
     display: flex;
-    justify-content: space-around;
-    padding: 15px 15px 0 15px;
+    justify-content: space-evenly;
+    /* padding: 15px 15px 0 15px; */
     box-sizing: border-box;
-
-
-
 }
 
 
@@ -671,6 +669,7 @@ button{
     background-color: white;
     color: #ffbf00;
     font-weight: 600;
+       border-radius: 5px;
 }
 
 #check{
