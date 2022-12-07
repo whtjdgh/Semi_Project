@@ -16,6 +16,7 @@
     <script defer src="<c:url value='/js/h_f.js'/>"></script>
     <script defer src="<c:url value='/js/header_search.js'/>"></script>
     <script defer src="<c:url value='/js/topBtn.js'/>"></script>
+    <script defer src="<c:url value='/js/myPageLabelColor.js'/>"></script>
     <link rel="stylesheet" href="<c:url value='/css/Mypage_shopping_basket.css'/> ">
     <link rel="stylesheet" href="<c:url value='/css/Mypage_base.css'/> ">
     <link rel="stylesheet" href="<c:url value='/css/Mypage_product_inquiry.css'/> ">
