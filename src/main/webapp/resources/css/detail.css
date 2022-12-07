@@ -637,7 +637,7 @@ button{
     display: none;
 }
 .basket_popup > div {
-    width: 95%;
+       width: 88%;
     height: 50%;
     margin: 0 auto;
     /* background-color: red; */
