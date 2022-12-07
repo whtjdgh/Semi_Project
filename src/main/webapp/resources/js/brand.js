@@ -28,7 +28,7 @@ $(document).ready(function () {
                 background: 'url(./img/장바구니_black.png) no-repeat center / 20px',
 
 
-        })
+            })
             $('.search').css({
                 background: 'url(./img/h_검색.png) no-repeat center / 20px'
             })
@@ -40,10 +40,11 @@ $(document).ready(function () {
         else if (s_top == 0) {
             $('.header').css({
                 background: 'transparent',
-                borderBottom: '1px solid rgb(137, 137, 137)'
+                // borderBottom: '1px solid rgb(137, 137, 137)'
             })
             $('.logo > a').css({
                 color: 'white',
+
 
             })
             $('.nav > a').css({
@@ -53,7 +54,8 @@ $(document).ready(function () {
                 color: 'white'
             })
             $('.h_menu::after').css({
-                borderRight: '1px solid white'
+                borderRight: '1px solid white',
+                borderRight: '1px solid #989898'
             })
             $('.shopping').css({
                 background: 'url(./img/장바구니_white.png) no-repeat center / 20px'

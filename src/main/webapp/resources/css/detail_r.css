@@ -45,12 +45,12 @@
 
     }
 
-    .main_tab{
+    .main_tab {
         width: 500px;
         height: 100px;
         line-height: 100px;
         /* background-color: red; */
-        margin: 0 auto;
+        margin: 25px auto;
         font-family: 'nanum';
     }
     .main_tab > ul {
@@ -72,9 +72,7 @@
         margin: 0 auto 50px;
         max-width: 90vw;
     }
-    .menu_list{
-        height: 450px;
-    }
+
 
     .p_name {
         font-size: 15px;
@@ -138,14 +136,13 @@
     }
     .menu_list{
         width: calc((100% - (25px * 2))/ 3);
-        height: 420px;
     }
     .main_tab{
         width: 600px;
         height: 100px;
         max-width: 500px;
         line-height: 100px;
-        margin: 0 auto;
+        margin: 20px auto;
         font-family: 'nanum';
     }
 
