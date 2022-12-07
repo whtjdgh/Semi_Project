@@ -49,7 +49,7 @@ a {
     width: 75%;
     height: 3px;
     border-radius: 10px;
-    background-color: black;
+    background-color: #f5c242;
     margin: 7px 0;
 }
 
@@ -161,6 +161,8 @@ a {
     height: 100%;
     margin: 0;
     background: url(../img/shopping_yellow.png) no-repeat center / 20px;
+    cursor: pointer;
+}
 }
 
 .search {
@@ -168,6 +170,8 @@ a {
     height: 100%;
     margin-left: 10px;
     background: url(../img/header_search_yellow.png) no-repeat center / 20px;
+    cursor: pointer;
+}
 }
 
 
