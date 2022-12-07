@@ -303,9 +303,9 @@ input::placeholder {
 
 .menu_list{
     width: calc((100% - (25px * 3))/ 4);
-    height: 500px;
+    /*height: 500px;*/
 
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 
     box-sizing: border-box;
     overflow: hidden;
