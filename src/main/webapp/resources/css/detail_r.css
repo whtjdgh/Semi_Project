@@ -339,10 +339,10 @@
     .basket_btn{
         right: 0;
     }
-    .basket_btn > button {
-        width: 134px;
-        height: 44px;
-    }
+  .basket_btn > button {
+    width: 112px;
+    height: 42px;
+}
     .footer{
         height: 320px;
         padding: 20px;
