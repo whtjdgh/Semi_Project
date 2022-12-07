@@ -2,22 +2,22 @@ $(document).ready(function() {
 
     // 장바구니 버튼
     $(document).on('click', '#btn_cart', function() {
-        alert("11")
+       $('.cart_popup').css({display:'block'})
     })
 
     // 구매버튼
     $(document).on('click', '#btn_pay', function() {
-        alert("22")
+        location.href="http://localhost:8080/egan/myPage"
     })
 
     // 리뷰 버튼
     $(document).on('click', '#rev_btn', function() {
-        alert("33")
+        $('.review_popup').css({display:'block'})
     })
 
     // 문의 버튼
     $(document).on('click', '#qna_btn', function() {
-        alert("44")
+        $('.qna_popup').css({display:'block'})
     })
 
     // 작성중인 글 버튼
@@ -36,24 +36,24 @@ $(document).ready(function() {
     })
     // 장바구니 팝업
     $(document).on('click', '#cart_stay_btn', function() {
-        alert("ff")
+        $('.cart_popup').css({display: 'none'})
     })
     $(document).on('click', '#cart_commit_btn', function() {
-        alert("ff")
+        location.href="http://localhost:8080/egan/myPage"
     })
     // 리뷰 팝업
     $(document).on('click', '#review_cancle_btn', function() {
-        alert("ff")
+        $('.review_popup').css({display: 'none'})
     })
     $(document).on('click', '#review_commit_btn', function() {
-        alert("ff")
+        $('.review_popup').css({display: 'none'})
     })
     // 문의 팝업
     $(document).on('click', '#qna_cancle_btn', function() {
-        alert("ff")
+        $('.qna_popup').css({display: 'none'})
     })
     $(document).on('click', '#qna_commit_btn', function() {
-        alert("ff")
+        $('.qna_popup').css({display: 'none'})
     })
 
 
