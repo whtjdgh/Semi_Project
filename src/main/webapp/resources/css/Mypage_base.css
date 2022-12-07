@@ -90,12 +90,12 @@ td{
     width: 100%;
     height: 100%;
 }
-.name{
-    width:calc(100% - 200px);
-    margin-top:50px;
+.name {
+    width: calc(100% - 200px);
+    margin-top: 50px;
     padding-bottom: 20px;
-    border-bottom:1px solid;
-    margin-bottom: 30px;
+    /* border-bottom: 1px solid; */
+    /* margin-bottom: 30px; */
     float: right;
     font-weight: 900;
     font-size: 20px;
