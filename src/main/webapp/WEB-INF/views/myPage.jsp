@@ -124,21 +124,22 @@
     <div class="contain">
         <div class="main">
             <div class="show_info">
+                <div class="info_wrap">
+                    <div class="show_info_box">
+                        <label for="rd7" >
+                            <div class="rd7_box">
+                                (골드) 김종일님
+                            </div>
+                        </label>
+                        <!-- <div class="rd7_txt"> 김종일님</div>
+                        <div class="rd7_txt">회원정보 변경</div>
+                        <div class="rd7_txt">배송지 관리</div> -->
+                    </div>
 
-                <div class="show_info_box">
-                    <label for="rd7" >
-                        <div class="rd7_box">
-                            (골드) 김종일님
-                        </div>
-                    </label>
-                    <!-- <div class="rd7_txt"> 김종일님</div>
-                    <div class="rd7_txt">회원정보 변경</div>
-                    <div class="rd7_txt">배송지 관리</div> -->
+                    <div class="show_info_box"><label for="rd5">쿠폰</label></div>
+                    <div class="show_info_box">다음달 예상등급 ></div>
+                    <div class="show_info_box"><label for="rd1">주문내역</label></div>
                 </div>
-
-                <div class="show_info_box"><label for="rd5">쿠폰</label></div>
-                <div class="show_info_box">다음달 예상등급 ></div>
-                <div class="show_info_box"><label for="rd1">주문내역</label></div>
             </div>
 
 
