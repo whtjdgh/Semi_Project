@@ -29,6 +29,7 @@
 .info{
     width: 100%;
     height: 100%;
+    height: 1000px;
     overflow: auto;
 }
 .info::-webkit-scrollbar {
@@ -48,6 +49,10 @@
     width: 100%;
     height: 50px;
     border-bottom:1px solid slategray ;
+    font-family: 'nanum-light';
+}
+td{
+       font-family: 'nanum';
 }
 .box1_last{
     border-bottom:none ;
@@ -64,6 +69,7 @@
     margin-top:50px;
     padding-bottom: 20px;
     border-bottom:1px solid;
+    margin-bottom: 30px;
     float: right;
     font-weight: 900;
     font-size: 20px;
