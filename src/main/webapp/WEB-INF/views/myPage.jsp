@@ -10,20 +10,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
-    <script defer src="<c:url value='/js/Mypage_shopping basket.js'/>"></script>
+    <script defer src="<c:url value='/js/Mypage_shopping_basket.js'/>"></script>
     <script defer src="<c:url value='/js/Mypage_alert.js'/>"></script>
-    <script defer src="<c:url value='/js/Mypage_product _inquiry.js'/>"></script>
-    <link rel="stylesheet" href="<c:url value='/css/Mypage_shopping basket.css'/> ">
-    <link rel="stylesheet" href="<c:url value='/css/h_f.css'/> ">
-    <link rel="stylesheet" href="<c:url value='/css/h_f_c.css'/> ">
+    <script defer src="<c:url value='/js/Mypage_product_inquiry.js'/>"></script>
+    <script defer src="<c:url value='/js/h_f.js'/>"></script>
+    <script defer src="<c:url value='/js/header_search.js'/>"></script>
+    <script defer src="<c:url value='/js/topBtn.js'/>"></script>
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_shopping_basket.css'/> ">
     <link rel="stylesheet" href="<c:url value='/css/Mypage_base.css'/> ">
-    <link rel="stylesheet" href="<c:url value='/css/Mypage_product _inquiry.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_product_inquiry.css'/> ">
     <link rel="stylesheet" href="<c:url value='/css/Mypage_infomation.css'/> ">
     <link rel="stylesheet" href="<c:url value='/css/Mypage_popup_inquiry_correct.css'/> ">
-    <link rel="stylesheet" href="<c:url value='/css/Mypage_popup_ inquiry_delect.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/Mypage_popup_inquiry_delect.css'/> ">
     <link rel="stylesheet" href="<c:url value='/css/button.css'/> ">
     <link rel="stylesheet" href="<c:url value='/css/Mypage_coupon.css'/> ">
     <link rel="stylesheet" href="<c:url value='/css/Mypage_review.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/egan_header.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
+    <link rel="stylesheet" href="<c:url value='/css/header_search.css'/> ">
 </head>
 <body>
 <!-- <div class="wrap "> -->
