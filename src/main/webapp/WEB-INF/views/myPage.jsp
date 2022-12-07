@@ -159,7 +159,7 @@
                 <!--   주문내역 -->
                 <input type="radio" name="rd" id="rd1" checked >
                 <div class="pan">
-                    <p class="name">
+                    <p class="name boder_bot">
                         주문내역
                         <select name="sel" class="text_button">
                             <option value="web1">1개월</option>
@@ -460,7 +460,7 @@
                 <!-- 장바구니-->
                 <input type="radio" name="rd" id="rd6" >
                 <div class="pan">
-                    <p class="name">
+                    <p class="name boder_bot">
                         장바구니
                     </p>
                     <div class="chk_all_box">
