@@ -44,6 +44,7 @@
     border: 1px solid #eaeaea;
     float: left;
     margin-top: 50px;
+    text-align: left;
 }
 .info > ul > label{
     display: inline-block;
