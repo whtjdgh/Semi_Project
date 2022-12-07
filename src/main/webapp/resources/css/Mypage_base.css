@@ -92,8 +92,10 @@ td{
 }
 .name {
     width: calc(100% - 200px);
+     height: 40px;
     margin-top: 50px;
     padding-bottom: 20px;
+    
     /* border-bottom: 1px solid; */
     /* margin-bottom: 30px; */
     float: right;
