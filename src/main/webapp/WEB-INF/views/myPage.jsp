@@ -30,7 +30,9 @@
     <link rel="stylesheet" href="<c:url value='/css/header_search.css'/> ">
 </head>
 <body>
-@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Merriweather&family=Nanum+Pen+Script&family=Stylish&family=Zen+Antique&display=swap'); @font-face {
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&family=Merriweather&family=Nanum+Pen+Script&family=Stylish&family=Zen+Antique&display=swap'); 
+    
+        @font-face {
             font-family: 'time';
             src: local('fonts/TimesNewRomancRegular'),
             url('<c:url value='/font/timesbd.ttf'/>')format('truetype');
