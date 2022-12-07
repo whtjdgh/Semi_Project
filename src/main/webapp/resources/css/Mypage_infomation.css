@@ -17,7 +17,6 @@ input {
     padding-bottom: 20px;
     float: right;
     box-sizing: border-box;
-    text-align: center;
     display: inline-block;
 }
 .login_text {
