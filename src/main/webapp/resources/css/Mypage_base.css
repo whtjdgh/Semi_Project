@@ -73,6 +73,10 @@
     display: inline-block;
     float: right;
 }
+.chgColor{
+    background : #fffeed;
+    color: #ffbf00;
+}
 td{
        font-family: 'nanum';
 }
