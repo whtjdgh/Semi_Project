@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/schema/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="member">
+
+    <!--로그인 처리-->
+    <select id="login_check"  resultType="String">
+        SELECT m_id,m_pwd,m_name FROM member
+        WHERE m_id = #{m_id} AND m_pwd = #{m_pwd}
+    </select>
+
+    <!--회원가입 처리-->
+    <insert id="insertlogin">
+        INSERT INTO member
+        (
+        m_index, m_id, m_pwd, m_phone, m_email,
+        m_birth
+        )
+        VALUE(
+        (SELECT IFNULL(MAX(a.m_index),0)+1 AS mno FROM  member a),
+        #{m_id}, #{m_pwd}, #{m_phone},#{m_email},#{m_birth}
+
+        )
+    </insert>
+
+    <!--회원가입 처리시 아이디 중복방지처리-->
+    <select id="check_m_id" resultType="Integer">
+        SELECT COUNT (*) FROM member
+        WHERE m_id =#{m_id}
+    </select>
+
+</mapper>
