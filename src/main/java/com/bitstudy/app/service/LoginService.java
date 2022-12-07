@@ -11,4 +11,8 @@ public interface LoginService {
     public void insertlogin(LoginDto dto) throws  Exception;
 
     public void logout(HttpSession session);
+
+    public int check_m_id(String m_id);
+
+    public int check_m_email(String m_email);
 }

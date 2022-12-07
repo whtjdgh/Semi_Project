@@ -35,4 +35,19 @@ public class LoginServiceImpl implements LoginService {
     public void logout(HttpSession session) {
         session.invalidate(); // 세션 초기화
     }
+
+    @Override
+    public int check_m_id(String m_id) {
+        int cnt = loginDao.check_m_id(m_id);
+        System.out.println("cnt: " + cnt);
+        return cnt;
+    }
+
+    @Override
+    public int check_m_email(String m_email) {
+        int cnt = loginDao.check_m_email(m_email);
+        System.out.println("cnt: " + cnt);
+        return cnt;
+    }
+
 }

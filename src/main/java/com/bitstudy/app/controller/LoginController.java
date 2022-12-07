@@ -32,12 +32,11 @@ public class LoginController {
         return "real_register";
     }
 
-
+    //회원가입 로직
     @RequestMapping(value = "/insertlogin", method = RequestMethod.POST)
     public String postRegister(LoginDto dto) throws Exception {
 
         loginService.insertlogin(dto);
-        System.out.println("m_id="+dto.getM_id());
         return "real_register";
     }
 
@@ -69,6 +68,30 @@ public class LoginController {
     public String logout(HttpSession session) {
         session.invalidate();
         return "redirect:main";
+    }
+
+    // 회원가입 아이디 중복확인
+    @ResponseBody
+    @RequestMapping(value = "check_m_id.do")
+    public int check_m_id(@RequestParam("m_id") String m_id) {
+
+        System.out.println("m_id="+m_id);
+        System.out.println("m_id="+m_id);
+        int cnt = loginService.check_m_id(m_id);
+
+        System.out.println(cnt);
+
+        return cnt;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "check_m_email.do")
+    public int check_m_email(@RequestParam("m_email") String m_email) {
+        System.out.println("m_email="+m_email);
+        int cnt = loginService.check_m_email(m_email);
+        System.out.println(cnt);
+
+        return cnt;
     }
 
 }

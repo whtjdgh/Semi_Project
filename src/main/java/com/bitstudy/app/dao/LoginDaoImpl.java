@@ -25,7 +25,12 @@ public class LoginDaoImpl implements LoginDao {
 
     @Override
     public int check_m_id(String m_id) {
-        return 0;
+        return sqlSession.selectOne("member.check_m_id", m_id);
+    }
+
+    @Override
+    public int check_m_email(String m_email) {
+        return sqlSession.selectOne("member.check_m_email",  m_email);
     }
 
 
