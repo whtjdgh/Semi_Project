@@ -49,7 +49,7 @@ a {
     width: 75%;
     height: 3px;
     border-radius: 10px;
-    background-color: #f5c242;
+    background-color: black;
     margin: 7px 0;
 }
 
@@ -68,25 +68,25 @@ a {
     padding: 20px;
     box-sizing: border-box;
 }
-}
 .ham_active {
     left:0 !important;
 }
 .ham_ul {
     font-size: 17px;
-    color: #2e2e2e;
+    color: #6d6d6d;
     text-align: center;
     line-height: 40px;
+    font-family: 'nanum';
 }
 .ham_ul li:nth-child(1),
 .ham_ul li:nth-child(2) {
-    font-size: 15px;
+    font-size: 18px;
 }
 .hr {
     width: 80%;
     height: 1px;
-    margin: 5px auto;
-    background-color: #a1a1a1;
+    margin: 10px auto;
+    background-color: #e7e7e7;
 }
 
 /* //////////////     헤더    //////////////// */
@@ -189,9 +189,21 @@ a {
     color: white;
     font-size: 20px;
     font-weight: 400;
-    border: none;
+    transition-property: background-color, opacity, visibility;
+    transition-duration: 0.3s, 0.5s, 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+
     cursor: pointer;
     background-color: #FFE178;
+    border: none;
+
+}
+.top_show{
+    opacity:1;
+    visibility:visible;
+
 }
 
 
