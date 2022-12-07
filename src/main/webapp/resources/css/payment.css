@@ -1,0 +1,432 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.content_area {
+    width: 1200px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* //////////////////// 반응형 ////////////////////// */
+.ham_btn {
+    display: none;
+    width: 40px;
+    height: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+
+}
+
+.ham_line {
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+}
+
+.ham_line:nth-child(2) {
+    margin: 5px 0;
+}
+
+
+
+/* //////////////     헤더    //////////////// */
+.header {
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background: #FFFEEB;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 99;
+
+}
+
+.logo {
+    font-size: 35px;
+    font-family: 'time';
+    color: #facf0e;
+    height: 100%;
+    width: 200px;
+}
+
+.nav {
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.nav>a {
+    margin: 0 30px;
+}
+
+.menu {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.h_menu>a {
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+.h_menu::after {
+    content: "";
+
+    margin: 15px;
+    width: 1px;
+    border-right: 1px solid #979286;
+}
+
+.h_icon {
+    width: 55px;
+    height: 100%;
+    display: flex;
+
+}
+
+.shopping {
+    width: 25px;
+    height: 100%;
+    margin: 0;
+    background: url(./포폴/포폴_img/세미_자료/장바구니_black.png)no-repeat center / 20px;
+}
+
+.search {
+    width: 25px;
+    height: 100%;
+    margin-left: 10px;
+    background: url(./포폴/포폴_img/세미_자료/\(헤더\)검색.png)no-repeat center / 20px;
+}
+
+/* ////////////// 각자 메인 ////////////// */
+.main{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+}
+
+
+/* ////////////// 탑 버튼 ////////////// */
+.top_btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+
+    background-color: #FFE178;
+}
+
+
+/* /////////////  푸터 //////////// */
+.footer {
+    margin-top: 20px;
+    width: 100vw;
+    height: 200px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: #FFFEEB;
+
+}
+
+.f_h_box {
+    box-sizing: border-box;
+    padding: 40px 0 0;
+}
+
+.f_h_txt1 {
+    font-weight: 900;
+}
+
+span {
+    font-weight: 400;
+}
+
+.f_b_box {
+    box-sizing: border-box;
+    padding: 30px 0 0;
+}
+
+
+.f_h_txt,
+.f_b_txt {
+    box-sizing: border-box;
+
+    font-size: 13.5px;
+    margin: 0;
+
+}
+
+.w_box {
+    display: inline-block;
+}
+
+.w_box>.f_b_txt {
+    background-color: #FFE178;
+}
+
+
+.header{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    background-color: white;
+}
+
+.logo{
+    width: 300px;
+    height: 60px;
+    margin-left: 30px;
+}
+
+.header > ul > li{
+    float: left;
+    padding-left: 35px;
+}
+
+.header_ul1{
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
+.header_ul2{
+    position: absolute;
+    top: 0;
+    left: 77%;
+}
+
+.contain{
+    width: 100%;
+}
+
+.main{
+    margin: 0 10%;
+    height: 100%;
+}
+
+.box{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    line-height : 200px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.order_product{
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid;
+
+}
+
+.order_product1{
+    padding-top: 20px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid;
+
+}
+
+.box2{
+    margin: 0 100px;
+}
+.product_li{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed;
+}
+
+.order_text{
+    padding-top: 8px;
+    padding-left: 13px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.box3{
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+
+}
+.adderss{
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid;
+}
+
+.btn_modify{
+    float: right;
+
+}
+
+.adderss_text{
+    padding-top: 8px;
+    padding-left: 13px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 66px;
+
+}
+
+.btn_modify{
+    margin-top: -20px;
+}
+
+.box5{
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.buy_outer{
+    width: 100%;
+    height: 55px;
+    margin-top: 5px;
+}
+
+.inner_box{
+    width: calc(100% - 80%);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 70px;
+}
+
+.inner_box2{
+    width: calc(100% - 30%);
+    position: absolute;
+    top: 15px;
+    left: 300px;
+
+
+}
+
+.buy_box{
+    width: calc(100% - 80%);
+    height: 55px;
+    text-align: center;
+    line-height: 70px;
+
+}
+
+.detail{
+    width: calc(100% - 80%);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 70px;
+}
+
+.inner_detail{
+    width: calc(100% - 30%);
+    height: 100%;
+    position: absolute;
+    padding-top: 10px;
+    left: 300px;
+}
+
+.select_cupon{
+    width: 500px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.outer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.money{
+    text-align: center;
+    line-height: 70px;
+    margin-right: 149px;
+}
+
+.product_price{
+    font-size: 14px;
+    margin-left: 174px;
+}
+
+.sale_price{
+    font-size: 14px;
+    margin-left: 174px;
+}
+
+.money_in{
+    font-size: 14px;
+    margin-right: 150px;
+}
+
+.outer_tmp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay_box{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+
+.pay_inner_box{
+    width: 130px;
+    height: 50px;
+    border: 1px solid;
+    line-height: 50px;
+    text-align: center;
+
+}
+
+.go_buy{
+    width: 20%;
+    height: 50px;
+    border: 1px solid;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}

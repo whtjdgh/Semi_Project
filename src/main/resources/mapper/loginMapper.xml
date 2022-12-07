@@ -16,19 +16,22 @@
         INSERT INTO member
         (
         m_index, m_id, m_pwd, m_phone, m_email,
-        m_birth
+        m_birth, m_name, m_nickName
         )
         VALUE(
         (SELECT IFNULL(MAX(a.m_index),0)+1 AS mno FROM  member a),
-        #{m_id}, #{m_pwd}, #{m_phone},#{m_email},#{m_birth}
+        #{m_id}, #{m_pwd}, #{m_phone},#{m_email},#{m_birth},#{m_name},#{m_nickName}
 
         )
     </insert>
 
     <!--회원가입 처리시 아이디 중복방지처리-->
-    <select id="check_m_id" resultType="Integer">
-        SELECT COUNT (*) FROM member
-        WHERE m_id =#{m_id}
+    <select id="check_m_id" parameterType="String" resultType="int">
+        SELECT COUNT(*) FROM  member WHERE m_id =#{m_id}
+    </select>
+
+    <select id="check_m_email" parameterType="String" resultType="int">
+        SELECT COUNT(*) FROM  member WHERE m_email =#{m_email}
     </select>
 
 </mapper>

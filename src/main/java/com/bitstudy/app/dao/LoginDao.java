@@ -9,7 +9,9 @@ public interface LoginDao {
 
 
     // 아이디 중복검사
-    int check_m_id(String m_id);
+    public int check_m_id(String m_id);
+
+    public int check_m_email(String m_email);
 
 
 }
