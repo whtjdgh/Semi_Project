@@ -64,8 +64,14 @@
 .info > ul > label:last-child{
     border-bottom:none;
 }
-.next{
+.next {
     background: url(../img/next.png) no-repeat center / cover;
+    width: 20px;
+    height: 20px;
+    margin: 13px 0;
+    /* line-height: 73px; */
+    display: inline-block;
+    float: right;
 }
 td{
        font-family: 'nanum';
