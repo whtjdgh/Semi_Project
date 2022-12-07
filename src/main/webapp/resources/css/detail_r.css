@@ -83,13 +83,13 @@
     .p_price{
         font-size: 15px;
     }
-    .basket_btn{
+/*     .basket_btn{
         width: 40px;
         height: 40px;
         position: fixed;
         bottom: 15px;
         right: 15px;
-    }
+    } */
 
     .footer{
         display: flex;
