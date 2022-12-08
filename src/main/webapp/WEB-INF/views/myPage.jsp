@@ -147,7 +147,7 @@
             <!-- 제품내역 -->
             <div class="info">
                 <ul>
-                    <label for="rd1" class="box1">주문내역<span class="next"></span></label>
+                    <label for="rd1" class="box1 box2">주문내역<span class="next"></span></label>
                     <label for="rd2" class="box1" onclick="diriver_alert()">배송지 관리<span class="next"></span></label>
                     <label for="rd3" class="box1">상품 후기<span class="next"></span></label>
                     <label for="rd4" class="box1">상품 문의<span class="next"></span></label>
