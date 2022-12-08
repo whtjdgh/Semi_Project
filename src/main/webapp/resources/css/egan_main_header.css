@@ -49,13 +49,14 @@ p {
     padding: 8px;
     box-sizing: border-box;
     cursor: pointer;
+    /* background-color: #979286; */
     display: none;
 }
 .ham_line {
     width: 75%;
     height: 3px;
     border-radius: 10px;
-   background-color: #f5c242;
+    background-color: black;
     margin: 7px 0;
 }
 
