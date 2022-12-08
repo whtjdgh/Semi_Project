@@ -288,8 +288,8 @@
                     <div class="infomation">
                         <ul class="infomation_ul">
                             <li class="infomation_li_1 font">제목</li>
-                            <li class="infomation_li_2 font">작성일</li>
                             <li class="infomation_li_2 font">답변상태</li>
+                            <li class="infomation_li_2 font"></li>
                         </ul>
 
 
