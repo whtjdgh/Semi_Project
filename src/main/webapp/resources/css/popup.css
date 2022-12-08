@@ -43,11 +43,11 @@
 
 /* 장바구니 팝업 */
 .cart_popup {
-    width: 450px;
-    height: 250px;
+    width: 398px;
+    height: 160px;
     background: #fff;
     border: 1px solid rgba(41, 40, 40, 0.3);
-     padding-top: 10px;
+    padding-top: 10px;
     box-sizing: border-box;
     text-align: center;
     position: fixed;
@@ -56,33 +56,48 @@
     transform: translate(-50%, -50%);
     z-index: 9999;
     display: none;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .cart_txt {
-    padding-top: 45px;
+      /* padding-top: 45px; */
     box-sizing: border-box;
-}
-.cart_btn {margin-top:10px;}
-.cart_txt p {
-    color: rgb(96, 95, 95);
+    margin: 20px 0;
     font-size: 18px;
-    font-weight: 500;
-    line-height: 45px;
+}
+.cart_btn {
+     margin-top: 32px;
+    background: #FFBF00;
+}
+.cart_txt p {
+    font-size: 16px;
+    font-weight: 600;
+    /* line-height: 32px; */
+    margin-bottom: 9px;
+    font-family: 'nanum';
 }
 #cart_stay_btn {
-    width: 130px;
+    width: 49%;
     height: 50px;
     border: 1px solid;
     background: #fff;
+    border: none;
+    background: transparent;
     color: #ffbf00;
-    font-size: 16px;
+    /* border-right: 1px solid white; */
+    background: white;
+    border: 1px solid #ffbf00;
+    color: #ffbf00;
+    font-size: 14px;
 }
 #cart_commit_btn {
-    width: 130px;
-    height: 50px;
-    border: 1px solid;
-    background: #ffbf00;
+    width: 50%;
+    /* height: 50px; */
+    /* border: 1px solid; */
+    border: none;
+    background: transparent;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* 작성중 취소 팝업 */

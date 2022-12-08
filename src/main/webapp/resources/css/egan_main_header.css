@@ -1,3 +1,4 @@
+
 html,
 body {
     max-width: 100%;
@@ -110,6 +111,7 @@ p {
     top: 0;
     right: 0;
     z-index: 99;
+        font-family: 'nanum';
 
 }
 
