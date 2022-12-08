@@ -305,7 +305,7 @@
                                     22.11.30
                                 </div>
                                 <div class="answer">
-                                    답변대기
+                                    <p>답변대기</p>
                                 </div>
 
                             </div>
