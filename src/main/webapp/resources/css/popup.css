@@ -174,7 +174,7 @@ margin: 0 auto;
 .review_item_box {
     margin: 10px 0;
     padding: 10px 0;
-    line-height: 50px;
+    line-height: 100px;
     box-sizing: border-box;
     border-top: 1px solid rgba(41, 40, 40, 0.3);
     border-bottom: 1px solid rgba(41, 40, 40, 0.3);
@@ -302,7 +302,11 @@ width: 100px;
     height: 100px;
     border: 1px solid;
     box-sizing: border-box;
+
 }
+.item_title{
+    font-family: 'nanum-light';
+    font-weight: 600;
 }
 /* 인풋 스타일 */
 .qna_input_box {
