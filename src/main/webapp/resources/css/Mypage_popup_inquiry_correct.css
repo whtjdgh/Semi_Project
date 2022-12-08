@@ -152,11 +152,12 @@ p{
     padding:15px;
 }
 .popup3{
-   width: 100%;
+      width: 100%;
     max-width: 400px;
-    background-color: #ffffff;
+/*     background-color: #ffffff; */
     border-radius: 10px;
     overflow: hidden;
+    background-color: #ffc107;
 }
 .popup-body3{
     width:100%;
