@@ -18,27 +18,30 @@
 .period_search_li_border{
     border-right: none;
 }
-.review{
-    width:calc(100% - 200px);
+.review {
+    width: calc(100% - 200px);
     height: 70px;
     float: left;
     margin-left: 50px;
-        margin-bottom: 20px;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     text-align: center;
     line-height: 70px;
     font-weight: 600;
 }
-.review_can{
-    border-right: 1px solid grey;
-    width: 49%;
+.review_can {
+    border: 1px solid grey;
+    border-bottom: 4px solid #fec900;
+    /* width: 50%; */
+    color: #fec900;
+    width: calc(99%/2);
     height: 100%;
     display: inline-block;
 }
-.review_done{
-    width: 49%;
+.review_done {
+    width: calc(99%/2);
     height: 100%;
     display: inline-block;
+    border: 1px solid grey;
 }
 .review_content{
     width:calc(100% - 200px);
