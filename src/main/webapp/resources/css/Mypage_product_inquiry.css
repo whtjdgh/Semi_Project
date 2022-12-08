@@ -23,6 +23,9 @@
     display: flex;
     cursor: pointer;
 }
+.content_area_tep{
+    margin: 20px 0;
+}
 .contact_information{
     display: inline-block;
     width:770px;
@@ -44,6 +47,8 @@
     width:100%;
     height: 100%;
     position: relative;
+        margin-bottom: 20px;
+}
 }
 .questions_tab_answer{
     width:100%;
