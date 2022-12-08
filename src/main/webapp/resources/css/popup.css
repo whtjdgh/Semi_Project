@@ -256,7 +256,6 @@ width: 180px;
     border-radius: 5px;
         margin-right: 7px;
 }
-}
 #review_commit_btn {
     width: 180px;
     height: 60px;
@@ -321,7 +320,7 @@ width: 100px;
     display: flex;
 /*     margin-bottom: 25px; */
 }
-#qna_popup_title {\
+#qna_popup_title {
     width: calc(100% - 100px);
     height: 40px;
     outline: none;
