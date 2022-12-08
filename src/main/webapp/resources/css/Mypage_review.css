@@ -27,6 +27,7 @@
     text-align: center;
     line-height: 70px;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 .review_can {
     border: 1px solid grey;
@@ -42,6 +43,11 @@
     height: 100%;
     display: inline-block;
     border: 1px solid grey;
+}
+.BtnColorChg {
+    border-bottom: 4px solid #fec900;
+    color: #fec900;
+
 }
 .review_content{
     width:calc(100% - 200px);

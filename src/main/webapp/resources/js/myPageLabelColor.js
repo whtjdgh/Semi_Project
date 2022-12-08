@@ -1,3 +1,5 @@
+
+    // 탭
 let box1 = document.getElementsByClassName('box1');
 
     for(let j=0; j<box1.length; j++) {
@@ -7,5 +9,18 @@ let box1 = document.getElementsByClassName('box1');
             }
 
             this.classList.add('chgColor');
+        })
+    }
+
+    // 리뷰
+let reviewBtn = document.getElementsByClassName('reviewBtn');
+
+    for(let j=0; j<reviewBtn.length; j++) {
+        reviewBtn[j].addEventListener('click',function(){    
+            for(let i=0; i<reviewBtn.length; i++) {
+                reviewBtn[i].classList.remove('BtnColorChg');
+            }
+
+            this.classList.add('BtnColorChg');
         })
     }

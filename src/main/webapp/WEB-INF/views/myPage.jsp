@@ -225,8 +225,8 @@
                     </ul>
 
                     <div class="review">
-                        <div class="review_can">작성가능 후기(0)</div>
-                        <div class="review_done" onclick="review_done_alert()">작성완료 후기(0)</div>
+                        <div class="review_can reviewBtn">작성가능 후기(0)</div>
+                        <div class="review_done reviewBtn" onclick="review_done_alert()">작성완료 후기(0)</div>
                     </div>
 
                     <div class="review_content">
