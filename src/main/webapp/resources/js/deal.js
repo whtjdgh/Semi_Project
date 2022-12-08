@@ -3,6 +3,7 @@ $(document).ready(function() {
     // 장바구니 버튼
     $(document).on('click', '#btn_cart', function() {
        $('.cart_popup').css({display:'block'})
+        $('.layer').css({display:'block'})
     })
 
     // 구매버튼
@@ -13,11 +14,13 @@ $(document).ready(function() {
     // 리뷰 버튼
     $(document).on('click', '#rev_btn', function() {
         $('.review_popup').css({display:'block'})
+        $('.layer').css({display:'block'})
     })
 
     // 문의 버튼
     $(document).on('click', '#qna_btn', function() {
         $('.qna_popup').css({display:'block'})
+        $('.layer').css({display:'block'})
     })
 
     // 작성중인 글 버튼
@@ -37,23 +40,29 @@ $(document).ready(function() {
     // 장바구니 팝업
     $(document).on('click', '#cart_stay_btn', function() {
         $('.cart_popup').css({display: 'none'})
+        $('.layer').css({display:'none'})
     })
     $(document).on('click', '#cart_commit_btn', function() {
         location.href="http://localhost:8080/egan/myPage"
+        $('.layer').css({display:'none'})
     })
     // 리뷰 팝업
     $(document).on('click', '#review_cancle_btn', function() {
         $('.review_popup').css({display: 'none'})
+        $('.layer').css({display:'none'})
     })
     $(document).on('click', '#review_commit_btn', function() {
         $('.review_popup').css({display: 'none'})
+        $('.layer').css({display:'none'})
     })
     // 문의 팝업
     $(document).on('click', '#qna_cancle_btn', function() {
         $('.qna_popup').css({display: 'none'})
+        $('.layer').css({display:'none'})
     })
     $(document).on('click', '#qna_commit_btn', function() {
         $('.qna_popup').css({display: 'none'})
+        $('.layer').css({display:'none'})
     })
 
 
@@ -100,20 +109,10 @@ $(document).ready(function() {
     // }
     let s_top = 0;
     $(window).resize(function (){
-        s_top = $(window).scrollTop();
-        if(s_top+$('.header').height() > tab_loc) {
             $('.item_ex_tab').css({
                 position: 'fixed',
                 top: $('.header').height()
             })
-        }
-        // else if(s_top+$('.header').height() <= tab_loc) {
-        //     $('.item_ex_tab').css({
-        //         position: 'static',
-        //         top:0
-        //     })
-        // }
-//     //
 
     });
     $(window).scroll(function() {
@@ -212,7 +211,7 @@ $(document).ready(function() {
     let bWidth = window.innerWidth;
     window.addEventListener("resize", () => {
         const nWidth = window.innerWidth;
-        if ((bWidth < 768 && nWidth >= 768) || (bWidth > 767 && nWidth <= 767)) {
+        if ((bWidth < 1024 && nWidth >= 1024) || (bWidth > 1023 && nWidth <= 1023)) {
             location.reload();
         }
         // beforeWidth = nowWidth;
