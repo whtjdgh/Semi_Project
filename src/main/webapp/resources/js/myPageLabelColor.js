@@ -6,6 +6,7 @@ let box1 = document.getElementsByClassName('box1');
         box1[j].addEventListener('click',function(){    
             for(let i=0; i<box1.length; i++) {
                 box1[i].classList.remove('chgColor');
+                box1[i].classList.remove('box2');
             }
 
             this.classList.add('chgColor');
