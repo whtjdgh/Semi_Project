@@ -207,8 +207,10 @@
                             배송완료
                         </div>
                     </div>
-                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                               <div class="prvBtn" >
+                                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                                </div>
                 </div>
 
                 <!-- 상품 후기 -->
@@ -273,8 +275,10 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                               <div class="prvBtn" >
+                                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                                </div>
                 </div>
 
 
@@ -499,8 +503,10 @@
                     <!-- 몇개를 입력받을지 모르고 같은 변수에 값을 더해서 총합을 만든다. -->
                     <div class="sum">총 합계 : </div>
                     <a href="http://localhost:8080/egan/payment"><div class="payment">결제하기</div></a>
-                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                               <div class="prvBtn" >
+                                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                                </div>
                 </div>
 
 
