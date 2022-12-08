@@ -152,7 +152,7 @@ p{
     padding:15px;
 }
 .popup3{
-   width: 350px;
+  width: 350px;
     height: 160px;
     /* max-width: 400px; */
     /* background-color: #ffffff; */
@@ -179,7 +179,7 @@ p{
     padding:10px 0;
 }
 .popup-foot3{
-    /* width: 100%; */
+    width: 100%; */
     height: 75px;
     text-align: center;
     color: white;
