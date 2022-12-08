@@ -37,12 +37,14 @@
     width: calc(99%/2);
     height: 100%;
     display: inline-block;
+    cursor: pointer;
 }
 .review_done {
     width: calc(99%/2);
     height: 100%;
     display: inline-block;
     border: 1px solid grey;
+    cursor: pointer;
 }
 .BtnColorChg {
     border-bottom: 4px solid #fec900;
