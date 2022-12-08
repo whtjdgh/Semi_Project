@@ -9,12 +9,10 @@
     text-align: center;
     line-height: 45px;
 }
-.infomation_li_1{
-
+.infomation_li_1 {
     float: left;
-    width: calc(100% - 200px);
+    width: calc(100% - 400px);
     height: 45px;
-
 }
 .infomation_li_2{
     float: right;
