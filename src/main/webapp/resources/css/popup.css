@@ -385,7 +385,7 @@ width: 60px;
         font-weight: 600;
 }
 .scr_chk_box {
-    width: 150px;
+    width: 120px;
     font-size: 14px;
     /* line-height: 0px; */
     display: flex;
@@ -393,10 +393,11 @@ width: 60px;
     flex-wrap: wrap;
     height: 40px;
     margin: 10px 0;
-    /* color: rgb(103, 102, 102);
+}
+
 }
 #qna_secret_pw {
-    width: 70px;
+width: 60px;
     outline: none;
     border: 1px solid rgba(41, 40, 40, 0.3);
     box-sizing: border-box;
