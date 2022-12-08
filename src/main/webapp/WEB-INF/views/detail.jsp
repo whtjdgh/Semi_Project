@@ -116,7 +116,7 @@
 
 <div class="main_tab">
   <ul>
-    <li id="move_skin">스킨케어</li>
+    <li id="move_skin" onclick="cate_click()">스킨케어</li>
     <div class="border_R"></div>
     <li id="move_daily">생활용품</li>
     <div class="border_R"></div>
