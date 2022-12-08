@@ -368,12 +368,12 @@
                                     <div class="popup-body3">
                                         <div class="body-content3">
                                             <div class="body-titlebox3">
-                                                <h3>후기가 등록되었습니다.</h3>
+                                                <p>후기가 등록되었습니다.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="popup-foot3">
-                                        <span id="confirm2">확인</span>
+                                        <div id="confirm2">확인</div>
                                     </div>
                                 </div>
                             </div>
