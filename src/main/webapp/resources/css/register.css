@@ -10,7 +10,6 @@
     margin: 100px auto 90px;
     padding: 40px;
     box-sizing: border-box;
-    /* font-family: 'nanum';
 }
 .reg_title {
     text-align: center;
@@ -26,8 +25,8 @@
     box-sizing: border-box;
 }
 .reg_txt {
-display: block;
-    width: 158px;
+    display: block;
+    width: 180px;
     margin: 20px 0px;
     font-weight: 700;
 }
@@ -74,9 +73,10 @@ input {outline: none;}
     font-weight: 600;
 }
 #address {
-    width: 280px;
+    width: 330px;
     height: 20px;
     margin-top: 15px;
+    
 }
 #postcode {height: 20px}
 #address_btn {
