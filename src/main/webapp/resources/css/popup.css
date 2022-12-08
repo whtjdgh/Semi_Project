@@ -231,8 +231,11 @@ width: 80px;
     font-weight: 700;
     font-family: 'nanum';
     text-align: center;
-    line-height: 190px;
+/*     line-height: 190px; */
+
 }
+.rv_input_main > p {
+ line-height: 200px;
 }
 .rv_input_title p {
     margin: 25px 0;
