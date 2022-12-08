@@ -373,6 +373,7 @@ width: 60px;
     border: 1px solid #ffbf00;
     border-radius: 5px;
         font-weight: 600;
+    margin-left: 20px;
 }
 #qna_commit_btn {
     width: 180px;
@@ -393,6 +394,9 @@ width: 60px;
     flex-wrap: wrap;
     height: 40px;
     margin: 10px 0;
+    padding: 0 10px;
+    border-radius: 3px;
+    margin-left: 5px;
 }
 
 }
@@ -404,7 +408,6 @@ width: 60px;
     padding: 0 10px;
     border-radius: 3px;
     margin-left: 5px;
-    
 }
 
 
