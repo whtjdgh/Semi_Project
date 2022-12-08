@@ -17,6 +17,9 @@
     url('../font/NanumBarunGothicLight.ttf')format('truetype');
 
 }
+*{
+    font-family: 'nanum';
+}
 html,
 body {
     max-width: 100%;
