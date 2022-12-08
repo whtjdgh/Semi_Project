@@ -83,4 +83,7 @@ p{
 .pop-btn2.close
 {
     border-right:1px solid white;
+        background: white;
+    border: 1px solid #f5c242;
+    color: #f5c242;
 }
