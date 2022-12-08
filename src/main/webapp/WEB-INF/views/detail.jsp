@@ -46,7 +46,6 @@
 
   </style>
 </head>
-<body>
 <div class="model_background">
   <div class="close" ></div>
   <div class="model_content">
@@ -117,13 +116,13 @@
 
 <div class="main_tab">
   <ul>
-    <li>스킨케어</li>
+    <li id="move_skin">스킨케어</li>
     <div class="border_R"></div>
-    <li>생활용품</li>
+    <li id="move_daily">생활용품</li>
     <div class="border_R"></div>
-    <li>식품</li>
+    <li id="move_food">식품</li>
     <div class="border_R"></div>
-    <li>채식:구</li>
+    <li id="move_veg">채식:구</li>
   </ul>
 </div>
 
@@ -133,198 +132,21 @@
 
 <div class="menu_box content_area">
 
-  <div class="menu_list">
-    <div class="menu_item">
-      <img src="<c:url value='/img/skin/4.jpg'/>" alt="">
-      <button class="menu_basket_btn"></button>
+  <c:forEach var="dto" items="${list }">
+    <div class="menu_list">
+      <div class="menu_item">
+        <img src="<c:url value='${dto.saveImage}'/>" alt="">
+        <button class="menu_basket_btn"></button>
+      </div>
+      <div class="menu_txt">
+        <p class="p_name">${dto.p_name}</p>
+        <p class="p_sale">32%</p>
+        <p class="p_sale">32%</p>
+        <p class="p_price">${dto.p_price}</p>
+      </div>
     </div>
-    <div class="menu_txt">
-      <p class="p_name">[채식구] 무농약 연근연근연근</p>
-      <p class="p_sale">32%</p>
-      <p class="p_sale">32%</p>
-      <p class="p_price">10,000~</p>
-    </div>
-  </div>
-  <div class="menu_list">
-    <div class="menu_item">
-      <img src="<c:url value='/img/skin/4.jpg'/>" alt="">
-      <button class="menu_basket_btn"></button>
-    </div>
-    <div class="menu_txt">
-      <p class="p_name">[채식구] 무농약 연근연근연근</p>
-      <p class="p_sale">32%</p>
-      <p class="p_sale">32%</p>
-      <p class="p_price">10,000~</p>
-    </div>
-  </div>
-  <div class="menu_list">
-    <div class="menu_item">
-      <img src="<c:url value='/img/skin/4.jpg'/>" alt="">
-      <button class="menu_basket_btn"></button>
-    </div>
-    <div class="menu_txt">
-      <p class="p_name">[채식구] 무농약 연근연근연근</p>
-      <p class="p_sale">32%</p>
-      <p class="p_sale">32%</p>
-      <p class="p_price">10,000~</p>
-    </div>
-  </div>
-  <div class="menu_list">
-    <div class="menu_item">
-      <img src="<c:url value='/img/skin/4.jpg'/>" alt="">
-      <button class="menu_basket_btn"></button>
-    </div>
-    <div class="menu_txt">
-      <p class="p_name">[채식구] 무농약 연근연근연근</p>
-      <p class="p_sale">32%</p>
-      <p class="p_sale">32%</p>
-      <p class="p_price">10,000~</p>
-    </div>
-  </div>
-  <div class="menu_list">
-    <div class="menu_item">
-      <img src="../포폴/포폴_img/마켓컬리_스킨케어/4.jpg" alt="">
-      <button class="menu_basket_btn"></button>
-    </div>
-    <div class="menu_txt">
-      <p class="p_name">[채식구] 무농약 연근연근연근</p>
-      <p class="p_sale">32%</p>
-      <p class="p_sale">32%</p>
-      <p class="p_price">10,000~</p>
-    </div>
-  </div>
-  <div class="menu_list">
-    <div class="menu_item">
-      <img src="../포폴/포폴_img/마켓컬리_스킨케어/4.jpg" alt="">
-      <button class="menu_basket_btn"></button>
-    </div>
-    <div class="menu_txt">
-      <p class="p_name">[채식구] 무농약 연근연근연근</p>
-      <p class="p_sale">32%</p>
-      <p class="p_sale">32%</p>
-      <p class="p_price">10,000~</p>
-    </div>
-  </div>
-  <div class="menu_list">
-    <div class="menu_item">
-      <img src="../포폴/포폴_img/마켓컬리_스킨케어/4.jpg" alt="">
-      <button class="menu_basket_btn"></button>
-    </div>
-    <div class="menu_txt">
-      <p class="p_name">[채식구] 무농약 연근연근연근</p>
-      <p class="p_sale">32%</p>
-      <p class="p_sale">32%</p>
-      <p class="p_price">10,000~</p>
-    </div>
-  </div>
-  <div class="menu_list">
-    <div class="menu_item">
-      <img src="../포폴/포폴_img/마켓컬리_스킨케어/4.jpg" alt="">
-      <button class="menu_basket_btn"></button>
-    </div>
-    <div class="menu_txt">
-      <p class="p_name">[채식구] 무농약 연근연근연근</p>
-      <p class="p_sale">32%</p>
-      <p class="p_sale">32%</p>
-      <p class="p_price">10,000~</p>
-    </div>
-  </div>
-  <div class="menu_list">
-    <div class="menu_item">
-      <img src="../포폴/포폴_img/마켓컬리_스킨케어/4.jpg" alt="">
-      <button class="menu_basket_btn"></button>
-    </div>
-    <div class="menu_txt">
-      <p class="p_name">[채식구] 무농약 연근연근연근</p>
-      <p class="p_sale">32%</p>
-      <p class="p_sale">32%</p>
-      <p class="p_price">10,000~</p>
-    </div>
-  </div>
-  <div class="menu_list">
-    <div class="menu_item">
-      <img src="../포폴/포폴_img/마켓컬리_스킨케어/4.jpg" alt="">
-      <button class="menu_basket_btn"></button>
-    </div>
-    <div class="menu_txt">
-      <p class="p_name">[채식구] 무농약 연근연근연근</p>
-      <p class="p_sale">32%</p>
-      <p class="p_sale">32%</p>
-      <p class="p_price">10,000~</p>
-    </div>
-  </div>
-  <div class="menu_list">
-    <div class="menu_item">
-      <img src="../포폴/포폴_img/마켓컬리_스킨케어/4.jpg" alt="">
-      <button class="menu_basket_btn"></button>
-    </div>
-    <div class="menu_txt">
-      <p class="p_name">[채식구] 무농약 연근연근연근</p>
-      <p class="p_sale">32%</p>
-      <p class="p_sale">32%</p>
-      <p class="p_price">10,000~</p>
-    </div>
-  </div>
-  <div class="menu_list">
-    <div class="menu_item">
-      <img src="../포폴/포폴_img/마켓컬리_스킨케어/4.jpg" alt="">
-      <button class="menu_basket_btn"></button>
-    </div>
-    <div class="menu_txt">
-      <p class="p_name">[채식구] 무농약 연근연근연근</p>
-      <p class="p_sale">32%</p>
-      <p class="p_sale">32%</p>
-      <p class="p_price">10,000~</p>
-    </div>
-  </div>
-  <div class="menu_list">
-    <div class="menu_item">
-      <img src="../포폴/포폴_img/마켓컬리_스킨케어/4.jpg" alt="">
-      <button class="menu_basket_btn"></button>
-    </div>
-    <div class="menu_txt">
-      <p class="p_name">[채식구] 무농약 연근연근연근</p>
-      <p class="p_sale">32%</p>
-      <p class="p_sale">32%</p>
-      <p class="p_price">10,000~</p>
-    </div>
-  </div>
-  <div class="menu_list">
-    <div class="menu_item">
-      <img src="../포폴/포폴_img/마켓컬리_스킨케어/4.jpg" alt="">
-      <button class="menu_basket_btn"></button>
-    </div>
-    <div class="menu_txt">
-      <p class="p_name">[채식구] 무농약 연근연근연근</p>
-      <p class="p_sale">32%</p>
-      <p class="p_sale">32%</p>
-      <p class="p_price">10,000~</p>
-    </div>
-  </div>
-  <div class="menu_list">
-    <div class="menu_item">
-      <img src="../포폴/포폴_img/마켓컬리_스킨케어/4.jpg" alt="">
-      <button class="menu_basket_btn"></button>
-    </div>
-    <div class="menu_txt">
-      <p class="p_name">[채식구] 무농약 연근연근연근</p>
-      <p class="p_sale">32%</p>
-      <p class="p_sale">32%</p>
-      <p class="p_price">10,000~</p>
-    </div>
-  </div>
-  <div class="menu_list">
-    <div class="menu_item">
-      <img src="../포폴/포폴_img/마켓컬리_스킨케어/4.jpg" alt="">
-      <button class="menu_basket_btn"></button>
-    </div>
-    <div class="menu_txt">
-      <p class="p_name">[채식구] 무농약 연근연근연근</p>
-      <p class="p_sale">32%</p>
-      <p class="p_sale">32%</p>
-      <p class="p_price">10,000~</p>
-    </div>
-  </div>
+  </c:forEach>
+
 </div>
 
 
@@ -377,50 +199,6 @@
 
 
 
-<!-- <div class="footer">
-    <div class="content_area">
-        <div class="f_txt">
-
-            <div class="f_h">
-
-                <div class="f_h_box">
-                    <p class="f_h_txt f_h_txt1">1:1상담하기<span> | Q & A 바로가기</span></p>
-                    <p class="f_h_txt">MON-FRI | AM 10:00 ~ PM 05:00</p>
-                    <p class="f_h_txt">(SAT. SUN. HOLIDAY CLOSED)</p>
-                </div>
-
-                <div class="f_h_box">
-                    <p class="f_h_txt f_h_txt1">BANK INFO</p>
-                    <p class="f_h_txt">농협 123345-14-259372</p>
-                    <p class="f_h_txt">예금주 : EGAN</p>
-                </div>
-
-                <div class="f_h_box">
-                    <p class="f_h_txt f_h_txt1">COMPANY INFO</p>
-                    <p class="f_h_txt">회사명 : EGAN | 대표 : 홍길동 | 개인정보관리책임자 : 홍길동</p>
-                    <p class="f_h_txt">사업자등록번호 : 123-00-00321 | 통신판매업신고 : 제 2022-경기남양-1204호</p>
-                </div>
-
-            </div>
-
-        <div class="f_b">
-
-            <div class="f_b_box">
-                <p class="f_b_txt f_h_txt1">해외 제휴 / 수출 문의</p>
-                <p class="f_b_txt">khedu123@naver.con</p>
-            </div>
-
-
-            <div class="f_b_box w_box">
-                <p class="f_b_txt">COPYRIGHT @ EGAN . ALL RIGHTS</p>
-            </div>
-
-        </div>
-
-    </div>
-</div>
-</div>            -->
-
 
 <div class="footer">
   <div class="content_area">
@@ -470,5 +248,9 @@
 </div>
 
 </div>
+
+<script>
+
+</script>
 </body>
 </html>

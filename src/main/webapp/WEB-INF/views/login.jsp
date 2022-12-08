@@ -37,7 +37,6 @@
     $(document).ready(function() {
         $("#login").click(function() {
 
-            alert("제발");
 
             let form = {
                 m_id: $("#m_id").val(),
