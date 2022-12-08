@@ -23,7 +23,7 @@
     display: flex;
     cursor: pointer;
 }
-.content_area_tep{
+#content_area_tep{
     margin: 20px 0;
 }
 .contact_information{
