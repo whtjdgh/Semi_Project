@@ -416,8 +416,10 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                   <div class="prvBtn" >
+                        <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                        <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                    </div>
 
                 </div>
 
