@@ -45,7 +45,7 @@ p{
     font-weight: 700;
     font-size: 25px;
 }
-}
+
 .img_size{
     width: 100px;
     height: 100px;
@@ -62,7 +62,7 @@ p{
     display: flex;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    border-bottom:2px solid gray;
+        border-bottom: 1px solid rgb(41 40 40 / 30%);
 }
 .popup-body{
     width:100%;
