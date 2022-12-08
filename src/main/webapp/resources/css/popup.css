@@ -202,7 +202,7 @@ display: flex;
 #review_title {
     width: 700px;
     height: 40px;
-    width: 500px;
+    width: calc(100% - 100px);
     outline: none;
     border: 1px solid rgba(41, 40, 40, 0.3);
     box-sizing: border-box;
@@ -254,6 +254,8 @@ width: 180px;
     background: #fff;
     border: 1px solid #ffbf00;
     border-radius: 5px;
+        margin-right: 7px;
+}
 }
 #review_commit_btn {
     width: 180px;
@@ -267,15 +269,15 @@ width: 180px;
 
 /* 문의 팝업창 */
 .qna_popup {
-    margin: 0 auto;
-    width: 900px;
-    height: 700px;
+   margin: 0 auto;
+    width: 700px;
+    height: 600px;
+    /* border-radius: 10px; */
     border: 1px solid rgba(41, 40, 40, 0.3);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 45px;
     box-sizing: border-box;
     background: #fff;
-
     position: fixed;
     top: 50%;
     left: 50%;
@@ -288,9 +290,10 @@ width: 180px;
     font-weight: 700;
 }
 .qna_item_box {
-    margin: 10px 0;
-    padding: 20px 0;
-    line-height: 50px;
+  margin: 10px 0;
+    padding: 10px 0;
+    line-height: 100px;
+    line-height: 100px;
     box-sizing: border-box;
     border-top: 1px solid rgba(41, 40, 40, 0.3);
     border-bottom: 1px solid rgba(41, 40, 40, 0.3);
@@ -312,42 +315,49 @@ width: 100px;
 .qna_input_box {
     padding: 15px;
     box-sizing: border-box;
+    margin-top: 25px;
 }
 .qna_input_title {
     display: flex;
-    margin-bottom: 25px;
+/*     margin-bottom: 25px; */
 }
-#qna_popup_title {
-    width: 700px;
-    /* height: 30px; */
+#qna_popup_title {\
+    width: calc(100% - 100px);
+    height: 40px;
     outline: none;
     border: 1px solid rgba(41, 40, 40, 0.3);
     box-sizing: border-box;
     padding: 0 10px;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 .qna_input_main {
     display: flex;
 }
 #qna_popup_main {
-    width: 700px;
-    height: 300px;
+    width: calc(100% - 100px);
+    height: 200px;
     outline: none;
     border: 1px solid rgba(41, 40, 40, 0.3);
     box-sizing: border-box;
     padding: 0 10px;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 .qna_input_title p,
 .qna_input_main p {
-    width: 60px;
+width: 60px;
     line-height: 30px;
-    color: rgb(103, 102, 102);
+    /* color: rgb(103, 102, 102); */
     font-weight: 700;
+    font-family: 'nanum';
+    width: 80px;
+    text-align: center;
 }
 .qna_input_title p {
     margin: 25px 0;
+    font-family: 'nanum';
     line-height: 0;
+    width: 80px;
+    text-align: center;
 }
 .qna_btn_box {
     text-align: center;
@@ -363,6 +373,7 @@ width: 100px;
     background: #fff;
     border: 1px solid #ffbf00;
     border-radius: 5px;
+        font-weight: 600;
 }
 #qna_commit_btn {
     width: 180px;
@@ -372,15 +383,18 @@ width: 100px;
     background: #ffbf00;
     border: none;
     border-radius: 5px;
+        font-weight: 600;
 }
 .scr_chk_box {
     width: 150px;
     font-size: 14px;
-    line-height: 25px;
+    /* line-height: 0px; */
     display: flex;
     gap: 7px;
     flex-wrap: wrap;
-    color:rgb(103, 102, 102) ;
+    height: 40px;
+    margin: 10px 0;
+    /* color: rgb(103, 102, 102);
 }
 #qna_secret_pw {
     width: 70px;
