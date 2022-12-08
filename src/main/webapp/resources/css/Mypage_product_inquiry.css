@@ -25,10 +25,11 @@
 }
 #content_area_tep{
     margin: 20px 0;
+        justify-content: flex-start;
 }
 .contact_information{
     display: inline-block;
-    width:770px;
+        width: 620px;
     height: 150px;
     line-height: 150px;
     font-weight: 500;
