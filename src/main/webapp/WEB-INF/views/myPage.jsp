@@ -433,7 +433,7 @@
                         <ul class="infomation_ul">
                             <li class="infomation_li_1 font">쿠폰명</li>
                             <li class="infomation_li_2 font">사용여부</li>
-                            <li class="infomation_li_2 font">사용</li>
+                            <li class="infomation_li_2 font">사용기간</li>
                         </ul>
                         <ul class="coupon_ul">
                             <li class="coupon_li_first">첫구매 할인 쿠폰
