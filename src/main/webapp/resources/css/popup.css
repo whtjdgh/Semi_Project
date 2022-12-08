@@ -389,7 +389,7 @@ width: 60px;
     font-size: 14px;
     /* line-height: 0px; */
     display: flex;
-    gap: 7px;
+    gap: 4px;
     flex-wrap: wrap;
     height: 40px;
     margin: 10px 0;
@@ -397,12 +397,13 @@ width: 60px;
 
 }
 #qna_secret_pw {
-    width: 70px;
+       width: 70px;
     outline: none;
     border: 1px solid rgba(41, 40, 40, 0.3);
     box-sizing: border-box;
     padding: 0 10px;
     border-radius: 3px;
+    margin-left: 5px;
 }
 
 
