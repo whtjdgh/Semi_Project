@@ -231,6 +231,8 @@ video {
   background-position: center;
   background-size: cover;
   position: relative;
+      background: rgba(0, 0, 0, 0.2) url(../img/food/21.jpg)no-repeat center / cover;
+    background-blend-mode: darken;
 }
 
 .chea_text {
