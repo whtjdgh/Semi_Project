@@ -314,7 +314,7 @@ width: 100px;
 .qna_input_box {
     padding: 15px;
     box-sizing: border-box;
-    margin-top: 25px;
+/*     margin-top: 25px; */
 }
 .qna_input_title {
     display: flex;
@@ -328,12 +328,13 @@ width: 100px;
     box-sizing: border-box;
     padding: 0 10px;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 .qna_input_main {
     display: flex;
 }
 .qna_input_main > p{
-        line-height: 200px;
+            line-height: 150px;
 }
 #qna_popup_main {
     width: calc(100% - 100px);
@@ -347,7 +348,7 @@ width: 100px;
 .qna_input_title p,
 .qna_input_main p {
 width: 60px;
-    line-height: 30px;
+    line-height: 40px;
     /* color: rgb(103, 102, 102); */
     font-weight: 700;
     font-family: 'nanum';
@@ -366,6 +367,7 @@ width: 60px;
     display: flex;
     justify-content: center;
     gap: 10px;
+        margin-top: 10px;
 }
 #qna_cancle_btn {
     width: 180px;
