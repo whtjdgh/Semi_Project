@@ -31,9 +31,9 @@
 }
 .review_can {
     border: 1px solid grey;
-    border-bottom: 4px solid #fec900;
+/*     border-bottom: 4px solid #fec900; */
     /* width: 50%; */
-    color: #fec900;
+/*     color: #fec900; */
     width: calc(99%/2);
     height: 100%;
     display: inline-block;
