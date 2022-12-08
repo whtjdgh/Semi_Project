@@ -152,35 +152,40 @@ p{
     padding:15px;
 }
 .popup3{
-      width: 100%;
-    max-width: 400px;
-/*     background-color: #ffffff; */
+   width: 350px;
+    height: 160px;
+    /* max-width: 400px; */
+    /* background-color: #ffffff; */
     border-radius: 10px;
     overflow: hidden;
-    background-color: #ffc107;
+    background-color: white;
+    /* text-align: center; */
+    padding: 20px;
 }
 .popup-body3{
     width:100%;
     background-color:#ffffff;
 }
 .body-content3{
-    width:100%;
-    padding:30px;
+    /* width: 100%; */
+    padding: 13px 0 0px;
 }
 .body-titlebox3{
-    text-align:center;
-    width:100%;
-    height:40px;
+    text-align: center;
+    width: 100%;
+    height: 30px;
 }
 .body-titlebox3 > h3{
     padding:10px 0;
 }
 .popup-foot3{
-    width:100%;
-    height:50px;
-    color:white;
-    cursor:pointer;
+    /* width: 100%; */
+    height: 75px;
     text-align: center;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0;
+    /* text-align: center; */
     line-height: 50px;
 }
 
