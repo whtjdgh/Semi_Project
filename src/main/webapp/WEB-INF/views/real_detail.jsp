@@ -311,8 +311,10 @@
         <div class="rv_popup_txt">
             <div class="rv_popup_txt_title">PRODUCT REVIEW</div>
             <div class="review_item_box">
-                <div class="item_img"></div>
-                <div class="item_title">[믹순] 비건 립밤 2종</div>
+                <div class="item_img">
+                    <img src="<c:url value='${dto.saveImage}'/>" alt="">
+                </div>
+                <div class="item_title">${dto.p_name}</div>
             </div>
         </div>
         <div class="review_input_box">
@@ -335,8 +337,8 @@
         <div class="qna_popup_txt">
             <div class="qna_popup_txt_title">PRODUCT REVIEW</div>
             <div class="qna_item_box">
-                <div class="item_img"></div>
-                <div class="item_title">[믹순] 비건 립밤 2종</div>
+                <div class="item_img"><img src="<c:url value='${dto.saveImage}'/>" alt=""></div>
+                <div class="item_title">${dto.p_name}</div>
             </div>
         </div>
         <div class="qna_input_box">
