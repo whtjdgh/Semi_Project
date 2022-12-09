@@ -18,4 +18,14 @@ public class ProductDaoImpl implements ProductDao {
     public List<ProductDto> listProduct() {
         return sqlSession.selectList("member.list_product");
     }
+
+    @Override
+    public ProductDto selectProduct(int p_index) {
+        return sqlSession.selectOne("member.selectProduct", p_index);
+    }
+
+
 }
+
+
+

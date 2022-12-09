@@ -90,8 +90,15 @@
 
     <div class="menu">
       <div class="h_menu">
-        <a href="">Login</a>
-        <a href="">Register</a>
+        <c:if test="${m_id != null}">
+          <a href="http://localhost:8080/egan/login">Logout</a>
+          <a href="http://localhost:8080/egan/real_register">MyPage</a>
+        </c:if>
+
+        <c:if test="${m_id == null}">
+          <a href="http://localhost:8080/egan/login">Login</a>
+          <a href="http://localhost:8080/egan/real_register">Register</a>
+        </c:if>
       </div>
       <div class="h_icon">
         <div class="shopping"></div>
@@ -135,7 +142,7 @@
   <c:forEach var="dto" items="${list }">
     <div class="menu_list">
       <div class="menu_item">
-        <a href="http://localhost:8080/egan/real_detail?${dto.p_index}">
+        <a href="http://localhost:8080/egan/real_detail/${dto.p_index}">
         <img src="<c:url value='${dto.saveImage}'/>" alt="c">
         </a>
         <button class="menu_basket_btn"></button>

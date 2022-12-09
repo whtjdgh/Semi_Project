@@ -82,13 +82,13 @@
     <div class="container">
         <div class="detail_box">
             <div class="detail_img">
-                <img src="<c:url value='/img/daily/1.jpg'/>" alt="비닐장갑">
+                <img src="<c:url value='${dto.saveImage}'/>" alt="">
             </div>
             <div class="detail_imfo">
                 <div class="d_txt">
-                    <div class="dt_title">[믹순]비건 립밤 2종</div>
+                    <div class="dt_title">${dto.p_name}</div>
                     <div class="price_txt_box">
-                        <div class="o_price o_p_c"><del>30,000원</del></div>
+                        <div class="o_price o_p_c"><del>${dto.p_price}</del></div>
                         <div class="s_price s_p_c">10,000원</div>
                     </div>
                     <p class="dt_title_txt">Lorem ipsum dolor sit amet consectetur</p>
@@ -97,7 +97,7 @@
                 <table class="detail_tb">
                     <tr>
                         <td class="det_txt">소비자가</td>
-                        <td id="o_price"><del>30,000원</del></td>
+                        <td id="o_price"><del>${dto.p_price}</del></td>
                     </tr>
                     <tr>
                         <td class="det_txt">판매가</td>

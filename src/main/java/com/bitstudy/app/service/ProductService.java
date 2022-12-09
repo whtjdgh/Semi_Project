@@ -6,4 +6,8 @@ import java.util.List;
 
 public interface ProductService {
     List<ProductDto> listProduct();
+
+    public  ProductDto selectProduct(int p_index);
+
+
 }

@@ -4,11 +4,11 @@ import com.bitstudy.app.domain.ProductDto;
 import com.bitstudy.app.service.ProductService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.inject.Inject;
+import java.util.HashMap;
 import java.util.List;
 
 @Controller
@@ -18,15 +18,32 @@ public class test {
     ProductService productService;
 
     @RequestMapping("/main")
-    public String main() {
+    public String main(ModelAndView mav) {
+        mav.addObject("list", productService.listProduct());  //데이터 저장
 
         return "main";
     }
 
     @RequestMapping("/detail")
-    public ModelAndView detail(ModelAndView mav, Model model) {
-        mav.setViewName("/detail"); //이동할 페이지 이름 (product_list.jsp 파일로 이동)
+    public ModelAndView detail(ModelAndView mav) {
+        mav.setViewName("/detail"); //이동할 페이지 이름
         mav.addObject("list", productService.listProduct());  //데이터 저장
+
+        System.out.println("1234");
+
+        return mav; //페이지 이동
+    }
+
+
+    @RequestMapping (value = "/real_detail/{p_index}" , method = RequestMethod.GET)
+    public ModelAndView selectProduct(@PathVariable("p_index") int p_index, ModelAndView mav) {
+        mav.setViewName("/real_detail"); //이동할 페이지 이름
+        ProductDto goodsInfo = productService.selectProduct(p_index);
+        mav.addObject("dto", productService.selectProduct(p_index));  //데이터 저장
+
+        System.out.println("4567");
+        System.out.println(p_index);
+        System.out.println(goodsInfo.getP_index());
 
 
         return mav; //페이지 이동
@@ -34,12 +51,9 @@ public class test {
 
     @RequestMapping("/deal")
     public String deal() {
-        return "real_detail";
-    }
-    @RequestMapping("/list")
-    public String list() {
 
-        return "list";
+
+        return "real_detail";
     }
 
 
@@ -56,11 +70,6 @@ public class test {
         return "myPage";
     }
 
-    @RequestMapping("/real_detail")
-    public String real_detail() {
-
-        return "real_detail";
-    }
 
 
     @RequestMapping("/payment")
