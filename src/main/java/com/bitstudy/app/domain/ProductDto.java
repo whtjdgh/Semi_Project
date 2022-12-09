@@ -19,35 +19,12 @@ public class ProductDto {
 
     private String saveImage;
 
-    public String getDetail_image1() {
-        return detail_image1;
-    }
-
-    public void setDetail_image1(String detail_image1) {
-        this.detail_image1 = detail_image1;
-    }
-
-    public String getDetail_image2() {
-        return detail_image2;
-    }
-
-    public void setDetail_image2(String detail_image2) {
-        this.detail_image2 = detail_image2;
-    }
-
-    public String getDetail_image3() {
-        return detail_image3;
-    }
-
-    public void setDetail_image3(String detail_image3) {
-        this.detail_image3 = detail_image3;
-    }
-
     private String detail_image1;
     private String detail_image2;
     private String detail_image3;
 
 
+    private String keyword;
 
 
 
@@ -161,5 +138,38 @@ public class ProductDto {
 
     public void setSaveImage(String saveImage) {
         this.saveImage = saveImage;
+    }
+
+    public String getDetail_image1() {
+        return detail_image1;
+    }
+
+    public void setDetail_image1(String detail_image1) {
+        this.detail_image1 = detail_image1;
+    }
+
+    public String getDetail_image2() {
+        return detail_image2;
+    }
+
+    public void setDetail_image2(String detail_image2) {
+        this.detail_image2 = detail_image2;
+    }
+
+    public String getDetail_image3() {
+        return detail_image3;
+    }
+
+    public void setDetail_image3(String detail_image3) {
+        this.detail_image3 = detail_image3;
+    }
+
+
+    public String getKeyword() {
+        return keyword;
+    }
+
+    public void setKeyword(String keyword) {
+        this.keyword = keyword;
     }
 }

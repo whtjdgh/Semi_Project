@@ -51,9 +51,7 @@
   <div class="model_content">
     <div class="search_box search_box2">
       <input type="text" placeholder="검색" class="txt_search">
-      <a href="">
-        <div class="icon"></div>
-      </a>
+        <div class="icon" onclick="search()"></div>
     </div>
   </div>
 </div>
@@ -91,7 +89,7 @@
     <div class="menu">
       <div class="h_menu">
         <c:if test="${m_id != null}">
-          <a href="http://localhost:8080/egan/login">Logout</a>
+          <a href="http://localhost:8080/egan/logout.do">Logout</a>
           <a href="http://localhost:8080/egan/real_register">MyPage</a>
         </c:if>
 
@@ -123,11 +121,11 @@
 
 <div class="main_tab">
   <ul>
-    <li id="move_skin" onclick="cate_click()">스킨케어</li>
+    <li id="move_skin" onclick="cate_click(2)">스킨케어</li>
     <div class="border_R"></div>
-    <li id="move_daily">생활용품</li>
+    <li id="move_daily" onclick="cate_click(1)">생활용품</li>
     <div class="border_R"></div>
-    <li id="move_food">식품</li>
+    <li id="move_food" onclick="cate_click(3)">식품</li>
     <div class="border_R"></div>
     <li id="move_veg">채식:구</li>
   </ul>
@@ -139,22 +137,22 @@
 
 <div class="menu_box content_area">
 
-  <c:forEach var="dto" items="${list }">
-    <div class="menu_list">
-      <div class="menu_item">
-        <a href="http://localhost:8080/egan/real_detail/${dto.p_index}">
-        <img src="<c:url value='${dto.saveImage}'/>" alt="c">
-        </a>
-        <button class="menu_basket_btn"></button>
+     <c:forEach var="dto" items="${list }">
+     <div class="menu_list">
+       <div class="menu_item">
+          <a href="http://localhost:8080/egan/real_detail/${dto.p_index}">
+            <img src="<c:url value='${dto.saveImage}'/>" alt="c">
+          </a>
+          <button class="menu_basket_btn"></button>
+        </div>
+        <div class="menu_txt">
+          <p class="p_name">${dto.p_name}</p>
+          <p class="p_sale">32%</p>
+          <p class="p_sale">32%</p>
+          <p class="p_price">${dto.p_price}</p>
+        </div>
       </div>
-      <div class="menu_txt">
-        <p class="p_name">${dto.p_name}</p>
-        <p class="p_sale">32%</p>
-        <p class="p_sale">32%</p>
-        <p class="p_price">${dto.p_price}</p>
-      </div>
-    </div>
-  </c:forEach>
+      </c:forEach>
 
 </div>
 
@@ -257,6 +255,60 @@
 </div>
 
 </div>
+
+<script>
+  function search(){
+    alert("123")
+  }
+
+  function cate_click(data){
+
+    let cate_value = data;
+    console.log(cate_value);
+
+    $.ajax({
+      url: '/egan/select_cate',
+      type: 'POST',
+      data: {cate_value: cate_value},
+
+      success: function(data){
+        if(data = true){
+          console.log("성공");
+          $('.footer').append(`<c:forEach var="dto2" items="${cate_list}">
+                                            <div class="menu_list">
+                                              <div class="menu_item">
+                                                <a href="http://localhost:8080/egan/real_detail/${dto2.p_index}">
+                                                <img src="<c:url value='${dto2.saveImage}'/>" alt="c">
+                                                </a>
+                                                <button class="menu_basket_btn"></button>
+                                              </div>
+                                              <div class="menu_txt">
+                                                <p class="p_name">${dto2.p_name}</p>
+                                                <p class="p_sale">32%</p>
+                                                <p class="p_sale">32%</p>
+                                                <p class="p_price">${dto2.p_price}</p>
+                                              </div>
+                                            </div>
+                                      </c:forEach>`)
+
+        }else if(date = false){
+          console.log("실패");
+        }
+
+
+      },
+      error: function(jqXHR, textStatus, errorThrown){
+        console.log(jqXHR);
+        console.log(textStatus);
+        console.log(errorThrown);
+        console.log("111");
+        console.log("아이디와 비밀번호를 확인해주세요.");
+      }
+    });
+
+  }
+
+</script>
 
 </body>
 </html>

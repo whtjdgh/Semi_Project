@@ -49,6 +49,16 @@ public class test {
         return mav; //페이지 이동
     }
 
+
+    @RequestMapping (value = "/select_cate" , method = RequestMethod.POST)
+    public ModelAndView select_cate(@RequestParam("cate_value") int cate_value, ModelAndView mav) {
+        mav.setViewName("/detail"); //이동할 페이지 이름
+        mav.addObject("cate_list", productService.listProduct_opt(cate_value));  //데이터 저장
+        System.out.println(cate_value);
+
+        return mav; //페이지 이동
+    }
+
     @RequestMapping("/deal")
     public String deal() {
 

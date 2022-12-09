@@ -24,5 +24,10 @@ public class ProductServiceImpl implements ProductService {
         return productDao.selectProduct(p_index);
     }
 
+    @Override
+    public List<ProductDto> listProduct_opt(int cate_value) {
+        return productDao.listProduct_opt(cate_value);
+    }
+
 
 }

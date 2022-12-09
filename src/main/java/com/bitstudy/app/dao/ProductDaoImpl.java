@@ -24,6 +24,11 @@ public class ProductDaoImpl implements ProductDao {
         return sqlSession.selectOne("member.selectProduct", p_index);
     }
 
+    @Override
+    public List<ProductDto> listProduct_opt(int cate_value) {
+        return sqlSession.selectList("member.listProduct_opt", cate_value);
+    }
+
 
 }
 

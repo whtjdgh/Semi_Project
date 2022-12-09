@@ -9,5 +9,5 @@ public interface ProductService {
 
     public  ProductDto selectProduct(int p_index);
 
-
+    List<ProductDto> listProduct_opt(int cate_value);
 }

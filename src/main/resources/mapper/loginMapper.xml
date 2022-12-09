@@ -5,6 +5,18 @@
 
 <mapper namespace="member">
 
+    <!--상품 검색기능-->
+    <sql id="where-list">
+        <if test="condition=='title' ">
+            INSTR(title, #{keyword}) &gt; 0
+        </if>
+
+        <if test="condition=='writer' ">
+            name=#{keyword}
+        </if>
+
+    </sql>
+
     <!--로그인 처리-->
     <select id="login_check"  resultType="String">
         SELECT m_id,m_pwd,m_name FROM member
@@ -30,15 +42,32 @@
         SELECT COUNT(*) FROM  member WHERE m_id =#{m_id}
     </select>
 
+    <!--회원가입 처리시 이메일 중복방지처리-->
     <select id="check_m_email" parameterType="String" resultType="int">
         SELECT COUNT(*) FROM  member WHERE m_email =#{m_email}
     </select>
 
+    <!--모든상품 리스트 출력-->
     <select id = "list_product" resultType ="com.bitstudy.app.domain.ProductDto">
-        SELECT p.p_index, p.category_index, i.image_id, p.p_name, p.p_price, p.p_no, i.saveImage
+        SELECT p.p_index, i.image_id, p.p_name, p.p_price, p.p_no, i.saveImage
         FROM product p JOIN image i ON p.p_index=i.p_index
+        <where>
+            <if test="keyword != null and keyword != ''">
+                <include refid="where-list"/>
+            </if>
+        </where>
+
     </select>
 
+
+    <select id = "listProduct_opt" resultType ="com.bitstudy.app.domain.ProductDto">
+        SELECT p.p_index, p.category_index, i.image_id, p.p_name, p.p_price, p.p_no, i.saveImage
+        FROM product p JOIN image i ON p.p_index=i.p_index
+        WHERE p.category_index = #{cate_value}
+
+    </select>
+
+    <!--상품 상세보기 -->
     <select id = "selectProduct" resultType ="com.bitstudy.app.domain.ProductDto">
         SELECT p.p_index, p.category_index, i.image_id, p.p_name, p.p_price, p.p_no, i.saveImage, i.detail_image1, i.detail_image2
         FROM product p JOIN image i ON p.p_index=i.p_index
