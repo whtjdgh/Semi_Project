@@ -101,8 +101,8 @@
 
         <div class="menu">
             <div class="h_menu">
-                <a href="">Login</a>
-                <a href="">Register</a>
+          <a href="http://localhost:8080/egan/login">Login</a>
+          <a href="http://localhost:8080/egan/real_register">Register</a>
             </div>
             <div class="h_icon">
                 <div class="shopping"></div>
