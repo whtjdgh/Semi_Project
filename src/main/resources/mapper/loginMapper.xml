@@ -37,7 +37,6 @@
     <select id = "list_product" resultType ="com.bitstudy.app.domain.ProductDto">
         SELECT p.p_index, p.category_index, i.image_id, p.p_name, p.p_price, p.p_no, i.saveImage
         FROM product p JOIN image i ON p.p_index=i.p_index
-        where p.category_index = 1
     </select>
 
     <select id = "selectProduct" resultType ="com.bitstudy.app.domain.ProductDto">
