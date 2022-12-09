@@ -351,8 +351,9 @@
         </div>
         <div class="qna_btn_box">
             <div class="scr_chk_box">
-                <input type="checkbox" name="qna_secret_chk" id="qna_secret_chk">
+<!--                 <input type="checkbox" name="qna_secret_chk" id="qna_secret_chk"> -->
                 <span>비밀글여부</span>
+                 <input type="checkbox" name="qna_secret_chk" id="qna_secret_chk">
                 <span>비밀번호</span>
                 <input type="password" name="qna_secret_pw" id="qna_secret_pw">
             </div>

@@ -124,29 +124,29 @@ img {
     float: left;
 }
 .pay_box {
-    padding: 20px 0;
+   padding: 20px 0;
     box-sizing: border-box;
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 10px;
 }
 #btn_cart {
-    width: 200px;
+   width: 200px;
     height: 50px;
     border: none;
-    background: #FFE178;
+    background: #ffbf00;
     color: #fff;
     font-size: 17px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 #btn_pay {
-    width: 200px;
+   width: 200px;
     height: 50px;
-    border: 1px solid #FFE178;
+    border: 1px solid #ffbf00;
     background: #fff;
-    color: #FFE178;
+    color: #ffbf00;
     font-size: 17px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .total_price {
     font-size: 30px;
@@ -169,8 +169,7 @@ img {
     height:100%;
     line-height: 60px;
     text-align: center;
-    /* border: 1px solid; */
-    box-shadow: 0px 1px 2px rgb(74 74 73 / 30%);
+     border: 1px solid;
     box-sizing: border-box;
     background-color:#FFE178;
     color: #fff;
@@ -190,8 +189,9 @@ img {
 /* 탭 상세 스타일 */
 .tab_active {
     background: #fff;
-    color: #FFE178;
-    border: 1px solid #FFE178;
+    background: #ffbf00;
+    color: #fff;
+    border: 1px solid #ffbf00;
 }
 #item_ex {
     width: 100%;
@@ -280,7 +280,7 @@ img {
     border: none;
     border-radius: 5px;
     color: #fff;
-    background: #FFE178;
+    background: #ffbf00;
     cursor: pointer;
 }
 /* 큐앤에이 스타일 */
@@ -335,7 +335,7 @@ img {
     border: none;
     border-radius: 5px;
     color: #fff;
-    background: #FFE178;
+    background: #ffbf00;
     cursor: pointer;
 }
 .item_qna_title {

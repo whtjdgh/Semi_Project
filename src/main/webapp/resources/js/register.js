@@ -70,87 +70,8 @@ let email = document.getElementById('register_email');
 let number = document.getElementById('register_phone_number');
 let birth = document.getElementById('from_date');
 let msg = document.getElementsByClassName('msg');
-// 유효성검사
-function idChk() {
-    if(id.value == "" || id.value == undefined) {
-        alert("아이디를 입력하세요")
-        id.focus();
-        return false;
-    }
-    else {
-        if(id.value == "asdf") {
-            alert("중복된 아이디 입니다.")
-            id.focus();
-            return false;
-        }
-        else {
-            alert("사용가능한 아이디 입니다.")
-        }
-    }
 
-}
 
-function formChk() {
-    //아이디 체크
-    if(id.value.trim() == "asdf") {
-        alert("중복된 아이디 입니다.")
-    }
-    if(id.value.trim() == "" || id.value.trim() == undefined) {
-        alert("아이디를 입력하세요")
-        return false;
-    }
-    if(id.value.trim().length < 4 || id.value.trim().length > 12) {
-        alert("아이디는 4글자 이상 또는 12글자 이하로 입력하세요")
-        id.focus();
-        return false;
-    }
-    //비번 체크
-    if(pw.value.trim() == "" || pw.value.trim() == undefined) {
-        alert("비밀번호를 입력하세요")
-        return false;
-    }
-    if(pw.value.trim().length < 4 || pw.value.trim().length > 12) {
-        alert("비밀번호는 4글자 이상 또는 12글자 이하로 입력하세요")
-        pw.focus();
-        return false;
-    }
-    // 비밀번호 확인
-    if(pw.value.trim() != pw_chk.value.trim()) {
-        alert("비밀번호가 같지 않습니다.")
-        pw_chk.focus();
-        return false;
-    }
-
-    // 이메일 확인
-    if(email.value.trim() == "" || email.value.trim() == undefined) {
-        alert("이메일을 입력해주세요.")
-        email.focus();
-        return false;
-    }
-    if(email.value.indexOf("@") == -1) {
-        alert("이메일 형식대로 입력하세요")
-        return false;
-    }
-    // 전화번호 확인
-    // 공백확인
-    if(number.value.trim() == "" || number.value.trim() == undefined) {
-        alert("전화번호를 입력하세요.")
-        return false;
-    }
-    if(number.value.trim().length != 11) {
-        alert("전화번호는 11글자로 입력하세요")
-        return false;
-    }
-    if(isNaN(number.value.trim())) {
-        alert("전화번호는 숫자만 입력하세요.")
-        return false;
-    }
-    // 생년월일 확인
-    if(birth.value == "" || birth.value == undefined) {
-        alert("생년월일을 입력하세요")
-        return false;
-    }
-}
 
 // 새로고침
 // history.scrollRestoration = "manual"

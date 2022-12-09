@@ -147,7 +147,7 @@
             <!-- 제품내역 -->
             <div class="info">
                 <ul>
-                    <label for="rd1" class="box1">주문내역<span class="next"></span></label>
+                    <label for="rd1" class="box1 box2">주문내역<span class="next"></span></label>
                     <label for="rd2" class="box1" onclick="diriver_alert()">배송지 관리<span class="next"></span></label>
                     <label for="rd3" class="box1">상품 후기<span class="next"></span></label>
                     <label for="rd4" class="box1">상품 문의<span class="next"></span></label>
@@ -207,8 +207,10 @@
                             배송완료
                         </div>
                     </div>
-                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                               <div class="prvBtn" >
+                                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                                </div>
                 </div>
 
                 <!-- 상품 후기 -->
@@ -225,8 +227,8 @@
                     </ul>
 
                     <div class="review">
-                        <div class="review_can">작성가능 후기(0)</div>
-                        <div class="review_done" onclick="review_done_alert()">작성완료 후기(0)</div>
+                        <div class="review_can reviewBtn reviewBtn1">작성가능 후기(0)</div>
+                        <div class="review_done reviewBtn" onclick="review_done_alert()">작성완료 후기(0)</div>
                     </div>
 
                     <div class="review_content">
@@ -273,8 +275,10 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                               <div class="prvBtn" >
+                                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                                </div>
                 </div>
 
 
@@ -288,8 +292,8 @@
                     <div class="infomation">
                         <ul class="infomation_ul">
                             <li class="infomation_li_1 font">제목</li>
-                            <li class="infomation_li_2 font">작성일</li>
                             <li class="infomation_li_2 font">답변상태</li>
+                            <li class="infomation_li_2 font">작성일</li>
                         </ul>
 
 
@@ -305,7 +309,7 @@
                                     22.11.30
                                 </div>
                                 <div class="answer">
-                                    답변대기
+                                    <p>답변대기</p>
                                 </div>
 
                             </div>
@@ -319,6 +323,10 @@
 
                             </div >
 
+                               <div class="prvBtn w100" >
+                                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                                </div>
                         </label>
 
                         <!-- 수정 팝업 -->
@@ -360,12 +368,12 @@
                                     <div class="popup-body3">
                                         <div class="body-content3">
                                             <div class="body-titlebox3">
-                                                <h3>후기가 등록되었습니다.</h3>
+                                                <p>후기가 등록되었습니다.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="popup-foot3">
-                                        <span id="confirm2">확인</span>
+                                        <div id="confirm2">확인</div>
                                     </div>
                                 </div>
                             </div>
@@ -416,8 +424,10 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+<!--                    <div class="prvBtn" >
+                        <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                        <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                    </div> -->
 
                 </div>
 
@@ -432,8 +442,8 @@
                     <div class="infomation">
                         <ul class="infomation_ul">
                             <li class="infomation_li_1 font">쿠폰명</li>
-                            <li class="infomation_li_2 font">사용가능기간</li>
                             <li class="infomation_li_2 font">사용여부</li>
+                            <li class="infomation_li_2 font">사용기간</li>
                         </ul>
                         <ul class="coupon_ul">
                             <li class="coupon_li_first">첫구매 할인 쿠폰
@@ -448,9 +458,10 @@
 
 
                     </div>
-                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
-
+                    <div class="prvBtn" >
+                        <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                        <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                    </div>
                 </div>
 
 
@@ -492,8 +503,10 @@
                     <!-- 몇개를 입력받을지 모르고 같은 변수에 값을 더해서 총합을 만든다. -->
                     <div class="sum">총 합계 : </div>
                     <a href="http://localhost:8080/egan/payment"><div class="payment">결제하기</div></a>
-                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
-                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                               <div class="prvBtn" >
+                                    <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
+                                    <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
+                                </div>
                 </div>
 
 

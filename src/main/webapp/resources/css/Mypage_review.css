@@ -18,26 +18,42 @@
 .period_search_li_border{
     border-right: none;
 }
-.review{
-    width:calc(100% - 200px);
+.review {
+    width: calc(100% - 200px);
     height: 70px;
     float: left;
     margin-left: 50px;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     text-align: center;
     line-height: 70px;
     font-weight: 600;
+    margin-bottom: 20px;
 }
-.review_can{
-    border-right: 1px solid grey;
-    width: 49%;
+.review_can {
+    border: 1px solid grey;
+/*     border-bottom: 4px solid #fec900; */
+    /* width: 50%; */
+/*     color: #fec900; */
+    width: calc(99%/2);
     height: 100%;
     display: inline-block;
+    cursor: pointer;
 }
-.review_done{
-    width: 49%;
+.review_done {
+    width: calc(99%/2);
     height: 100%;
     display: inline-block;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+.BtnColorChg {
+    border-bottom: 4px solid #fec900;
+    color: #fec900;
+
+}
+.reviewBtn1{
+    border-bottom: 4px solid #fec900;
+    color: #fec900;
 }
 .review_content{
     width:calc(100% - 200px);
@@ -62,15 +78,16 @@
     padding-left:30px ;
 }
 .review_content_botton{
-    top:35px;
-    left: 850px;
-    display: inline-block;
-    position: absolute;
-    width: 100px;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid rgb(202, 199, 199);
-    line-height: 40px;
+position: absolute;
+    top: 40px;
+    left: 90%;
     text-align: center;
-    font-weight: 600;
+    color: white;
+    border: 1p;
+    border: 1px solid;
+    line-height: 30px;
+    height: 30px;
+    width: 70px;
+    background: rgb(255 116 121);
+    border-radius: 7px;
 }

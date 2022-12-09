@@ -9,12 +9,10 @@
     text-align: center;
     line-height: 45px;
 }
-.infomation_li_1{
-
+.infomation_li_1 {
     float: left;
-    width: calc(100% - 200px);
+    width: calc(100% - 400px);
     height: 45px;
-
 }
 .infomation_li_2{
     float: right;
@@ -41,30 +39,42 @@
     text-align: center;
 }
 .coupon_li_2{
-    width: 100px;
-    height: 100%;
-    display: inline-block;
-    padding-left:20px;
+
 
     position: absolute;
     top: 60px;
     left: 880px;
     text-align: center;
+    
+    color: white;
+    border: 1p;
+    border: 1px solid;
+    line-height: 30px;
+    height: 30px;
+    width: 70px;
+    /* text-align: center; */
+    background: rgb(255 116 121);
+    background: #b5b5b5;
+    border-radius: 7px;
+    margin-left: 20px;
 }
 
-.coupon_li_first{
+
+.coupon_li_first {
     display: inline-block;
     width: 300px;
     height: 100%;
-    margin:30px ;
+    margin: 30px;
     padding: 20px;
-    border: 1px solid #FFE178;
-    font-size: 25px;
+    border: 3px solid #FFE178;
+    font-size: 19px;
     font-weight: 600;
 }
-.copun_txt1{
-    font-size: 20px;
-    color:red ;
+.copun_txt1 {
+    font-size: 22px;
+    width: 100%;
+    margin: 10px 0;
+    color: red;
     display: inline-block;
 }
 .copun_txt2{
