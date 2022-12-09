@@ -135,7 +135,9 @@
   <c:forEach var="dto" items="${list }">
     <div class="menu_list">
       <div class="menu_item">
-        <img src="<c:url value='${dto.saveImage}'/>" alt="">
+        <a href="http://localhost:8080/egan/real_detail?${dto.p_index}">
+        <img src="<c:url value='${dto.saveImage}'/>" alt="c">
+        </a>
         <button class="menu_basket_btn"></button>
       </div>
       <div class="menu_txt">
@@ -249,8 +251,5 @@
 
 </div>
 
-<script>
-
-</script>
 </body>
 </html>
