@@ -139,10 +139,10 @@
             </div>
             <div class="detail_item_box">
                 <div class="tb_dt" id="item_ex">
-                    <img src="<c:url value='/img/daily/1-1.jpg'/>" alt="비닐장갑">
+                    <img src="<c:url value='${dto.detail_image1}'/>" alt="${dto.p_name}">
                 </div>
                 <div class="tb_dt" id="item_ex_dt">
-                    <img src="<c:url value='/img/daily/1-2.jpg'/>" alt="비닐장갑">
+                    <img src="<c:url value='${dto.detail_image2}'/>" alt="${dto.p_name}">
                 </div>
                 <!-- 리뷰 -->
                 <div class="tb_dt" id="item_review">
