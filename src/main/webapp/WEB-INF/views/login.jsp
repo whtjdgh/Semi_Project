@@ -44,12 +44,12 @@
             <div class="ham_line" id="line_bot"></div>
             <div class="ham_menu">
                 <ul class="ham_ul">
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
+                    <li><a href="http://localhost:8080/egan/login">Login</a></li>
+                    <li><a href="http://localhost:8080/egan/real_register">Register</a></li>
                     <li class="hr"></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">BRAND</a></li>
-                    <li><a href="#">COMMUNITY</a></li>
+                    <li><a href="http://localhost:8080/egan/detail">SHOP</a></li>
+                    <li><a href="http://localhost:8080/egan/brand">BRAND</a></li>
+                    <li><a href="http://localhost:8080/egan/brand">COMMUNITY</a></li>
 
                 </ul>
             </div>
@@ -62,7 +62,7 @@
         <div class="nav">
             <a href="http://localhost:8080/egan/detail">SHOP</a>
             <a href="http://localhost:8080/egan/brand">BRAND</a>
-            <a href="">COMMUNITY</a>
+            <a href="http://localhost:8080/egan/brand">COMMUNITY</a>
         </div>
 
         <div class="menu">
@@ -86,7 +86,7 @@
 <div class="wrap">
     <div class="login_text">로그인</div>
     <input type="text" id="m_id" class="id" placeholder="아이디를 입력 해주세요.">
-    <input type="text" id="m_pwd" class="pw" placeholder="비밀번호를 입력 해주세요.">
+    <input type="password" id="m_pwd" class="pw" placeholder="비밀번호를 입력 해주세요.">
     <ul class="find_wrap">
         <li class="remember">
             <input type="checkbox" id="keep">
