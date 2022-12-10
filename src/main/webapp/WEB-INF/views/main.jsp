@@ -123,12 +123,12 @@
         <div class="h_menu">
           <c:if test="${m_id != null}">
             <a href="http://localhost:8080/egan/logout.do">Logout</a>
-            <a href="http://localhost:8080/egan/real_register">MyPage</a>
+            <a href="http://localhost:8080/egan/myPage">MyPage</a>
           </c:if>
 
           <c:if test="${m_id == null}">
             <a href="http://localhost:8080/egan/login">Login</a>
-            <a href="http://localhost:8080/egan/real_register">Register</a>
+            <a href="http://localhost:8080/egan/myPage">Register</a>
           </c:if>
         </div>
         <div class="h_icon">
