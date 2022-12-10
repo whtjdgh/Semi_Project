@@ -58,6 +58,9 @@
     .contact_information {
         width: 130px;
     }
+    .coupon_li_first {
+    width: 200px;
+}
     .coupon_li_1 {
         left: 260px;
     }
@@ -81,5 +84,6 @@
     }
     .id_pw_box {
         margin-left: 40px;
+        width: 350px;
     }
 }
