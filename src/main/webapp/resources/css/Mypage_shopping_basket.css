@@ -8,20 +8,20 @@
     height: 30px;
 }
 .letf{
-    position: absolute;
-    left: 700px;
-    top:60px;
+position: absolute;
+    left: 600px;
+    top: 60px;
 }
 .right{
     position: absolute;
-    left:760px;
-    top:60px;
+    left: 660px;
+    top: 60px;
 }
 #txt_qty {
     left: 150px;
     position: absolute;
-    left:730px;
-    top:60px;
+    left: 630px;
+    top: 60px;
     width: 30px;
     height: 30px;
     text-align: center;
@@ -48,10 +48,10 @@
 }
 /* 체크박스 */
 .chk {
-    float: left;
-    display:inline-block;
+float: left;
+    display: inline-block;
     margin-top: 75px;
-    margin-left: 20px;
+    margin-left: 21px;
     width: 15px;
     height: 15px;
 }
@@ -83,10 +83,10 @@
     font-size: 20px;
 }
 .payment{
-   width: 150px;
+    width: 150px;
     height: 50px;
     margin-top: 30px;
-    margin-left: 700px;
+    margin-left: 400px;
     background-color: #FFBF00;
     border-radius: 5px;
     float: left;
