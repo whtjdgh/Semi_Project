@@ -694,11 +694,11 @@ button{
 }
 /* login */
 .logChk_popup {
-    width: 450px;
-    height: 250px;
+    width: 420px;
+    height: 200px;
     background: #fff;
     border: 1px solid rgba(41, 40, 40, 0.3);
-    padding: 30px 0;
+    padding: 40px 0;
     box-sizing: border-box;
     text-align: center;
     position: fixed;
@@ -707,16 +707,20 @@ button{
     transform: translate(-50%, -50%);
     z-index: 9999;
     display: none;
+    border-radius: 10px;
 }
 .logChk_txt {
-    padding-top: 30px;
+/*     padding-top: 30px; */
     box-sizing: border-box;
 }
 .logChk_txt p {
     color: rgb(96, 95, 95);
     font-size: 18px;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 28px;
+    /* font-weight: 600; */
+    font-size: 16px;
+    /* margin: 0; */
 }
 .logChk_btn {margin-top:10px;}
 #log_cancle_btn {
@@ -725,15 +729,20 @@ button{
     border: 1px solid;
     background: #fff;
     color: #ffbf00;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 5px;
 }
 #logChk_commit_btn {
     width: 130px;
-    height: 50px;
+    height: 52px;
     border: 1px solid;
     background: #ffbf00;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 600;
 }
 
 /* /////////////  푸터 //////////// */
