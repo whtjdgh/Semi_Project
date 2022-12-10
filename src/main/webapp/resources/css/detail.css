@@ -301,7 +301,7 @@ input::placeholder {
     margin: 0 auto 150px;
     padding: 50px 0 0;
     max-width: 90vw;
-
+justify-content: flex-start;
 }
 
 .menu_list{
@@ -312,7 +312,7 @@ input::placeholder {
 
     box-sizing: border-box;
     overflow: hidden;
-
+margin-left: 15px;
      /*background-color: red;*/
 }
 .box {
