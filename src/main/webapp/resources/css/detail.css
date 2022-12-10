@@ -301,7 +301,7 @@ input::placeholder {
     margin: 0 auto 150px;
     padding: 50px 0 0;
     max-width: 90vw;
- gap: 20px;
+/*  gap: 20px; */
     justify-content: flex-start;
 }
 
@@ -315,6 +315,10 @@ input::placeholder {
     overflow: hidden;
 
      /*background-color: red;*/
+    margin-right: 15px;
+}
+.menu_list:nth-child(4n){
+    margin-right: 0;
 }
 .box {
     width: 100px;
