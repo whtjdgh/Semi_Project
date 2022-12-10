@@ -94,4 +94,29 @@ function moveSlide(num) {
   
 }
 
+let timer = undefined;
+
+function autoslide() {
+    if(timer == undefined) {
+        timer = setInterval(function () {
+            moveSlide(current_index + 1);
+        }, 3000)
+    }
+}
+
+autoslide();
+
+function stopSlide(){
+    clearInterval(timer);
+    timer = undefined;
+}
+
+slide_wrap.addEventListener('mouseenter', function(){
+    stopSlide();
+})
+
+slide_wrap.addEventListener('mouseleave', function() {
+    autoslide();
+})
+
 

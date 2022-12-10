@@ -24,6 +24,9 @@ ul{list-style: none; margin: 0; padding: 0;}
 
     display: flex;
     justify-content: space-between;
+
+
+
 }
 
 a{
@@ -462,7 +465,7 @@ input::placeholder {
     box-sizing: border-box;
 
     display: none;
-    z-index: 9999;
+
 }
 .popup_inner_box{
     width: 100%;
@@ -646,7 +649,7 @@ button{
     padding: 40px;
     box-sizing: border-box;
     display: none;
-
+    z-index: 9999;
 }
 .basket_popup > div {
        width: 88%;
