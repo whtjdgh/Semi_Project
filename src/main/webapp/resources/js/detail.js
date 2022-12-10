@@ -21,7 +21,7 @@ $(document).ready(function () {
         $('.layer').css({display:'none'})
         $('html').css({overflowY:'visible'})
     })
-    $('#put').click(function () {
+    $('#check').click(function () {
         location.href="http://localhost:8080/egan/myPage"
     })
     $('#contiune').click(function () {
