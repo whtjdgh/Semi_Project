@@ -90,6 +90,9 @@ td{
 }
 
 /* 탭으로 나타나는 부분 */
+.content_area {
+     width: 0; 
+}
 .content{
     /* position:relative; */
     width: 100%;
@@ -164,3 +167,5 @@ input {display: none;}
 .input_block{
     display:inline-block;
 }
+
+
