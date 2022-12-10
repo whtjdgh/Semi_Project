@@ -25,6 +25,9 @@ $(document).ready(function () {
         $('.basket_popup').css({
             display: 'block',
         })
+           $('.popup_outer_box').css({
+            display: 'none',
+        })
     })
     $('#check').click(function () {
         location.href="http://localhost:8080/egan/myPage"
