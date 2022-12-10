@@ -212,29 +212,3 @@ input {display: none;}
         width: 100px;
     }
 }
-@media screen and (max-width: 768px) {
-    .show_info_box{
-        width: calc((100% - 20px *4) / 2);
-        height: 150px;
-        line-height: 70px;
-        margin-bottom: 25px;
-        padding: 25px;
-    }
-    .show_info{
-        height: 400px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-@media screen and (max-width: 480px) {
-    .show_info_box{
-        width:80%;
-        height: 50px;
-        padding: 0px;
-        margin-bottom: 10px;
-        line-height: 50px;
-    }
-    .show_info{
-        height: 300px;
-    }
-}
