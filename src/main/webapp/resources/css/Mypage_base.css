@@ -122,9 +122,8 @@ td{
     float: right;
 }
 .infomation{
-/*        position: relative; */
     float: right;
-    width:calc(100% - 200px);
+    width: calc(100% - 150px);
     height: 150px;
 }
 .img{
