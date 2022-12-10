@@ -44,8 +44,15 @@
             <div class="ham_line" id="line_bot"></div>
             <div class="ham_menu">
                 <ul class="ham_ul">
-                    <li><a href="http://localhost:8080/egan/login">Login</a></li>
-                    <li><a href="http://localhost:8080/egan/real_register">Register</a></li>
+                    <c:if test="${m_id != null}">
+                        <li> <a href="http://localhost:8080/egan/logout.do">Logout</a></li>
+                        <li><a href="http://localhost:8080/egan/myPage">MyPage</a></li>
+                    </c:if>
+
+                    <c:if test="${m_id == null}">
+                        <li><a href="http://localhost:8080/egan/login">Login</a></li>
+                        <li><a href="http://localhost:8080/egan/real_register">Register</a></li>
+                    </c:if>
                     <li class="hr"></li>
                     <li><a href="http://localhost:8080/egan/detail">SHOP</a></li>
                     <li><a href="http://localhost:8080/egan/brand">BRAND</a></li>
