@@ -79,13 +79,13 @@
             <div class="ham_menu">
                 <ul class="ham_ul">
                     <c:if test="${m_id != null}">
-                        <a href="http://localhost:8080/egan/logout.do">Logout</a>
-                        <a href="http://localhost:8080/egan/myPage">MyPage</a>
+                        <li> <a href="http://localhost:8080/egan/logout.do">Logout</a></li>
+                        <li><a href="http://localhost:8080/egan/myPage">MyPage</a></li>
                     </c:if>
 
                     <c:if test="${m_id == null}">
-                        <a href="http://localhost:8080/egan/login">Login</a>
-                        <a href="http://localhost:8080/egan/real_register">Register</a>
+                        <li><a href="http://localhost:8080/egan/login">Login</a></li>
+                        <li><a href="http://localhost:8080/egan/real_register">Register</a></li>
                     </c:if>
                     <li class="hr"></li>
                     <li><a href="#">SHOP</a></li>
@@ -109,13 +109,13 @@
         <div class="menu">
             <div class="h_menu">
                 <c:if test="${m_id != null}">
-                    <li> <a href="http://localhost:8080/egan/logout.do">Logout</a></li>
-                    <li><a href="http://localhost:8080/egan/myPage">MyPage</a></li>
+                    <a href="http://localhost:8080/egan/logout.do">Logout</a>
+                    <a href="http://localhost:8080/egan/myPage">MyPage</a>
                 </c:if>
 
                 <c:if test="${m_id == null}">
-                    <li><a href="http://localhost:8080/egan/login">Login</a></li>
-                    <li><a href="http://localhost:8080/egan/real_register">Register</a></li>
+                    <a href="http://localhost:8080/egan/login">Login</a>
+                    <a href="http://localhost:8080/egan/real_register">Register</a>
                 </c:if>
             </div>
             <div class="h_icon">
