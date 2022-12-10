@@ -646,6 +646,7 @@ button{
     padding: 40px;
     box-sizing: border-box;
     display: none;
+    z-index: 9999;
 }
 .basket_popup > div {
        width: 88%;
