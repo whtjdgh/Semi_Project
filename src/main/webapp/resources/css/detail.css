@@ -354,8 +354,8 @@ margin-left: 15px;
     background: pink;
 
 }
-.menu_item:hover > img{
-    transform: scale(1.4);
+.menu_item:hover  img{
+    transform: scale(1.2);
 }
 
 .menu_txt{
