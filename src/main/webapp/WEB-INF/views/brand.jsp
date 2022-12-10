@@ -80,7 +80,7 @@
                 <ul class="ham_ul">
                     <c:if test="${m_id != null}">
                         <a href="http://localhost:8080/egan/logout.do">Logout</a>
-                        <a href="http://localhost:8080/egan/real_register">MyPage</a>
+                        <a href="http://localhost:8080/egan/myPage">MyPage</a>
                     </c:if>
 
                     <c:if test="${m_id == null}">
@@ -110,7 +110,7 @@
             <div class="h_menu">
                 <c:if test="${m_id != null}">
                     <a href="http://localhost:8080/egan/logout.do">Logout</a>
-                    <a href="http://localhost:8080/egan/real_register">MyPage</a>
+                    <a href="http://localhost:8080/egan/myPage">MyPage</a>
                 </c:if>
 
                 <c:if test="${m_id == null}">
