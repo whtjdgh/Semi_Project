@@ -9,7 +9,7 @@ $(document).ready(function () {
     $(document).on('click', '#log_cancle_btn', function() {
         $('.logChk_popup').css({display:'none'})
         $('.layer').css({display:'none'})
-        $('html').css({overflowY:'visible'})
+//         $('html').css({overflowY:'visible'})
     })
     $(document).on('click', '#logChk_commit_btn', function() {
         location.href="http://localhost:8080/egan/login"
