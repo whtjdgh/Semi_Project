@@ -462,6 +462,7 @@ input::placeholder {
     box-sizing: border-box;
 
     display: none;
+        z-index: 9999;
 
 }
 .popup_inner_box{
