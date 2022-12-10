@@ -21,6 +21,11 @@ $(document).ready(function () {
         $('.layer').css({display:'none'})
         $('html').css({overflowY:'visible'})
     })
+      $('#put').click(function () {
+        $('.basket_popup').css({
+            display: 'block',
+        })
+    })
     $('#check').click(function () {
         location.href="http://localhost:8080/egan/myPage"
     })
