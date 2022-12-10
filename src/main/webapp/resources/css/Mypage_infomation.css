@@ -26,11 +26,11 @@ input {
     margin: 10px 0;
 }
 .id_pw_box{
-    /* width: 400px; */
+width: 400px;
     max-width: 90vw;
     height: 300px;
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 150px;
 }
 .id,
 .pw {
