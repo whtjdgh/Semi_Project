@@ -19,7 +19,7 @@ $(document).ready(function () {
             display: 'none',
         })
         $('.layer').css({display:'none'})
-        $('html').css({overflowY:'visible'})
+//         $('html').css({overflowY:'visible'})
     })
       $('#put').click(function () {
         $('.basket_popup').css({
@@ -43,7 +43,7 @@ $(document).ready(function () {
             pointerEvents: 'auto',
         })
         $('.layer').css({display:'none'})
-        $('html').css({overflowY:'visible'})
+//         $('html').css({overflowY:'visible'})
     })
     $('#check').click(function () {
         location.href="http://localhost:8080/egan/myPage"
