@@ -443,13 +443,11 @@
             <c:if test="${m_id != null}">
                 $('.cart_popup').css({display:'block'})
                 $('.layer').css({display:'block'})
-                $('html').css({overflowY:'hidden'})
             </c:if>
 
             <c:if test="${m_id == null}">
                 $('.logChk_popup').css({display:'block'})
                 $('.layer').css({display:'block'})
-                $('html').css({overflowY:'hidden'})
             </c:if>
         })
         $(document).on('click', '#btn_pay', function () {
@@ -460,33 +458,28 @@
             <c:if test="${m_id == null}">
             $('.logChk_popup').css({display:'block'})
             $('.layer').css({display:'block'})
-            $('html').css({overflowY:'hidden'})
             </c:if>
         })
         $(document).on('click', '#rev_btn', function () {
             <c:if test="${m_id != null}">
             $('.review_popup').css({display:'block'})
             $('.layer').css({display:'block'})
-            $('html').css({overflowY:'hidden'})
             </c:if>
 
             <c:if test="${m_id == null}">
             $('.logChk_popup').css({display:'block'})
             $('.layer').css({display:'block'})
-            $('html').css({overflowY:'hidden'})
             </c:if>
         })
         $(document).on('click', '#qna_btn', function () {
             <c:if test="${m_id != null}">
             $('.qna_popup').css({display:'block'})
             $('.layer').css({display:'block'})
-            $('html').css({overflowY:'hidden'})
             </c:if>
 
             <c:if test="${m_id == null}">
             $('.logChk_popup').css({display:'block'})
             $('.layer').css({display:'block'})
-            $('html').css({overflowY:'hidden'})
             </c:if>
         })
 

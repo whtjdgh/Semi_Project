@@ -30,7 +30,6 @@ $(document).ready(function() {
     $(document).on('click', '#log_cancle_btn', function() {
         $('.logChk_popup').css({display:'none'})
         $('.layer').css({display:'none'})
-        $('html').css({overflowY:'visible'})
     })
     $(document).on('click', '#logChk_commit_btn', function() {
         location.href="http://localhost:8080/egan/login"
@@ -39,7 +38,6 @@ $(document).ready(function() {
     $(document).on('click', '#cart_stay_btn', function() {
         $('.cart_popup').css({display: 'none'})
         $('.layer').css({display:'none'})
-        $('html').css({overflowY:'visible'})
     })
     $(document).on('click', '#cart_commit_btn', function() {
         location.href="http://localhost:8080/egan/myPage"
@@ -49,23 +47,19 @@ $(document).ready(function() {
     $(document).on('click', '#review_cancle_btn', function() {
         $('.review_popup').css({display: 'none'})
         $('.layer').css({display:'none'})
-        $('html').css({overflowY:'visible'})
     })
     $(document).on('click', '#review_commit_btn', function() {
         $('.review_popup').css({display: 'none'})
         $('.layer').css({display:'none'})
-        $('html').css({overflowY:'visible'})
     })
     // 문의 팝업
     $(document).on('click', '#qna_cancle_btn', function() {
         $('.qna_popup').css({display: 'none'})
         $('.layer').css({display:'none'})
-        $('html').css({overflowY:'visible'})
     })
     $(document).on('click', '#qna_commit_btn', function() {
         $('.qna_popup').css({display: 'none'})
         $('.layer').css({display:'none'})
-        $('html').css({overflowY:'visible'})
     })
 
 

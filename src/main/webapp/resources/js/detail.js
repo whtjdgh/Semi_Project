@@ -18,20 +18,19 @@ $(document).ready(function () {
         $('.popup_outer_box').css({
             display: 'none',
         })
-        $('.layer').css({
+        $('.layer').css({display:'none'})
+//         $('html').css({overflowY:'visible'})
+    })
+      $('#put').click(function () {
+        $('.basket_popup').css({
+            display: 'block',
+        })
+           $('.popup_outer_box').css({
             display: 'none',
         })
     })
-    $('#put').click(function () {
-        $('.popup_outer_box').css({
-            display: 'none',
-        })
-        $('.basket_popup').css({
-            display: 'block'
-        })
-        $('.menu_basket_btn').css({
-            pointerEvents: 'none',
-        })
+    $('#check').click(function () {
+        location.href="http://localhost:8080/egan/myPage"
     })
     $('#contiune').click(function () {
         $('.basket_popup').css({
@@ -43,20 +42,11 @@ $(document).ready(function () {
         $('.menu_basket_btn').css({
             pointerEvents: 'auto',
         })
-        $('.layer').css({
-            display: 'none',
-        })
+        $('.layer').css({display:'none'})
+//         $('html').css({overflowY:'visible'})
     })
     $('#check').click(function () {
-        $('.basket_popup').css({
-            display: 'none',
-        })
-        $('.popup_outer_box').css({
-            display: 'none',
-        })
-        $('.menu_basket_btn').css({
-            pointerEvents: 'auto',
-        })
+        location.href="http://localhost:8080/egan/myPage"
     })
 
 
