@@ -18,6 +18,9 @@ $(document).ready(function () {
         $('.popup_outer_box').css({
             display: 'none',
         })
+        $('.layer').css({
+            display: 'none',
+        })
     })
     $('#put').click(function () {
         $('.popup_outer_box').css({
@@ -39,6 +42,9 @@ $(document).ready(function () {
         })
         $('.menu_basket_btn').css({
             pointerEvents: 'auto',
+        })
+        $('.layer').css({
+            display: 'none',
         })
     })
     $('#check').click(function () {
