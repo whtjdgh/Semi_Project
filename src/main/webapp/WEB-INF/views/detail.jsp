@@ -155,7 +155,6 @@
         <div class="menu_txt">
           <p class="p_name">${dto.p_name}</p>
           <p class="p_sale">32%</p>
-          <p class="p_sale">32%</p>
           <p class="p_price">${dto.p_price}</p>
         </div>
       </div>
@@ -208,7 +207,18 @@
     <button id="check">확인하기</button>
   </div>
 </div>
+<!-- 로그인 팝업 -->
+<div class="logChk_popup">
+  <div class="logChk_txt">
+    <p>로그인이 필요한 서비스입니다.</p>
+    <p>로그인페이지로 이동하시겠습니까?</p>
+  </div>
+  <div class="logChk_btn">
+    <input type="button" value="취소" id="log_cancle_btn">
+    <input type="button" value="확인하기" id="logChk_commit_btn" name="logChk">
+  </div>
 
+</div>
 <button class="top_btn">TOP</button>
 
 
@@ -257,7 +267,7 @@
 
 
 
-
+<div class="layer"></div>
 
 </div>
 
@@ -316,6 +326,21 @@
 
   }
 
+  $(document).ready(function (){
+      $(document).on('click', '.menu_basket_btn', function () {
+        <c:if test="${m_id != null}">
+        $('.popup_outer_box').css({display:'block'})
+        $('.layer').css({display:'block'})
+        $('html').css({overflowY:'hidden'})
+        </c:if>
+
+        <c:if test="${m_id == null}">
+        $('.logChk_popup').css({display:'block'})
+        $('.layer').css({display:'block'})
+        $('html').css({overflowY:'hidden'})
+        </c:if>
+      })
+  })
 </script>
 
 </body>

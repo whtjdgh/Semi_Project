@@ -1,9 +1,18 @@
 $(document).ready(function () {
 
-    $('.menu_basket_btn').click(function () {
-        $('.popup_outer_box').css({
-            display: 'block',
-        })
+    // $('.menu_basket_btn').click(function () {
+    //     $('.popup_outer_box').css({
+    //         display: 'block',
+    //     })
+    // })
+    // 로그인 버튼
+    $(document).on('click', '#log_cancle_btn', function() {
+        $('.logChk_popup').css({display:'none'})
+        $('.layer').css({display:'none'})
+        $('html').css({overflowY:'visible'})
+    })
+    $(document).on('click', '#logChk_commit_btn', function() {
+        location.href="http://localhost:8080/egan/login"
     })
     $('#cancel').click(function () {
         $('.popup_outer_box').css({
