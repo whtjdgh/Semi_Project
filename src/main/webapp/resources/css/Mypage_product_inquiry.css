@@ -28,8 +28,8 @@
         justify-content: flex-start;
 }
 .contact_information{
-    display: inline-block;
-        width: 620px;
+display: inline-block;
+    width: 600px;
     height: 150px;
     line-height: 150px;
     font-weight: 500;
@@ -37,7 +37,7 @@
 }
 .date_created,
 .answer {
-    width: 120px;
+    width: 95px;
     height: 150px;
     line-height: 150px;
 /*     color:gray; */
