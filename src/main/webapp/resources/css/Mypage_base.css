@@ -167,3 +167,75 @@ input {display: none;}
 }
 
 
+
+
+
+
+/ ********************* 반응형 ********************* /
+
+@media screen and (max-width: 1024px) {
+   
+    .contact_information {
+        width: 350px;
+    }
+    .coupon_li_1 {
+        left: 520px;
+    }
+    .coupon_li_2 {
+        left: 630px;
+    }
+    .chk {
+        margin-left: 21px;
+    }
+    .letf {
+        left: 600px;
+    }
+    #txt_qty {
+        left: 630px;
+    }
+    .right {
+        left: 660px;
+    }
+    .payment {
+        margin-left: 400px;
+    }
+    .coupon_li_1 {
+        left: 520px;
+    }
+    .coupon_li_2 {
+        left: 630px;
+        margin-left: 20px;
+    }
+    .contact_information {
+        width: 350px;
+    }
+    .date_created, .answer {
+        width: 100px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .show_info_box{
+        width: calc((100% - 20px *4) / 2);
+        height: 150px;
+        line-height: 70px;
+        margin-bottom: 25px;
+        padding: 25px;
+    }
+    .show_info{
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 480px) {
+    .show_info_box{
+        width:80%;
+        height: 50px;
+        padding: 0px;
+        margin-bottom: 10px;
+        line-height: 50px;
+    }
+    .show_info{
+        height: 300px;
+    }
+}
