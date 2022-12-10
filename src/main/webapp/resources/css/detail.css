@@ -312,7 +312,22 @@ input::placeholder {
 
      /*background-color: red;*/
 }
+.box {
+    width: 100px;
+    height: 100px;
+    background: #000000;
+}
+.menu_list2{
+    width: calc((100% - (25px * 3))/ 4);
+    /*height: 500px;*/
 
+    margin-bottom: 100px;
+
+    box-sizing: border-box;
+    overflow: hidden;
+
+    /*background-color: red;*/
+}
 .menu_item{
     /* height: 400px; */
     width: 100%;

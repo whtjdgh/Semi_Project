@@ -85,32 +85,32 @@ $(document).ready(function () {
         })
     })
 
-    let d_hei = $(document).height();
-    $(window).scroll(function () {
-        let count = 0;
-        let s_bot = $(window).scrollTop() + $(window).height();
-
-        if(count < 4 && d_hei <= s_bot) {
-            for(let i=0; i<4; i++) {
-               $('.menu_box').append(`<c:forEach var="dto" items="${list }">
-                                            <div class="menu_list">
-                                              <div class="menu_item">
-                                                <a href="http://localhost:8080/egan/real_detail/${dto.p_index}">
-                                                <img src="<c:url value='${dto.saveImage}'/>" alt="c">
-                                                </a>
-                                                <button class="menu_basket_btn"></button>
-                                              </div>
-                                              <div class="menu_txt">
-                                                <p class="p_name">${dto.p_name}</p>
-                                                <p class="p_sale">32%</p>
-                                                <p class="p_sale">32%</p>
-                                                <p class="p_price">${dto.p_price}</p>
-                                              </div>
-                                            </div>
-                                      </c:forEach>`)
-            }
-            d_hei = s_bot;
-            count++
-        }
-    })
+    // let d_hei = $(document).height();
+    // $(window).scroll(function () {
+    //     let count = 0;
+    //     let s_bot = $(window).scrollTop() + $(window).height();
+    //
+    //     if(count < 4 && d_hei <= s_bot) {
+    //         for(let i=0; i<4; i++) {
+    //            $('.menu_box').append(`<c:forEach var="dto" items="${list }">
+    //                                         <div class="menu_list">
+    //                                           <div class="menu_item">
+    //                                             <a href="http://localhost:8080/egan/real_detail/${dto.p_index}">
+    //                                             <img src="<c:url value='${dto.saveImage}'/>" alt="c">
+    //                                             </a>
+    //                                             <button class="menu_basket_btn"></button>
+    //                                           </div>
+    //                                           <div class="menu_txt">
+    //                                             <p class="p_name">${dto.p_name}</p>
+    //                                             <p class="p_sale">32%</p>
+    //                                             <p class="p_sale">32%</p>
+    //                                             <p class="p_price">${dto.p_price}</p>
+    //                                           </div>
+    //                                         </div>
+    //                                   </c:forEach>`)
+    //         }
+    //         d_hei = s_bot;
+    //         count++
+    //     }
+    // })
 })

@@ -78,8 +78,15 @@
             <div class="ham_line" id="line_bot"></div>
             <div class="ham_menu">
                 <ul class="ham_ul">
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
+                    <c:if test="${m_id != null}">
+                        <a href="http://localhost:8080/egan/logout.do">Logout</a>
+                        <a href="http://localhost:8080/egan/real_register">MyPage</a>
+                    </c:if>
+
+                    <c:if test="${m_id == null}">
+                        <a href="http://localhost:8080/egan/login">Login</a>
+                        <a href="http://localhost:8080/egan/real_register">Register</a>
+                    </c:if>
                     <li class="hr"></li>
                     <li><a href="#">SHOP</a></li>
                     <li><a href="#">BRAND</a></li>
@@ -101,8 +108,15 @@
 
         <div class="menu">
             <div class="h_menu">
-          <a href="http://localhost:8080/egan/login">Login</a>
-          <a href="http://localhost:8080/egan/real_register">Register</a>
+                <c:if test="${m_id != null}">
+                    <a href="http://localhost:8080/egan/logout.do">Logout</a>
+                    <a href="http://localhost:8080/egan/real_register">MyPage</a>
+                </c:if>
+
+                <c:if test="${m_id == null}">
+                    <a href="http://localhost:8080/egan/login">Login</a>
+                    <a href="http://localhost:8080/egan/real_register">Register</a>
+                </c:if>
             </div>
             <div class="h_icon">
                 <div class="shopping"></div>

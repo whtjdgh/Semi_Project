@@ -65,8 +65,15 @@
       <div class="ham_line" id="line_bot"></div>
       <div class="ham_menu">
         <ul class="ham_ul">
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Register</a></li>
+          <c:if test="${m_id != null}">
+            <a href="http://localhost:8080/egan/logout.do">Logout</a>
+            <a href="http://localhost:8080/egan/real_register">MyPage</a>
+          </c:if>
+
+          <c:if test="${m_id == null}">
+            <a href="http://localhost:8080/egan/login">Login</a>
+            <a href="http://localhost:8080/egan/real_register">Register</a>
+          </c:if>
           <li class="hr"></li>
           <li><a href="#">SHOP</a></li>
           <li><a href="#">BRAND</a></li>
@@ -265,7 +272,7 @@
 
     let cate_value = data;
     console.log(cate_value);
-
+    $('.menu_list').remove();
     $.ajax({
       url: '/egan/select_cate',
       type: 'POST',
@@ -274,8 +281,8 @@
       success: function(data){
         if(data = true){
           console.log("성공");
-          $('.footer').append(`<c:forEach var="dto2" items="${cate_list}">
-                                            <div class="menu_list">
+          $('.menu_box').append(`<c:forEach var="dto2" items="${cate_list}">
+                                            <div class="menu_list2">
                                               <div class="menu_item">
                                                 <a href="http://localhost:8080/egan/real_detail/${dto2.p_index}">
                                                 <img src="<c:url value='${dto2.saveImage}'/>" alt="c">
@@ -291,6 +298,7 @@
                                             </div>
                                       </c:forEach>`)
 
+          // $('.menu_box').append(`<h1>hello</h1>`)
         }else if(date = false){
           console.log("실패");
         }
