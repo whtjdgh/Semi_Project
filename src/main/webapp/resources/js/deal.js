@@ -1,27 +1,23 @@
 $(document).ready(function() {
 
     // 장바구니 버튼
-    $(document).on('click', '#btn_cart', function() {
-       $('.cart_popup').css({display:'block'})
-        $('.layer').css({display:'block'})
-    })
 
     // 구매버튼
-    $(document).on('click', '#btn_pay', function() {
-        location.href="http://localhost:8080/egan/myPage"
-    })
+    // $(document).on('click', '#btn_pay', function() {
+    //     location.href="http://localhost:8080/egan/myPage"
+    // })
 
     // 리뷰 버튼
-    $(document).on('click', '#rev_btn', function() {
-        $('.review_popup').css({display:'block'})
-        $('.layer').css({display:'block'})
-    })
+    // $(document).on('click', '#rev_btn', function() {
+    //     $('.review_popup').css({display:'block'})
+    //     $('.layer').css({display:'block'})
+    // })
 
     // 문의 버튼
-    $(document).on('click', '#qna_btn', function() {
-        $('.qna_popup').css({display:'block'})
-        $('.layer').css({display:'block'})
-    })
+    // $(document).on('click', '#qna_btn', function() {
+    //     $('.qna_popup').css({display:'block'})
+    //     $('.layer').css({display:'block'})
+    // })
 
     // 작성중인 글 버튼
     $(document).on('click', '#wrt_cancle_btn', function() {
@@ -32,15 +28,18 @@ $(document).ready(function() {
     })
     // 로그인 버튼
     $(document).on('click', '#log_cancle_btn', function() {
-        alert("ff")
+        $('.logChk_popup').css({display:'none'})
+        $('.layer').css({display:'none'})
+        $('html').css({overflowY:'visible'})
     })
     $(document).on('click', '#logChk_commit_btn', function() {
-        alert("ff")
+        location.href="http://localhost:8080/egan/login"
     })
     // 장바구니 팝업
     $(document).on('click', '#cart_stay_btn', function() {
         $('.cart_popup').css({display: 'none'})
         $('.layer').css({display:'none'})
+        $('html').css({overflowY:'visible'})
     })
     $(document).on('click', '#cart_commit_btn', function() {
         location.href="http://localhost:8080/egan/myPage"
@@ -50,19 +49,23 @@ $(document).ready(function() {
     $(document).on('click', '#review_cancle_btn', function() {
         $('.review_popup').css({display: 'none'})
         $('.layer').css({display:'none'})
+        $('html').css({overflowY:'visible'})
     })
     $(document).on('click', '#review_commit_btn', function() {
         $('.review_popup').css({display: 'none'})
         $('.layer').css({display:'none'})
+        $('html').css({overflowY:'visible'})
     })
     // 문의 팝업
     $(document).on('click', '#qna_cancle_btn', function() {
         $('.qna_popup').css({display: 'none'})
         $('.layer').css({display:'none'})
+        $('html').css({overflowY:'visible'})
     })
     $(document).on('click', '#qna_commit_btn', function() {
         $('.qna_popup').css({display: 'none'})
         $('.layer').css({display:'none'})
+        $('html').css({overflowY:'visible'})
     })
 
 

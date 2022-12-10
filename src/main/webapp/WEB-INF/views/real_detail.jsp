@@ -75,7 +75,7 @@
             <div class="h_menu">
                 <c:if test="${m_id != null}">
                     <a href="http://localhost:8080/egan/logout.do">Logout</a>
-                    <a href="http://localhost:8080/egan/real_register">MyPage</a>
+                    <a href="http://localhost:8080/egan/myPage">MyPage</a>
                 </c:if>
 
                 <c:if test="${m_id == null}">
@@ -179,40 +179,42 @@
                             <tbody>
                             <tr class="review_tr move_tr">
                                 <td class="rv_tb_css rv_tb_num">1</td>
-                                <td class="rv_tb_css rv_tb_title">제목1</td>
+                                <td class="rv_tb_css rv_tb_title">괜찮은 상품이네요~</td>
                                 <td class="rv_tb_css rv_tb_writer">asdf</td>
                                 <td class="rv_tb_css rv_tb_date">2022-01-01</td>
                             </tr>
                             <tr class="review_tr move_tr tab_content">
                                 <td>
                                     <div class="rev_box">
-                                        <div class="rv_content">dsfsdfsdf</div>
+                                        <div class="rv_content">
+                                            상품 너무 좋아요~ 재구매 의향 있습니다.
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <tr class="review_tr move_tr">
                                 <td class="rv_tb_css rv_tb_num">2</td>
-                                <td class="rv_tb_css rv_tb_title">제목2</td>
+                                <td class="rv_tb_css rv_tb_title">이건 좀 별로예요</td>
                                 <td class="rv_tb_css rv_tb_writer">asdf</td>
                                 <td class="rv_tb_css rv_tb_date">2022-01-01</td>
                             </tr>
                             <tr class="review_tr move_tr tab_content">
                                 <td>
                                     <div class="rev_box">
-                                        <div class="rv_content">dsfsdfsdf</div>
+                                        <div class="rv_content">가격에 비해 퀄리티가 별로네요</div>
                                     </div>
                                 </td>
                             </tr>
                             <tr class="review_tr move_tr">
                                 <td class="rv_tb_css rv_tb_num">3</td>
-                                <td class="rv_tb_css rv_tb_title">제목3</td>
+                                <td class="rv_tb_css rv_tb_title">제가 원하던 상품이에요</td>
                                 <td class="rv_tb_css rv_tb_writer">asdf</td>
                                 <td class="rv_tb_css rv_tb_date">2022-01-01</td>
                             </tr>
                             <tr class="review_tr move_tr tab_content">
                                 <td>
                                     <div class="rev_box">
-                                        <div class="rv_content">dsfsdfsdf</div>
+                                        <div class="rv_content">제가 찾던 상품이에요 다음에 또 구매할게요!</div>
                                     </div>
                                 </td>
                             </tr>
@@ -247,40 +249,44 @@
                             <tbody>
                             <tr class="QnA_tr move_tr">
                                 <td class="qna_tb_css qna_tb_num">1</td>
-                                <td class="qna_tb_css qna_tb_title">제목1</td>
+                                <td class="qna_tb_css qna_tb_title">혹시 배송은 언제까지 될까요?
+                                </td>
                                 <td class="qna_tb_css qna_tb_writer">asdf</td>
                                 <td class="qna_tb_css qna_tb_date">2022-01-01</td>
+                                <td class="qna_tb_css qna_tb_answer">답변대기</td>
                             </tr>
                             <tr class="QnA_tr move_tr tab_content">
                                 <td>
                                     <div class="qNa_box">
-                                        <div class="rv_content">dsfsdfsdf</div>
+                                        <div class="rv_content">이번주까지 써야하는데 얼른 배송해주세요</div>
                                     </div>
                                 </td>
                             </tr>
                             <tr class="QnA_tr move_tr">
                                 <td class="rv_tb_css rv_tb_num">2</td>
-                                <td class="rv_tb_css rv_tb_title">제목2</td>
+                                <td class="rv_tb_css rv_tb_title">재입고 일정이 어떻게 되는지 궁금합니다.</td>
                                 <td class="rv_tb_css rv_tb_writer">asdf</td>
                                 <td class="rv_tb_css rv_tb_date">2022-01-01</td>
+                                <td class="qna_tb_css qna_tb_answer">답변대기</td>
                             </tr>
                             <tr class="QnA_tr move_tr tab_content">
                                 <td>
                                     <div class="qNa_box">
-                                        <div class="rv_content">dsfsdfsdf</div>
+                                        <div class="rv_content">재입고 일정을 알려주세요</div>
                                     </div>
                                 </td>
                             </tr>
                             <tr class="QnA_tr move_tr">
                                 <td class="rv_tb_css rv_tb_num">3</td>
-                                <td class="rv_tb_css rv_tb_title">제목3</td>
+                                <td class="rv_tb_css rv_tb_title">무슨 문의를 해야할까요</td>
                                 <td class="rv_tb_css rv_tb_writer">asdf</td>
                                 <td class="rv_tb_css rv_tb_date">2022-01-01</td>
+                                <td class="qna_tb_css qna_tb_answer_o">답변완료</td>
                             </tr>
                             <tr class="QnA_tr move_tr tab_content">
                                 <td>
                                     <div class="qNa_box">
-                                        <div class="rv_content">dsfsdfsdf</div>
+                                        <div class="rv_content">물어볼게 없네요</div>
                                     </div>
                                 </td>
                             </tr>
@@ -431,6 +437,61 @@
 <div class="layer"></div>
 <!-- 탑 버튼 -->
 <button class="top_btn top_show">TOP</button>
+<script>
+    $(document).ready(function () {
+        $(document).on('click', '#btn_cart', function () {
+            <c:if test="${m_id != null}">
+                $('.cart_popup').css({display:'block'})
+                $('.layer').css({display:'block'})
+                $('html').css({overflowY:'hidden'})
+            </c:if>
+
+            <c:if test="${m_id == null}">
+                $('.logChk_popup').css({display:'block'})
+                $('.layer').css({display:'block'})
+                $('html').css({overflowY:'hidden'})
+            </c:if>
+        })
+        $(document).on('click', '#btn_pay', function () {
+            <c:if test="${m_id != null}">
+            location.href="http://localhost:8080/egan/myPage"
+            </c:if>
+
+            <c:if test="${m_id == null}">
+            $('.logChk_popup').css({display:'block'})
+            $('.layer').css({display:'block'})
+            $('html').css({overflowY:'hidden'})
+            </c:if>
+        })
+        $(document).on('click', '#rev_btn', function () {
+            <c:if test="${m_id != null}">
+            $('.review_popup').css({display:'block'})
+            $('.layer').css({display:'block'})
+            $('html').css({overflowY:'hidden'})
+            </c:if>
+
+            <c:if test="${m_id == null}">
+            $('.logChk_popup').css({display:'block'})
+            $('.layer').css({display:'block'})
+            $('html').css({overflowY:'hidden'})
+            </c:if>
+        })
+        $(document).on('click', '#qna_btn', function () {
+            <c:if test="${m_id != null}">
+            $('.qna_popup').css({display:'block'})
+            $('.layer').css({display:'block'})
+            $('html').css({overflowY:'hidden'})
+            </c:if>
+
+            <c:if test="${m_id == null}">
+            $('.logChk_popup').css({display:'block'})
+            $('.layer').css({display:'block'})
+            $('html').css({overflowY:'hidden'})
+            </c:if>
+        })
+
+    })
+</script>
 </body>
 
 </html>

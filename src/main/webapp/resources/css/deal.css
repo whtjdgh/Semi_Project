@@ -303,7 +303,22 @@ img {
 .qna_tb_title {width: 750px;}
 .qna_tb_writer {width: 200px;}
 .qna_tb_date {width: 200px;}
-
+.qna_tb_answer {
+    width: 100px;
+    height: 30px;
+    color:#ffbf00;
+    background: #fff;
+    border: 1px solid #ffbf00;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.qna_tb_answer_o {
+    width: 100px;
+    height: 30px;
+    color:#fff;
+    background: #ffbf00;
+    border-radius: 5px;
+}
 .QnA_tr{
     display: block;
     text-align: center;
