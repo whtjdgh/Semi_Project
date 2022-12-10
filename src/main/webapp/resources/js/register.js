@@ -63,13 +63,6 @@ function aaaa(tmp_date) {
 
     // })
 }
-let id = document.getElementById('register_id');
-let pw = document.getElementById('register_pw');
-let pw_chk = document.getElementById('register_pw_chk');
-let email = document.getElementById('register_email');
-let number = document.getElementById('register_phone_number');
-let birth = document.getElementById('from_date');
-let msg = document.getElementsByClassName('msg');
 
 
 

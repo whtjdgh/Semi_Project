@@ -141,7 +141,7 @@
                             <td class="reg_input">
                                 <input type="text" id="address" placeholder="주소">
                                 <input type="text" id="postcode" placeholder="우편번호">
-                                <input type="button" id="address_btn" onclick="sample5_execDaumPostcode()" value="주소 검색" disabled><br>
+                                <input type="button" id="address_btn" onclick="sample5_execDaumPostcode()" value="주소 검색" ><br>
                             </td>
                         </tr>
                         <tr>
