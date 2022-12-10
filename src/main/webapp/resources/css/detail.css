@@ -24,6 +24,9 @@ ul{list-style: none; margin: 0; padding: 0;}
 
     display: flex;
     justify-content: space-between;
+    
+    
+       
 }
 
 a{
@@ -298,7 +301,8 @@ input::placeholder {
     margin: 0 auto 150px;
     padding: 50px 0 0;
     max-width: 90vw;
-
+ gap: 20px;
+    justify-content: flex-start;
 }
 
 .menu_list{
