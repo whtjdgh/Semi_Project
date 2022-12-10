@@ -34,10 +34,11 @@
 }
 /* aside  */
 .info{
-    width: 1200px;
-    height: 1000px;
-    overflow: auto;
-    margin: 0 auto;
+      width: 1200px;
+        max-width: 90vw;
+        height: 1000px;
+        overflow: auto;
+        margin: 0 auto;
 }
 .info::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera*/
@@ -118,7 +119,7 @@ td{
     float: right;
 }
 .infomation{
-       position: relative;
+/*        position: relative; */
     float: right;
     width:calc(100% - 200px);
     height: 150px;
@@ -130,24 +131,26 @@ td{
     float: left;
 }
 .infomation_box{
-    float: left;
-
-    line-height: 35px;
-    margin-left: 10px;
+ position: relative;
+        float: left;
+        line-height: 35px;
+        margin-left: 10px;
+        width: 300px;
 }
 .diriver{
-   position: absolute;
-    top: 50px;
-    left: 90%;
-    text-align: center;
-    color: white;
-    border: 1p;
-    border: 1px solid;
-    line-height: 30px;
-    height: 30px;
-    width: 70px;
-    background: rgb(255 116 121);
-    border-radius: 7px;
+    position: absolute;
+        display: inline;
+        top: 170px;
+        left: 90%;
+        text-align: center;
+        color: white;
+        border: 1p;
+        border: 1px solid;
+        line-height: 30px;
+        height: 37px;
+        width: 70px;
+        background: rgb(255 116 121);
+        border-radius: 7px;
 }
 /* 탭 연결 부분*/
 input[name="rd"]:checked + .pan {
