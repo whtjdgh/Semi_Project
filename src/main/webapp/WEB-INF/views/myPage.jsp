@@ -86,12 +86,19 @@
             <div class="ham_line" id="line_bot"></div>
             <div class="ham_menu">
                 <ul class="ham_ul">
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
+                    <c:if test="${m_id != null}">
+                        <a href="http://localhost:8080/egan/logout.do">Logout</a>
+                        <a href="http://localhost:8080/egan/myPage">MyPage</a>
+                    </c:if>
+
+                    <c:if test="${m_id == null}">
+                        <a href="http://localhost:8080/egan/login">Login</a>
+                        <a href="http://localhost:8080/egan/real_register">Register</a>
+                    </c:if>
                     <li class="hr"></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">BRAND</a></li>
-                    <li><a href="#">COMMUNITY</a></li>
+                    <li><a href="http://localhost:8080/egan/detail">SHOP</a></li>
+                    <li><a href="http://localhost:8080/egan/brand">BRAND</a></li>
+                    <li><a href="http://localhost:8080/egan/brand">COMMUNITY</a></li>
 
                 </ul>
             </div>
@@ -104,13 +111,20 @@
         <div class="nav">
             <a href="http://localhost:8080/egan/detail">SHOP</a>
             <a href="http://localhost:8080/egan/brand">BRAND</a>
-            <a href="">COMMUNITY</a>
+            <a href="http://localhost:8080/egan/brand">COMMUNITY</a>
         </div>
 
         <div class="menu">
             <div class="h_menu">
-                <a href="">Login</a>
-                <a href="">Register</a>
+                <c:if test="${m_id != null}">
+                    <a href="http://localhost:8080/egan/logout.do">Logout</a>
+                    <a href="http://localhost:8080/egan/myPage">MyPage</a>
+                </c:if>
+
+                <c:if test="${m_id == null}">
+                    <a href="http://localhost:8080/egan/login">Login</a>
+                    <a href="http://localhost:8080/egan/real_register">Register</a>
+                </c:if>
             </div>
             <div class="h_icon">
                 <div class="shopping"></div>
