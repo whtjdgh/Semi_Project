@@ -28,6 +28,16 @@ public class ProductDto {
 
     private String m_name;
 
+    private int num;
+
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
     public String getM_name() {
         return m_name;
     }

@@ -179,7 +179,7 @@
                             <tbody>
                 <c:forEach var="dto" items="${r_list }">
                             <tr class="review_tr move_tr">
-                                <td class="rv_tb_css rv_tb_num">${dto.review_index}</td>
+                                <td class="rv_tb_css rv_tb_num">${dto.num}</td>
                                 <td class="rv_tb_css rv_tb_title">${dto.title}</td>
                                 <td class="rv_tb_css rv_tb_writer">${dto.m_name}</td>
                                 <td class="rv_tb_css rv_tb_date">${dto.in_day}</td>
