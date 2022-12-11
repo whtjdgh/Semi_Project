@@ -104,12 +104,19 @@
     .name{
     width:100%;
     }
+    .infomation {
+    float: left;
+}
+    
     .diriver {
     top: 570px;
     left: 75%;
 }
     .prvBtn {
     display: none;
+}
+    .review {
+    width: 80%;
 }
     .review_can {  
     width: 100%;
@@ -122,5 +129,9 @@
     width: 200px;
     left: 83%;
     line-height: 50px;
+    padding-left: 0px;       
+}
+    .period_search {
+    display:none;
 }
 }
