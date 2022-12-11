@@ -134,4 +134,55 @@
     .period_search {
     display:none;
 }
+.infomation { 
+    width: 100%;
+}
+.contact_information,date_created {
+    display:none;
+}
+.coupon_li_first { 
+    margin-top: 30px;
+    margin-left: 2%;
+    font-size: 14px; 
+}
+.copun_txt1 {
+    font-size: 14px;
+}
+.copun_txt2 {
+    font-size: 12px;
+}
+.coupon_li_1 {
+    left: 40%;
+}
+.coupon_li_2 {
+    left: 70%;
+}
+.chk_all_box {
+    width: 100%;
+}
+.product_description {
+    left: 80px;
+    top: 190px;
+}
+.letf {
+    left: 200px;
+    top: 190px;
+}
+#txt_qty {
+    left: 230px;
+    top: 190px;
+}
+.right {
+    left: 260px;
+    top: 190px;
+}
+.sum {
+    margin-top: 80px;
+    margin-left: 100px;   
+}
+.payment {
+    position: absolute;
+    top: 840px;
+    left: 100px;
+}
 }
