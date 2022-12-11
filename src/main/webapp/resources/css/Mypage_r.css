@@ -56,7 +56,7 @@
 }
 /* 주문내역 */
 .diriver {
-    left: 85%; 
+    left: 80%; 
 }
 /*   상품후기   */
 .period_search {
@@ -223,7 +223,7 @@ width: calc(100% - 200px);
     text-align: center;
 }
 .infomation_li_1 {
- width:0px;
+    width: 0px;
 }
 /*  쿠폰    */
 .coupon_li_first { 
@@ -233,7 +233,7 @@ width: calc(100% - 200px);
     width: 100px;
 }
     .infomation_li_1 {
-  whidth:0px;
+        width: 0px;
     }
 .copun_txt1 {
     font-size: 14px;
