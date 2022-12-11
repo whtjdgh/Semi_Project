@@ -132,7 +132,7 @@
     width: 50px;
     left: 45%;
     padding-left: 0px;
-    top: 110px;
+    top: 88px;
 }
 .review_content_botton {
     left: 104%;
@@ -148,9 +148,11 @@
 .infomation { 
     width: 100%;
 }
-.contact_information,date_created {
-    display:none;
+.answer,date_created {
     text-align: center;
+}
+.infomation_li_1 {
+ width:0px;
 }
 /*  쿠폰    */
 .coupon_li_first { 
@@ -174,6 +176,7 @@
 .coupon_li_2 {
     left: 70%;
 }
+/*  장바구니    */
 .chk_all_box {
     width: 100%;
 }
