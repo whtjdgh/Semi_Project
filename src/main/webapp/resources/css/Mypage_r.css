@@ -206,5 +206,18 @@
     left: 100px;
     margin-left: 0px;
 }
-
+/* 개인정보 수정     */
+.personal_information { 
+    width: 100%;
+}
+    .id_pw_box {
+    margin-left: 0px; 
+            width: 95%;
+}
+    .id, .pw {
+    width: 70%;
+}
+   .login {
+    width: 70%;
+} 
 }
