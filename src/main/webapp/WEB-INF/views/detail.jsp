@@ -332,13 +332,11 @@
         <c:if test="${m_id != null}">
         $('.popup_outer_box').css({display:'block'})
         $('.layer').css({display:'block'})
-        $('html').css({overflowY:'hidden'})
         </c:if>
 
         <c:if test="${m_id == null}">
         $('.logChk_popup').css({display:'block'})
         $('.layer').css({display:'block'})
-        $('html').css({overflowY:'hidden'})
         </c:if>
       })
 
