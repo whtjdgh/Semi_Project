@@ -125,6 +125,10 @@ width: calc(100% - 200px);
     left: 250px;
     top: 60px;
 }
+    .product_description {
+      left: 65px;
+      top: 175px;
+}
     .letf {
     left: 65px;
     top: 210px;
@@ -268,8 +272,12 @@ width: calc(100% - 200px);
     top: 190px;
 }
 .sum {
-    margin-top: 80px;
+    margin-top: 110px;
     margin-left: 100px;   
+}
+.result {
+    left: 100px;
+    top: 240px;
 }
 .payment {
     position: absolute;
