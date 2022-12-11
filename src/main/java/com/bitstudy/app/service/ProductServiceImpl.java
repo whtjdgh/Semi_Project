@@ -34,5 +34,9 @@ public class ProductServiceImpl implements ProductService {
         return productDao.listProduct_cate(value);
     }
 
+    @Override
+    public List<ProductDto> search_product(String keyword){
+        return productDao.search_product(keyword);
+    }
 
 }

@@ -13,4 +13,6 @@ public interface ProductDao {
     List<ProductDto> listProduct_opt(int cate_value);
 
     List<ProductDto> listProduct_cate(int value);
+
+    List<ProductDto> search_product(String keyword);
 }

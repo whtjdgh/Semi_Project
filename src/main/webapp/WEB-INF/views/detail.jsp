@@ -51,7 +51,7 @@
   <div class="close" ></div>
   <div class="model_content">
     <div class="search_box search_box2">
-      <input type="text" placeholder="검색" class="txt_search">
+      <input type="text" placeholder="검색" class="txt_search" id="txt_search1">
         <div class="icon" onclick="search()"></div>
     </div>
   </div>
@@ -120,8 +120,8 @@
 <div class="main_banner">
   <div class="banner">
     <div class="search_box">
-      <input type="text" placeholder="검색" class="txt_search">
-      <a href=""><div class="icon"></div></a>
+      <input type="text" placeholder="검색" class="txt_search" id="txt_search2">
+        <div class="icon" onclick="search()"></div>
     </div>
   </div>
 </div>
@@ -144,6 +144,7 @@
 
 
 <div class="menu_box content_area">
+<c:if test="${keyword == null}">
   <c:if test="${cate_value == null}">
      <c:forEach var="dto" items="${list }">
      <div class="menu_list">
@@ -201,6 +202,26 @@
 
 
   <c:if test="${cate_value == 'food'}">
+    <c:forEach var="dto" items="${cate_list }">
+      <div class="menu_list">
+        <div class="menu_item">
+          <a href="http://localhost:8080/egan/real_detail/${dto.p_index}">
+            <img src="<c:url value='${dto.saveImage}'/>" alt="c">
+          </a>
+          <button class="menu_basket_btn"></button>
+        </div>
+        <div class="menu_txt">
+          <p class="p_name">${dto.p_name}</p>
+          <p class="p_sale">32%</p>
+          <p class="p_price">${dto.p_price}</p>
+        </div>
+      </div>
+    </c:forEach>
+  </c:if>
+</c:if>
+
+
+  <c:if test="${keyword != null}">
     <c:forEach var="dto" items="${cate_list }">
       <div class="menu_list">
         <div class="menu_item">
@@ -334,7 +355,11 @@
 
 <script>
   function search(){
-    alert("123")
+
+    let keyword = document.getElementById('txt_search2').value;
+    location.href = "http://localhost:8080/egan/search_product/"+keyword+"";
+
+
   }
 
 

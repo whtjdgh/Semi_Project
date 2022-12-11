@@ -5,17 +5,7 @@
 
 <mapper namespace="member">
 
-    <!--상품 검색기능-->
-    <sql id="where-list">
-        <if test="condition=='title' ">
-            INSTR(title, #{keyword}) &gt; 0
-        </if>
 
-        <if test="condition=='writer' ">
-            name=#{keyword}
-        </if>
-
-    </sql>
 
     <!--로그인 처리-->
     <select id="login_check"  resultType="String">
@@ -51,11 +41,14 @@
     <select id = "list_product" resultType ="com.bitstudy.app.domain.ProductDto">
         SELECT p.p_index, i.image_id, p.p_name, p.p_price, p.p_no, i.saveImage
         FROM product p JOIN image i ON p.p_index=i.p_index
-        <where>
-            <if test="keyword != null and keyword != ''">
-                <include refid="where-list"/>
-            </if>
-        </where>
+
+    </select>
+
+    <!--검색기능 리스트 출력-->
+    <select id = "search_product" resultType ="com.bitstudy.app.domain.ProductDto" parameterType= "com.bitstudy.app.domain.ProductDto">
+        SELECT p.p_index, i.image_id, p.p_name, p.p_price, p.p_no, i.saveImage
+        FROM product p JOIN image i ON p.p_index=i.p_index
+        WHERE p.p_name like concat ('%',#{keyword},'%')
 
     </select>
 
@@ -67,7 +60,7 @@
 
     </select>
 
-
+    <!-- 카테고리 기능 리스트 출력-->
     <select id = "listProduct_cate" resultType ="com.bitstudy.app.domain.ProductDto">
         SELECT p.p_index, p.category_index, i.image_id, p.p_name, p.p_price, p.p_no, i.saveImage
         FROM product p JOIN image i ON p.p_index=i.p_index

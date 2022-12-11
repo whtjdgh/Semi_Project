@@ -50,14 +50,6 @@ public class test {
     }
 
 
-    @RequestMapping (value = "/select_cate" , method = RequestMethod.POST)
-    public ModelAndView select_cate(@RequestParam("cate_value") int cate_value, ModelAndView mav) {
-        mav.setViewName("/detail"); //이동할 페이지 이름
-        mav.addObject("cate_list", productService.listProduct_opt(cate_value));  //데이터 저장
-        System.out.println(cate_value);
-
-        return mav; //페이지 이동
-    }
 
     @RequestMapping (value = "/detail/{cate_value}" , method = RequestMethod.GET)
     public ModelAndView selectProduct(@PathVariable("cate_value") String cate_value, ModelAndView mav) {
@@ -84,8 +76,19 @@ public class test {
         mav.addObject("cate_value", cate_value);  //데이터 저장
         System.out.println("4567");
 
+        return mav; //페이지 이동
+    }
 
 
+    @RequestMapping (value = "/search_product/{keyword}" , method = RequestMethod.GET)
+    public ModelAndView search_product(@PathVariable("keyword") String keyword, ModelAndView mav) {
+        mav.setViewName("/detail"); //이동할 페이지 이름
+
+        mav.addObject("cate_list", productService.search_product(keyword));
+        mav.addObject("keyword", keyword);
+        System.out.println("selectProduct");
+        System.out.println(keyword);
+        System.out.println("8888");
 
         return mav; //페이지 이동
     }
