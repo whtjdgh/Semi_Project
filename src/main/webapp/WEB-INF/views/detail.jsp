@@ -357,8 +357,12 @@
   function search(){
 
     let keyword = document.getElementById('txt_search2').value;
-    location.href = "http://localhost:8080/egan/search_product/"+keyword+"";
 
+    if(keyword == ""){
+      location.href = "http://localhost:8080/egan/detail";
+    }else {
+      location.href = "http://localhost:8080/egan/search_product/" + keyword + "";
+    }
 
   }
 

@@ -51,7 +51,14 @@ public class LoginController {
     @RequestMapping("login_check.do")
     public ModelAndView login_check(@ModelAttribute LoginDto dto, HttpSession session) {
         String name = loginService.loginCheck(dto, session);
+        String name1 = loginService.loginCheck(dto, session);
+        String name2 = loginService.loginCheck(dto, session);
+
         session.setAttribute("m_id", name);
+        session.setAttribute("m_index", name1);
+        session.setAttribute("m_name", name2);
+
+
         ModelAndView mav = new ModelAndView();
 
         if (name != null) { // 로그인 성공 시

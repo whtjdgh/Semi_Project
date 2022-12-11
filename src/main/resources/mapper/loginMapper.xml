@@ -9,7 +9,7 @@
 
     <!--로그인 처리-->
     <select id="login_check"  resultType="String">
-        SELECT m_id,m_pwd,m_name FROM member
+        SELECT m_id,m_pwd,m_name,m_index FROM member
         WHERE m_id = #{m_id} AND m_pwd = #{m_pwd}
     </select>
 
@@ -73,6 +73,27 @@
         SELECT p.p_index, p.category_index, i.image_id, p.p_name, p.p_price, p.p_no, i.saveImage, i.detail_image1, i.detail_image2
         FROM product p JOIN image i ON p.p_index=i.p_index
         where p.p_index = #{p_index}
+    </select>
+
+
+    <insert id="insert_review">
+        INSERT INTO review
+        (
+        review_index, title, content,
+        in_day, p_index, m_id
+        )
+        VALUE(
+        (SELECT IFNULL(MAX(a.review_index),0)+1 AS rno FROM  review a),
+        #{title},#{content},SYSDATE(),#{p_index}, #{m_id}
+
+        )
+    </insert>
+
+
+    <select id = "selectReviewList" resultType ="com.bitstudy.app.domain.ProductDto">
+        SELECT r.review_index, r.title, r.content, r.in_day, m.m_name FROM
+        review r JOIN member m ON r.m_id=m.m_id
+        where r.p_index =  #{p_index}
     </select>
 
 </mapper>
