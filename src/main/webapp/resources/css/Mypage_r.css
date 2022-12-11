@@ -77,8 +77,8 @@ width: calc(100% - 200px);
     width: 65px;
 }
 /*   상품문의   */
-    .infomation_li_1 {  
-    width:0px;
+.infomation_li_1 {
+    width: calc(100% - 200px);
 }
     .review_content_botton {
         left: 76%;
@@ -145,7 +145,7 @@ width: calc(100% - 200px);
 }
 /*  개인정보 수정 */
 .id_pw_box {
-    margin-left: 40px; 
+    margin-left: 0px; 
     width: 100%;
 }
 .id_text, .pw_text {
