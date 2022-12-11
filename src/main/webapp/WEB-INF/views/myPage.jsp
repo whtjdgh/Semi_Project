@@ -162,7 +162,6 @@
             <div class="info">
                 <ul>
                     <label for="rd1" class="box1 box2">주문내역<span class="next"></span></label>
-                    <label for="rd2" class="box1" onclick="diriver_alert()">배송지 관리<span class="next"></span></label>
                     <label for="rd3" class="box1">상품 후기<span class="next"></span></label>
                     <label for="rd4" class="box1">상품 문의<span class="next"></span></label>
                     <label for="rd5" class="box1">쿠폰<span class="next"></span></label>
@@ -185,8 +184,7 @@
                     </p>
 
                     <div class="infomation">
-                        <!-- 제품사진 클릭시 이동 -->
-                        <a href="#"><img src="<c:url value='/img/daily/1.jpg'/>" class="img" onclick="img_alert()">
+                       <img src="<c:url value='/img/food/6.jpg'/>" class="img">
                         </a>
 
                         <!-- 제품내역 -->
@@ -246,8 +244,8 @@
                     </div>
 
                     <div class="review_content">
-                        <img src="<c:url value='/img/daily/1.jpg'/>" class="review_content_img" alt="">
-                        <div class="review_product"> 제품명</div>
+                        <img src="<c:url value='/img/food/6-1.jpg'/>" class="img">
+                        <div class="review_product"> 냉동 유기농 애플망고 700g </div>
                         <label type="button" id="modal-open" >
                             <div class="review_content_botton">작성하기</div>
                         </label>
@@ -264,9 +262,9 @@
                                     <div class="head-title">
                                         PRODUCT REVIEW</div>
                                     <div class="product_box">
-                                        <img src="<c:url value='/img/daily/1.jpg'/>" class="img_size" alt="">
+                                       <img src="<c:url value='/img/food/6-1.jpg'/>" class="img">
                                         <div class="product_name">
-                                            리뷰할 제품명
+                                           냉동 유기농 애플망고 700g 
                                         </div>
                                     </div>
 
@@ -313,11 +311,11 @@
 
                         <label for="toggle" class="toggleSwitch">
                             <div class="content_area " id="content_area_tep">
-                                <a href="#">
-                                    <img src="<c:url value='/img/daily/1.jpg'/>" class="img" onclick="img_alert()">
-                                </a>
+                                
+                                  <img src="<c:url value='/img/skin/3.jpg'/>" class="img">
+                               
                                 <div class="contact_information">
-                                    문의사항 제목
+                                    언제쯤 도착하는지 알수 있을까요?
                                 </div>
                                 <div class="date_created ">
                                     22.11.30
@@ -352,9 +350,9 @@
                                         <div class="head-title">
                                             PRODUCT Q&A</div>
                                         <div class="product_box">
-                                            <img src="<c:url value='/img/daily/1.jpg'/>" class="img_size" alt="">
+                                           <img src="<c:url value='/img/food/6-1.jpg'/>" class="img">
                                             <div class="product_name">
-                                                문의할 제품명
+                                                냉동 유기농 애플망고 700g 
                                             </div>
                                         </div>
                                     </div>
@@ -495,9 +493,7 @@
                     <div class="infomation">
                         <input type="checkbox" class="chk input_block">
                         <!-- 제품사진 -->
-                        <a href="">
-                            <img src="<c:url value='/img/daily/1.jpg'/>" alt="" class="img">
-                        </a>
+                        <img src="<c:url value='/img/food/6-1.jpg'/>" class="img">
                         <!-- 계산 -->
                         <div class="box">
                             <!-- 상품설명 -->
