@@ -98,4 +98,29 @@
     .show_info{     
       height: 300px;
  }
+    ul{
+    width:100%;
+    }
+    .name{
+    width:100%;
+    }
+    .diriver {
+    top: 570px;
+    left: 75%;
+}
+    .prvBtn {
+    display: none;
+}
+    .review_can {  
+    width: 100%;
+}
+    .review_done {
+    width: 100%;
+    margin-top: 200px;
+}
+    .review_product {
+    width: 200px;
+    left: 83%;
+    line-height: 50px;
+}
 }
