@@ -64,6 +64,12 @@ width: calc(100% - 200px);
 }.period_search_li {
   width: calc((100% - 10px) / 4);
 }
+.review_done {
+    width: calc(96%/2);
+}
+.review_can {
+    width: calc(96%/2);
+}
 .review_content {
     width: calc(100% - 210px);
 }
@@ -99,25 +105,58 @@ width: calc(100% - 200px);
     .coupon_li_2 {
         left: 75%;
     }
-    .letf {
-        left: 390px;
+    .copun_txt1 {
+    font-size: 14px;
     }
-    .letf {
-        left: 390px;
+    .copun_txt2 {
+        font-size: 12px;
     }
+    
+    /*  장바구니 */
+    cription {
+    left: 65px;
+    top: 181px;
+}
     #txt_qty {
-        left: 420px;
+    left: 95px;
+    top: 210px;
+    }
+    .product_delect {
+    left: 250px;
+    top: 60px;
+}
+    .letf {
+    left: 65px;
+    top: 210px;
     }
     .right {
-        left: 449px;
+        left: 125px;
+        top: 210px;
     }
-    .payment {
-        margin-left: 211px;
-    }
-    .id_pw_box {
-        margin-left: 40px;
-        width: 350px;
-    }
+    .result {
+    left: 65px;
+    top: 260px;
+}
+  .sum {
+    margin-top: 150px;
+}
+   .payment {
+    margin-left: 275px;
+}
+/*  개인정보 수정 */
+.id_pw_box {
+    margin-left: 40px; 
+    width: 100%;
+}
+.id_text, .pw_text {
+    width: 40%; 
+}
+.id, .pw {
+    width: 60%;
+}
+.login {
+    width: 60%;
+}
 }
 @media screen and (max-width: 480px) {
   .show_info_box{
