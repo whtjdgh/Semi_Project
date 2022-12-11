@@ -144,7 +144,7 @@
 
 
 <div class="menu_box content_area">
-
+  <c:if test="${cate_value == null}">
      <c:forEach var="dto" items="${list }">
      <div class="menu_list">
        <div class="menu_item">
@@ -160,6 +160,64 @@
         </div>
       </div>
       </c:forEach>
+  </c:if>
+
+
+  <c:if test="${cate_value == 'daily'}">
+    <c:forEach var="dto" items="${cate_list }">
+      <div class="menu_list">
+        <div class="menu_item">
+          <a href="http://localhost:8080/egan/real_detail/${dto.p_index}">
+            <img src="<c:url value='${dto.saveImage}'/>" alt="c">
+          </a>
+          <button class="menu_basket_btn"></button>
+        </div>
+        <div class="menu_txt">
+          <p class="p_name">${dto.p_name}</p>
+          <p class="p_sale">32%</p>
+          <p class="p_price">${dto.p_price}</p>
+        </div>
+      </div>
+    </c:forEach>
+  </c:if>
+
+  <c:if test="${cate_value == 'skin'}">
+    <c:forEach var="dto" items="${cate_list }">
+      <div class="menu_list">
+        <div class="menu_item">
+          <a href="http://localhost:8080/egan/real_detail/${dto.p_index}">
+            <img src="<c:url value='${dto.saveImage}'/>" alt="c">
+          </a>
+          <button class="menu_basket_btn"></button>
+        </div>
+        <div class="menu_txt">
+          <p class="p_name">${dto.p_name}</p>
+          <p class="p_sale">32%</p>
+          <p class="p_price">${dto.p_price}</p>
+        </div>
+      </div>
+    </c:forEach>
+  </c:if>
+
+
+  <c:if test="${cate_value == 'food'}">
+    <c:forEach var="dto" items="${cate_list }">
+      <div class="menu_list">
+        <div class="menu_item">
+          <a href="http://localhost:8080/egan/real_detail/${dto.p_index}">
+            <img src="<c:url value='${dto.saveImage}'/>" alt="c">
+          </a>
+          <button class="menu_basket_btn"></button>
+        </div>
+        <div class="menu_txt">
+          <p class="p_name">${dto.p_name}</p>
+          <p class="p_sale">32%</p>
+          <p class="p_price">${dto.p_price}</p>
+        </div>
+      </div>
+    </c:forEach>
+  </c:if>
+
 
 </div>
 
@@ -279,53 +337,23 @@
     alert("123")
   }
 
+
   function cate_click(data){
-
-    let cate_value = data;
-    console.log(cate_value);
-    $('.menu_list').remove();
-    $.ajax({
-      url: '/egan/select_cate',
-      type: 'POST',
-      data: {cate_value: cate_value},
-
-      success: function(data){
-        if(data = true){
-          console.log("성공");
-          $('.menu_box').append(`<c:forEach var="dto2" items="${cate_list}">
-                                            <div class="menu_list2">
-                                              <div class="menu_item">
-                                                <a href="http://localhost:8080/egan/real_detail/${dto2.p_index}">
-                                                <img src="<c:url value='${dto2.saveImage}'/>" alt="c">
-                                                </a>
-                                                <button class="menu_basket_btn"></button>
-                                              </div>
-                                              <div class="menu_txt">
-                                                <p class="p_name">${dto2.p_name}</p>
-                                                <p class="p_sale">32%</p>
-                                                <p class="p_sale">32%</p>
-                                                <p class="p_price">${dto2.p_price}</p>
-                                              </div>
-                                            </div>
-                                      </c:forEach>`)
-
-          // $('.menu_box').append(`<h1>hello</h1>`)
-        }else if(date = false){
-          console.log("실패");
-        }
-
-
-      },
-      error: function(jqXHR, textStatus, errorThrown){
-        console.log(jqXHR);
-        console.log(textStatus);
-        console.log(errorThrown);
-        console.log("111");
-        console.log("아이디와 비밀번호를 확인해주세요.");
-      }
-    });
+    console.log(data);
+    let cate_value = "";
+    if(data == 2){
+      cate_value = "skin"
+      location.href = "http://localhost:8080/egan/detail/"+cate_value+"";
+    }else if(data == 1){
+      cate_value = "daily"
+      location.href = "http://localhost:8080/egan/detail/"+cate_value+"";
+    }else{
+      cate_value = "food"
+      location.href = "http://localhost:8080/egan/detail/"+cate_value+"";
+    }
 
   }
+
 
   $(document).ready(function (){
       $(document).on('click', '.menu_basket_btn', function () {
@@ -344,4 +372,5 @@
 </script>
 
 </body>
+
 </html>

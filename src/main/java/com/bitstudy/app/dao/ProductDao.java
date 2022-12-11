@@ -11,4 +11,6 @@ public interface ProductDao {
     public ProductDto selectProduct(int p_index);
 
     List<ProductDto> listProduct_opt(int cate_value);
+
+    List<ProductDto> listProduct_cate(int value);
 }

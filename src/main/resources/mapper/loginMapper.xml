@@ -67,6 +67,14 @@
 
     </select>
 
+
+    <select id = "listProduct_cate" resultType ="com.bitstudy.app.domain.ProductDto">
+        SELECT p.p_index, p.category_index, i.image_id, p.p_name, p.p_price, p.p_no, i.saveImage
+        FROM product p JOIN image i ON p.p_index=i.p_index
+        WHERE p.category_index = #{value}
+
+    </select>
+
     <!--상품 상세보기 -->
     <select id = "selectProduct" resultType ="com.bitstudy.app.domain.ProductDto">
         SELECT p.p_index, p.category_index, i.image_id, p.p_name, p.p_price, p.p_no, i.saveImage, i.detail_image1, i.detail_image2
