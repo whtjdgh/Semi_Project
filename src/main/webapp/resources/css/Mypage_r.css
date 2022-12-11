@@ -101,6 +101,8 @@
     .info > ul{
     width:100%;
     }
+    
+/*    주문내역  */
     .name{
     width:100%;
     }
@@ -115,6 +117,7 @@
     .prvBtn {
     display: none;
 }
+/*    상품후기  */
     .review {
     width: 80%;
 }
@@ -129,7 +132,7 @@
     width: 50px;
     left: 45%;
     padding-left: 0px;
-    margin-top: 110px;
+    top: 110px;
 }
 .review_content_botton {
     left: 104%;
@@ -141,17 +144,24 @@
     .period_search {
     display:none;
 }
+/*    상품 문의  */
 .infomation { 
     width: 100%;
 }
 .contact_information,date_created {
     display:none;
+    text-align: center;
 }
+/*  쿠폰    */
 .coupon_li_first { 
     margin-top: 30px;
     margin-left: 2%;
     font-size: 14px; 
+    width: 100px;
 }
+    .infomation_li_1 {
+  whidth:0px;
+    }
 .copun_txt1 {
     font-size: 14px;
 }
@@ -191,6 +201,7 @@
     position: absolute;
     top: 840px;
     left: 100px;
+    margin-left: 0px;
 }
 
 }
