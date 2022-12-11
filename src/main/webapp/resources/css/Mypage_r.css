@@ -125,11 +125,18 @@
     width: 100%;
     margin-top: 200px;
 }
-    .review_product {
-    width: 200px;
-    left: 83%;
-    line-height: 50px;
-    padding-left: 0px;       
+.review_product {
+    width: 50px;
+    left: 45%;
+    padding-left: 0px;
+    margin-top: 110px;
+}
+.review_content_botton {
+    left: 104%;
+    top: 120px;
+}
+.review_content {
+ height:0px;
 }
     .period_search {
     display:none;
@@ -185,4 +192,5 @@
     top: 840px;
     left: 100px;
 }
+
 }
