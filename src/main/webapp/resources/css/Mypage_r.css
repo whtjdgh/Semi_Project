@@ -90,10 +90,10 @@ width: calc(100% - 200px);
     width: calc(96%/2);
 }
 .review_content {
-  display:none;
+    width: calc(100% - 200px);
 }
 .review_product {
-   display:non;
+ display:none;
 }
 /*   상품문의   */
 .infomation_li_1 {
@@ -223,17 +223,14 @@ width: calc(100% - 200px);
     margin-top: 200px;
 }
 .review_product {
-    width: 50px;
-    left: 45%;
-    padding-left: 0px;
-    top: 88px;
+ display:none;
 }
 .review_content_botton {
     left: 104%;
     top: 120px;
 }
 .review_content {
-  display:none;
+ width:70%;
 }
     .period_search {
     display:none;
