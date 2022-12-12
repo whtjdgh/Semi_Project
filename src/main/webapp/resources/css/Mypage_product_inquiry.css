@@ -40,7 +40,7 @@ display: inline-block;
     width: 95px;
     height: 150px;
     line-height: 150px;
-/*     color:gray; */
+    margin-left: 20px;
 }
 .answer > p {
 
