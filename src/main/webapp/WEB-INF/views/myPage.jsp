@@ -346,7 +346,7 @@
 
 
                         <label for="toggle" class="toggleSwitch">
-                            <div class="content_area " id="content_area_tep">
+                            <div id="content_area_tep">
                                 
                                   <img src="<c:url value='/img/skin/3.jpg'/>" class="img">
                                
