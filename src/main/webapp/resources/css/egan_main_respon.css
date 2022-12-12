@@ -25,6 +25,10 @@
     .chea_text div:nth-child(3) {
         display: none;
     }
+    .md_product {
+        width: 100%;
+        height: 500px;
+    }
 }
 
 
@@ -89,6 +93,9 @@
     }
     .mdDes div:nth-child(1) {
         font-size: 13px;
+    }
+    .md_product {
+        height: 300px;
     }
 }
 

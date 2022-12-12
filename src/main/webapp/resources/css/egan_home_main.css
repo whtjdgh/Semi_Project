@@ -249,12 +249,12 @@ video {
 /* MD 상품 */
 
 .md_product {
-  width: 100%;
-  height: 500px;
-  padding: 0 40px;
-  box-sizing: border-box;
-  margin: 50px 0;
-  margin-bottom: 150px;
+    width: 100%;
+    height: 700px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin: 50px 0;
+    margin-bottom: 150px;
 }
 
 .md_title {
