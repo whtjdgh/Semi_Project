@@ -25,3 +25,8 @@
 .w100{
         width: 100%;
 }
+@media screen and (max-width: 768px){
+    .prvBtn {
+        width: 100%;
+    }
+}
