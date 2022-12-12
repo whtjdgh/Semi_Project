@@ -16,9 +16,9 @@
     .vi_text {
         top: 15%;
     }
-    .vi_link {
-        top: 22%;
-    }
+.vi_link {
+    top: 28%;
+}
     .chae-sicku_banner{
         height: 200px;
     }
@@ -38,7 +38,7 @@
         top: 15%;
     }
     .vi_link {
-        top: 23%;
+/*         top: 23%; */
     }
     .md_product {
         margin: 35px 0;
