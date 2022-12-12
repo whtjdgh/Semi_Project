@@ -128,15 +128,15 @@ td{
     position: relative;
 }
 .img {
-    margin-left: 20px;
+    margin: 0 20px;
+    /* margin-left: 20px; */
     width: 100px;
     height: 100px;
     float: left;
 }
 .infomation_box {
     position: relative;
-    float: left;
-    line-height: 30px;
+    line-height: 26px;
     margin-left: 10px;
     width: 560px;
 }
@@ -166,7 +166,24 @@ input {display: none;}
     display:inline-block;
 }
 
+@media screen and (max-width: 768px){
+    .info > ul {
+         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .name {
+        width: 100%;
+    }
+    .info > ul > label {
+        width: calc(100%/3);
 
+    }
+    .infomation {
+        width: 100%;
+    }
+}
 
 
 
