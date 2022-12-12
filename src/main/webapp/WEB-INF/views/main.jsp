@@ -132,7 +132,7 @@
           </c:if>
         </div>
         <div class="h_icon">
-          <div class="shopping"></div>
+          <a href="http://localhost:8080/egan/myPage_checked"><div class="shopping"></div></a>
           <div class="search"></div>
         </div>
       </div>
