@@ -56,7 +56,7 @@ input::placeholder {
     float: right;
 
     background: url(../img/detail_search.png)no-repeat center / 40px;
-
+cursor: pointer;
 
 }
 
