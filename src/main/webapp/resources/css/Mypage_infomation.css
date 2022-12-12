@@ -25,12 +25,12 @@ input {
     color: grey;
     margin: 10px 0;
 }
-.id_pw_box{
-width: 400px;
+.id_pw_box {
+    width: 400px;
     max-width: 90vw;
-    height: 300px;
-    margin-top: 50px;
-    margin-left: 150px;
+    /* margin-top: 50px; */
+    margin: 50px auto;
+    /* margin-left: 150px; */
 }
 .id,
 .pw {
@@ -77,4 +77,26 @@ label {
     line-height: 60px;
     font-weight: 600;
 }
-
+@media screen and (max-width: 768px){
+    .personal_information {
+        width: 100%;
+    }
+    .id_pw_box {
+        width: 370px;
+        margin: 70px auto;
+    }
+    .id_text, .pw_text {
+        width: 80px;
+    }
+    .id, .pw {
+        width: 280px;
+        float: inherit;
+    }
+    .login {
+        width: 250px;
+        height: 60px;
+         padding: 0px;
+        float: inherit;
+        margin: 50px;
+    }
+}
