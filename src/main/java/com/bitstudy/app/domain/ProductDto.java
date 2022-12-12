@@ -26,6 +26,52 @@ public class ProductDto {
 
     private String keyword;
 
+    private String m_name;
+
+    private int num;
+
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
+    public String getM_name() {
+        return m_name;
+    }
+
+    public void setM_name(String m_name) {
+        this.m_name = m_name;
+    }
+
+    private int review_index;
+    private int m_index;
+    private String write;
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    private String title;
+    private String content;
+    private String in_day;
+
+    public String getM_id() {
+        return m_id;
+    }
+
+    public void setM_id(String m_id) {
+        this.m_id = m_id;
+    }
+
+    private String m_id;
+
 
 
 
@@ -171,5 +217,45 @@ public class ProductDto {
 
     public void setKeyword(String keyword) {
         this.keyword = keyword;
+    }
+
+    public int getReview_index() {
+        return review_index;
+    }
+
+    public void setReview_index(int review_index) {
+        this.review_index = review_index;
+    }
+
+    public int getM_index() {
+        return m_index;
+    }
+
+    public void setM_index(int m_index) {
+        this.m_index = m_index;
+    }
+
+    public String getWrite() {
+        return write;
+    }
+
+    public void setWrite(String write) {
+        this.write = write;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getIn_day() {
+        return in_day;
+    }
+
+    public void setIn_day(String in_day) {
+        this.in_day = in_day;
     }
 }

@@ -1286,8 +1286,9 @@ a.ui-button:active,
 }
 
 .ui-datepicker-trigger {
-    width: 30px;
-    height: 34px;
+    width: 27px;
+    height: 33px;
     position: absolute;
-    top: 24%;
+    top: 22%;
+    margin-left: 10px;
 }

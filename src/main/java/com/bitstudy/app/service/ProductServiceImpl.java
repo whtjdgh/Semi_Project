@@ -29,5 +29,24 @@ public class ProductServiceImpl implements ProductService {
         return productDao.listProduct_opt(cate_value);
     }
 
+    @Override
+    public List<ProductDto> listProduct_cate(int value) {
+        return productDao.listProduct_cate(value);
+    }
+
+    @Override
+    public List<ProductDto> search_product(String keyword){
+        return productDao.search_product(keyword);
+    }
+
+    @Override
+    public void insert_review(ProductDto dto) throws Exception {
+        productDao.insert_review(dto);
+    }
+
+    @Override
+    public List<ProductDto> selectReviewList(int p_index) {
+        return productDao.selectReviewList(p_index);
+    }
 
 }

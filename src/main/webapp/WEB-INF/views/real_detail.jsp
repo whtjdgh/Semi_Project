@@ -177,47 +177,23 @@
                             </tr>
                             </thead>
                             <tbody>
+                <c:forEach var="dto" items="${r_list }">
                             <tr class="review_tr move_tr">
-                                <td class="rv_tb_css rv_tb_num">1</td>
-                                <td class="rv_tb_css rv_tb_title">괜찮은 상품이네요~</td>
-                                <td class="rv_tb_css rv_tb_writer">asdf</td>
-                                <td class="rv_tb_css rv_tb_date">2022-01-01</td>
+                                <td class="rv_tb_css rv_tb_num">${dto.num}</td>
+                                <td class="rv_tb_css rv_tb_title">${dto.title}</td>
+                                <td class="rv_tb_css rv_tb_writer">${dto.m_name}</td>
+                                <td class="rv_tb_css rv_tb_date">${dto.in_day}</td>
                             </tr>
                             <tr class="review_tr move_tr tab_content">
                                 <td>
                                     <div class="rev_box">
                                         <div class="rv_content">
-                                            상품 너무 좋아요~ 재구매 의향 있습니다.
+                                                ${dto.content}
                                         </div>
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="review_tr move_tr">
-                                <td class="rv_tb_css rv_tb_num">2</td>
-                                <td class="rv_tb_css rv_tb_title">이건 좀 별로예요</td>
-                                <td class="rv_tb_css rv_tb_writer">asdf</td>
-                                <td class="rv_tb_css rv_tb_date">2022-01-01</td>
-                            </tr>
-                            <tr class="review_tr move_tr tab_content">
-                                <td>
-                                    <div class="rev_box">
-                                        <div class="rv_content">가격에 비해 퀄리티가 별로네요</div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="review_tr move_tr">
-                                <td class="rv_tb_css rv_tb_num">3</td>
-                                <td class="rv_tb_css rv_tb_title">제가 원하던 상품이에요</td>
-                                <td class="rv_tb_css rv_tb_writer">asdf</td>
-                                <td class="rv_tb_css rv_tb_date">2022-01-01</td>
-                            </tr>
-                            <tr class="review_tr move_tr tab_content">
-                                <td>
-                                    <div class="rev_box">
-                                        <div class="rv_content">제가 찾던 상품이에요 다음에 또 구매할게요!</div>
-                                    </div>
-                                </td>
-                            </tr>
+                </c:forEach>
                             <tr class="review_tr move_tr">
                                 <td colspan="4">
                                     <input type="button" name="rv_btn" id="rev_btn" value="리뷰등록">
@@ -341,6 +317,8 @@
             <div class="rv_input_title">
                 <p>제목</p>
                 <input type="text" id="review_title" name="review_title" placeholder="제목을 입력하세요">
+                <input type="hidden" id="product_id" name="product_id" value="${dto.p_index}">
+                <input type="hidden" id="member_id" name="product_id" value="${m_index}">
             </div>
             <div class="rv_input_main">
                 <p>내용</p>
@@ -452,7 +430,7 @@
         })
         $(document).on('click', '#btn_pay', function () {
             <c:if test="${m_id != null}">
-            location.href="http://localhost:8080/egan/myPage"
+            location.href="http://localhost:8080/egan/payment"
             </c:if>
 
             <c:if test="${m_id == null}">
@@ -482,6 +460,31 @@
             $('.layer').css({display:'block'})
             </c:if>
         })
+
+    })
+
+    $(document).on('click', '#review_commit_btn', function () {
+
+        let form = {
+            title: $("#review_title").val(), //제목
+            content: $("#review_main").val(), //내용
+            p_index :  $('#product_id').val(),
+            m_id :   $('#member_id').val(),
+
+        }
+        console.log(form);
+
+        $.ajax({
+            url:'/egan/insert_review', //Controller에서 요청 받을 주소
+            type:'POST', //POST 방식으로 전달
+            data : form,
+            success:function(result){ //컨트롤러에서 넘어온 cnt값을 받는다
+                location.reload();
+            },
+            error:function(){
+                alert("에러입니다");
+            }
+        });
 
     })
 </script>

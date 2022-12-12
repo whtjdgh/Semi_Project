@@ -16,14 +16,18 @@
     .vi_text {
         top: 15%;
     }
-    .vi_link {
-        top: 22%;
-    }
+.vi_link {
+    top: 28%;
+}
     .chae-sicku_banner{
         height: 200px;
     }
     .chea_text div:nth-child(3) {
         display: none;
+    }
+    .md_product {
+        width: 100%;
+        height: 500px;
     }
 }
 
@@ -34,7 +38,7 @@
         top: 15%;
     }
     .vi_link {
-        top: 23%;
+/*         top: 23%; */
     }
     .md_product {
         margin: 35px 0;
@@ -89,6 +93,9 @@
     }
     .mdDes div:nth-child(1) {
         font-size: 13px;
+    }
+    .md_product {
+        height: 300px;
     }
 }
 

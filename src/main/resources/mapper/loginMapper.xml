@@ -5,21 +5,11 @@
 
 <mapper namespace="member">
 
-    <!--상품 검색기능-->
-    <sql id="where-list">
-        <if test="condition=='title' ">
-            INSTR(title, #{keyword}) &gt; 0
-        </if>
 
-        <if test="condition=='writer' ">
-            name=#{keyword}
-        </if>
-
-    </sql>
 
     <!--로그인 처리-->
     <select id="login_check"  resultType="String">
-        SELECT m_id,m_pwd,m_name FROM member
+        SELECT m_id,m_pwd,m_name,m_index FROM member
         WHERE m_id = #{m_id} AND m_pwd = #{m_pwd}
     </select>
 
@@ -51,11 +41,14 @@
     <select id = "list_product" resultType ="com.bitstudy.app.domain.ProductDto">
         SELECT p.p_index, i.image_id, p.p_name, p.p_price, p.p_no, i.saveImage
         FROM product p JOIN image i ON p.p_index=i.p_index
-        <where>
-            <if test="keyword != null and keyword != ''">
-                <include refid="where-list"/>
-            </if>
-        </where>
+
+    </select>
+
+    <!--검색기능 리스트 출력-->
+    <select id = "search_product" resultType ="com.bitstudy.app.domain.ProductDto" parameterType= "com.bitstudy.app.domain.ProductDto">
+        SELECT p.p_index, i.image_id, p.p_name, p.p_price, p.p_no, i.saveImage
+        FROM product p JOIN image i ON p.p_index=i.p_index
+        WHERE p.p_name like concat ('%',#{keyword},'%')
 
     </select>
 
@@ -67,11 +60,40 @@
 
     </select>
 
+    <!-- 카테고리 기능 리스트 출력-->
+    <select id = "listProduct_cate" resultType ="com.bitstudy.app.domain.ProductDto">
+        SELECT p.p_index, p.category_index, i.image_id, p.p_name, p.p_price, p.p_no, i.saveImage
+        FROM product p JOIN image i ON p.p_index=i.p_index
+        WHERE p.category_index = #{value}
+
+    </select>
+
     <!--상품 상세보기 -->
     <select id = "selectProduct" resultType ="com.bitstudy.app.domain.ProductDto">
         SELECT p.p_index, p.category_index, i.image_id, p.p_name, p.p_price, p.p_no, i.saveImage, i.detail_image1, i.detail_image2
         FROM product p JOIN image i ON p.p_index=i.p_index
         where p.p_index = #{p_index}
+    </select>
+
+
+    <insert id="insert_review">
+        INSERT INTO review
+        (
+        review_index, title, content,
+        in_day, p_index, m_id
+        )
+        VALUE(
+        (SELECT IFNULL(MAX(a.review_index),0)+1 AS rno FROM  review a),
+        #{title},#{content},SYSDATE(),#{p_index}, #{m_id}
+
+        )
+    </insert>
+
+
+    <select id = "selectReviewList" resultType ="com.bitstudy.app.domain.ProductDto">
+        SELECT ROW_NUMBER() OVER(order by r.review_index) as num, r.title, r.content, r.in_day, m.m_name FROM
+        review r JOIN member m ON r.m_id=m.m_id
+        where r.p_index =  #{p_index}
     </select>
 
 </mapper>

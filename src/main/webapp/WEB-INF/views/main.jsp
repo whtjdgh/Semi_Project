@@ -236,12 +236,12 @@
 
         <div class="mdPro_article">
           <div class="mdProArticle_img">
-            <a href="#">
+            <a href="http://localhost:8080/egan/detail/daily">
               <div class="mdimg1"></div>
             </a>
           </div>
           <div class="md_descri">
-            <a href="" class="mdDes">
+            <a href="http://localhost:8080/egan/detail" class="mdDes">
               <div>비건/제로웨이스트가 처음이라면?</div>
               <div>지금 가장 인기 있는 제품을 만나 보세요!</div>
             </a>
@@ -250,10 +250,10 @@
 
         <div class="mdPro_article">
           <div class="mdProArticle_img mdimg2">
-            <a href="#"><div class="mdimg2"></div></a>
+            <a href="http://localhost:8080/egan/detail/skin"><div class="mdimg2"></div></a>
           </div>
           <div class="md_descri">
-            <a href="" class="mdDes">
+            <a href="http://localhost:8080/egan/detail" class="mdDes">
               <div>비건/제로웨이스트가 처음이라면?</div>
               <div>지금 가장 인기 있는 제품을 만나 보세요!</div>
             </a>
@@ -262,10 +262,10 @@
 
         <div class="mdPro_article">
           <div class="mdProArticle_img mdimg3">
-            <a href="#"><div class="mdimg3"></div></a>
+            <a href="http://localhost:8080/egan/detail/food"><div class="mdimg3"></div></a>
           </div>
           <div class="md_descri">
-            <a href="" class="mdDes">
+            <a href="http://localhost:8080/egan/detail" class="mdDes">
               <div>비건/제로웨이스트가 처음이라면?</div>
               <div>지금 가장 인기 있는 제품을 만나 보세요!</div>
             </a>
