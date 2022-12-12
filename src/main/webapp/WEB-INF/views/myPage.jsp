@@ -184,7 +184,7 @@
                     </p>
 
                     <div class="infomation">
-                       <img src="<c:url value='/img/food/6.jpg'/>" class="img">
+                       <img src="<c:url value='/img/daily/3.jpg'/>" class="img">
                         </a>
 
                         <!-- 제품내역 -->
@@ -197,19 +197,55 @@
                                 <tbody>
                                 <tr>
                                     <td>상품명</td>
-                                    <td></td>
+                                    <td>[슈가버블] 친환경 주방세제 3입 선물세트</td>
                                 </tr>
                                 <tr>
                                     <td>주문번호</td>
-                                    <td></td>
+                                    <td>00000001</td>
                                 </tr>
                                 <tr>
                                     <td>주문일자</td>
-                                    <td></td>
+                                    <td>2022-01-01</td>
                                 </tr>
                                 <tr>
                                     <td >결제금액</td>
-                                    <td></td>
+                                    <td>10,900원</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--배송상태  -->
+                        <div class="diriver">
+                            배송완료
+                        </div>
+                    </div>
+                    <div class="infomation">
+                        <img src="<c:url value='/img/food/6.jpg'/>" class="img">
+                        </a>
+
+                        <!-- 제품내역 -->
+                        <div class="infomation_box">
+                            <table>
+                                <colgroup>
+                                    <col style="width:100px;">
+                                    <col style="width:350px;">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <td>상품명</td>
+                                    <td>냉동 유기농 애플망고 700g (페루산)</td>
+                                </tr>
+                                <tr>
+                                    <td>주문번호</td>
+                                    <td>00000002</td>
+                                </tr>
+                                <tr>
+                                    <td>주문일자</td>
+                                    <td>2022-01-02</td>
+                                </tr>
+                                <tr>
+                                    <td >결제금액</td>
+                                    <td>10,900원</td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -493,12 +529,12 @@
                     <div class="infomation">
                         <input type="checkbox" class="chk input_block">
                         <!-- 제품사진 -->
-                        <img src="<c:url value='/img/food/6-1.jpg'/>" class="img">
+                        <img src="<c:url value='/img/food/6.jpg'/>" class="img">
                         <!-- 계산 -->
                         <div class="box">
                             <!-- 상품설명 -->
                             <div class="product_description">
-                                상품에 대한 설명
+                                냉동 유기농 애플망고 700g (페루산)
                             </div>
                             <input type="button" value="-" id="btn_minus" class="btn_updown letf input_block" onclick="minus()" >
                             <input type="text" value="0" id="txt_qty" class="input_block">
@@ -511,8 +547,10 @@
                     </div>
                     <!-- 총 합계 -->
                     <!-- 몇개를 입력받을지 모르고 같은 변수에 값을 더해서 총합을 만든다. -->
-                    <div class="sum">총 합계 : </div>
-                    <a href="http://localhost:8080/egan/payment"><div class="payment">결제하기</div></a>
+                    <div class="mypage_paybox">
+                        <div class="sum">총 합계 : </div>
+                        <a href="http://localhost:8080/egan/payment"><div class="payment">결제하기</div></a>
+                    </div>
                                <div class="prvBtn" >
                                     <a href="#"><img src="<c:url value='/img/btn_page_prev.gif'/>" class="btn_left" alt="이전 버튼"></a>
                                     <a href="#"><img src="<c:url value='/img/btn_page_next.gif'/>" class="btn_right" alt="다음 버튼"></a>
