@@ -128,7 +128,7 @@
             </div>
             <div class="h_icon">
                 <div class="shopping"></div>
-                <a href="http://localhost:8080/egan/myPage_checked"><div class="search"></div></a>
+                <a href="http://localhost:8080/egan/detail"><div class="search"></div></a>
             </div>
         </div>
 
