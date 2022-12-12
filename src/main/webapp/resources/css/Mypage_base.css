@@ -126,10 +126,10 @@ td{
     width: calc(100% - 200px);
     height: 150px;
 }
-.img{
+.img {
     margin-left: 20px;
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     float: left;
 }
 .infomation_box{
