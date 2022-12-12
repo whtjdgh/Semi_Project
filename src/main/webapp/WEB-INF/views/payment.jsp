@@ -96,9 +96,9 @@
       </div>
       <div class="product_box">
         <ul>
-          <li class="product_li">[채:식구] 상품명</li>
-          <li class="product_li">[채:식구] 상품명</li>
-          <li class="product_li">[채:식구] 상품명</li>
+          <li class="product_li">[슈가버블] 친환경 세탁세제 2,4L</li>
+          <li class="product_li">[보나쥬르] 유기농 비건 티트리 오일 10ml</li>
+          <li class="product_li">[채:식구] 냉동 유기농 애플망고 700g</li>
 
         </ul>
       </div>
@@ -162,42 +162,42 @@
       <div class="buy_outer">
         <div class="outer">
           <div class="buy_box">주문금액</div>
-          <div class="money">원</div>
+          <div class="money">63,000원</div>
         </div>
       </div>
 
       <div class="buy_outer_in">
         <div class="outer_tmp">
           <div class="product_price">상품금액</div>
-          <div class="money_in">원</div>
+          <div class="money_in">63,000원</div>
         </div>
       </div>
 
       <div class="buy_outer_in">
         <div class="outer_tmp">
           <div class="sale_price">할인금액</div>
-          <div class="money_in">원</div>
+          <div class="money_in">4,000원</div>
         </div>
       </div>
 
       <div class="buy_outer">
         <div class="outer">
           <div class="buy_box">배송비</div>
-          <div class="money">원</div>
+          <div class="money">0원</div>
         </div>
       </div>
 
       <div class="buy_outer">
         <div class="outer">
           <div class="buy_box">쿠폰할인</div>
-          <div class="money">원</div>
+          <div class="money">0원</div>
         </div>
       </div>
 
       <div class="buy_outer">
         <div class="outer">
           <div class="buy_box">최종결제금액</div>
-          <div class="money">원</div>
+          <div class="money">59,000원</div>
         </div>
       </div>
 

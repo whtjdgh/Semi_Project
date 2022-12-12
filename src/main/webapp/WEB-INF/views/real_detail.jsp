@@ -430,7 +430,7 @@
         })
         $(document).on('click', '#btn_pay', function () {
             <c:if test="${m_id != null}">
-            location.href="http://localhost:8080/egan/myPage"
+            location.href="http://localhost:8080/egan/payment"
             </c:if>
 
             <c:if test="${m_id == null}">
