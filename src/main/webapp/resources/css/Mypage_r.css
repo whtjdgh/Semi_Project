@@ -90,7 +90,7 @@ width: calc(100% - 200px);
     width: calc(96%/2);
 }
 .review_content {
-    width: calc(100% - 210px);
+  display:none;
 }
 .review_product {
    display:non;
@@ -102,9 +102,9 @@ width: calc(100% - 200px);
     .review_content_botton {
         left: 76%;
     }
-    .contact_information {
-        width: 130px;
-    }
+.contact_information {
+   display:none;
+}
 /*    쿠폰  */
 .coupon_li_first { 
     margin-top: 30px;
@@ -233,7 +233,7 @@ width: calc(100% - 200px);
     top: 120px;
 }
 .review_content {
- height:0px;
+  display:none;
 }
     .period_search {
     display:none;
@@ -247,6 +247,9 @@ width: calc(100% - 200px);
 }
 .infomation_li_1 {
     width: 0px;
+}
+.contact_information {
+   display:none;
 }
 /*  쿠폰    */
 .coupon_li_first { 
