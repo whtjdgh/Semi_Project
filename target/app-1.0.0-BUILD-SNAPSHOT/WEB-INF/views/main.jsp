@@ -18,10 +18,10 @@
   <script defer src="${pageContext.request.contextPath}/js/egan_home_imgSlide.js"></script>
   <script defer src="<c:url value='/js/header_search.js'/>"></script>
   <link rel="stylesheet" href="<c:url value='/css/header_search.css'/> ">
-  <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_home_main.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_main_header.css'/> ">
   <link rel="stylesheet" href="<c:url value='/css/egan_main_respon.css'/> ">
+  <link rel="stylesheet" href="<c:url value='/css/h_f_r.css'/> ">
 
 
 
@@ -91,12 +91,19 @@
         <div class="ham_line" id="line_bot"></div>
         <div class="ham_menu">
           <ul class="ham_ul">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Register</a></li>
+            <c:if test="${m_id != null}">
+              <li> <a href="http://localhost:8080/egan/logout.do">Logout</a></li>
+              <li><a href="http://localhost:8080/egan/myPage">MyPage</a></li>
+            </c:if>
+
+            <c:if test="${m_id == null}">
+              <li><a href="http://localhost:8080/egan/login">Login</a></li>
+              <li><a href="http://localhost:8080/egan/real_register">Register</a></li>
+            </c:if>
             <li class="hr"></li>
-            <li><a href="#">SHOP</a></li>
-            <li><a href="#">BRAND</a></li>
-            <li><a href="#">COMMUNITY</a></li>
+            <li><a href="http://localhost:8080/egan/detail">SHOP</a></li>
+            <li><a href="http://localhost:8080/egan/brand">BRAND</a></li>
+            <li><a href="http://localhost:8080/egan/brand">COMMUNITY</a></li>
 
           </ul>
         </div>
@@ -109,13 +116,20 @@
       <div class="nav">
         <a href="http://localhost:8080/egan/detail">SHOP</a>
         <a href="http://localhost:8080/egan/brand">BRAND</a>
-        <a href="">COMMUNITY</a>
+        <a href="http://localhost:8080/egan/brand">COMMUNITY</a>
       </div>
 
       <div class="menu">
         <div class="h_menu">
-          <a href="http://localhost:8080/egan/login">Login</a>
-          <a href="http://localhost:8080/egan/real_register">Register</a>
+          <c:if test="${m_id != null}">
+            <a href="http://localhost:8080/egan/logout.do">Logout</a>
+            <a href="http://localhost:8080/egan/myPage">MyPage</a>
+          </c:if>
+
+          <c:if test="${m_id == null}">
+            <a href="http://localhost:8080/egan/login">Login</a>
+            <a href="http://localhost:8080/egan/myPage">Register</a>
+          </c:if>
         </div>
         <div class="h_icon">
           <div class="shopping"></div>
@@ -156,32 +170,32 @@
         <div class="best_slide">
           <div class="slide_wrap">
             <div class="b_slide_img">
-              <div id = "b_img" class="slide1" onclick="location.href='http://localhost:8080/egan/real_detail'">
+              <div id = "b_img" class="slide1" onclick="location.href='http://localhost:8080/egan/real_detail/33'">
                 <div class="text1">[아떼뷰티] 앤루트 클리닉 샴푸 기획</div>
               </div>
             </div>
             <div class="b_slide_img">
-              <div id = "b_img" class="slide2" onclick="location.href='http://localhost:8080/egan/real_detail'">
+              <div id = "b_img" class="slide2" onclick="location.href='http://localhost:8080/egan/real_detail/16'">
                 <div class="text2">[닐스야드] 오가닉 베이비 밤</div>
               </div>
             </div>
             <div class="b_slide_img">
-              <div id = "b_img" class="slide3" onclick="location.href='http://localhost:8080/egan/real_detail'">
+              <div id = "b_img" class="slide3" onclick="location.href='http://localhost:8080/egan/real_detail/11'">
                 <div class="text3">[아르아르] 프레쉬 집들이 리빙 선물 세트</div>
               </div>
             </div>
             <div class="b_slide_img">
-              <div id = "b_img" class="slide4" onclick="location.href='http://localhost:8080/egan/real_detail'">
+              <div id = "b_img" class="slide4" onclick="location.href='http://localhost:8080/egan/real_detail/24'">
                 <div class="text4">[달바] 워터풀 에센스 썬크림 비건</div>
               </div>
             </div>
             <div class="b_slide_img">
-              <div id = "b_img" class="slide5" onclick="location.href='http://localhost:8080/egan/real_detail'">
+              <div id = "b_img" class="slide5" onclick="location.href='http://localhost:8080/egan/real_detail/54'">
                 <div class="text5">우리밀 순수하게 비건 교자</div>
               </div>
             </div>
             <div class="b_slide_img">
-              <div id = "b_img" class="slide6" onclick="location.href='http://localhost:8080/egan/real_detail'">
+              <div id = "b_img" class="slide6" onclick="location.href='http://localhost:8080/egan/real_detail/52  '">
                 <div class="text6">칠레산 유레카 블루베리 1kg</div>
               </div>
             </div>
@@ -303,10 +317,6 @@
 
     </div>
   </div>
-
-
-
-
 
 
 </body>
