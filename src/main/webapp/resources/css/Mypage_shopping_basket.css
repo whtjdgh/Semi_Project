@@ -7,21 +7,21 @@
     width: 30px;
     height: 30px;
 }
-.letf{
-position: absolute;
-    left: 600px;
-    top: 60px;
-}
-.right{
+.letf {
     position: absolute;
-    left: 660px;
-    top: 60px;
+    right: 260px;
+    top: 40px;
+}
+.right {
+    position: absolute;
+    right: 200px;
+    top: 40px;
 }
 #txt_qty {
-    left: 150px;
+    /* left: 150px; */
     position: absolute;
-    left: 630px;
-    top: 60px;
+    right: 230px;
+    top: 40px;
     width: 30px;
     height: 30px;
     text-align: center;
@@ -33,15 +33,15 @@ position: absolute;
 #o_price{
     display: none;
 }
-.result{
+.result {
     position: absolute;
-    left:850px;
-    top:60px;
+    right: 30px;
+    top: 40px;
 }
 .product_delect {
     position: absolute;
     right: 0px;
-    top: 55px;
+    top: 35px;
     color: rgb(230, 218, 218);
     font-size: 25px;
     font-weight: 100;
@@ -70,10 +70,11 @@ float: left;
     margin-left: 20px;
 }
 /*  상품 설명*/
-.product_description{
-    position: absolute;
-    left:250px;
-    top:65px;
+.product_description {
+    /* position: absolute; */
+    line-height: 110px;
+    left: 250px;
+    top: 65px;
 }
 .sum{
     height: 50px;
@@ -96,4 +97,88 @@ float: left;
     text-align: center;
     line-height: 50px;
     color: aliceblue;
+}
+@media screen and (max-width: 1024px){
+    .letf {
+        position: absolute;
+        right: 200px;
+        top: 40px;
+    }
+    #txt_qty {
+        /* left: 150px; */
+        position: absolute;
+        right: 170px;
+        top: 40px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border: none;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        box-sizing: border-box;
+    }
+    .right {
+        position: absolute;
+        right: 140px;
+        top: 40px;
+    }
+    .payment {
+        width: 150px;
+        height: 50px;
+        margin-top: 30px;
+        margin-left: 135px;
+        background-color: #FFBF00;
+        border-radius: 5px;
+        float: left;
+        text-align: center;
+        line-height: 50px;
+        color: aliceblue;
+    }
+
+
+}
+@media screen and (max-width: 768px){
+    .chk_all_box {
+        width: 100%;
+    }
+    .chk {
+          margin-top: 0px;
+     }
+    .product_description {
+         position: static;
+        line-height: 110px;
+    }
+    .right {
+        position: absolute;
+        right: 40px;
+        top: 40px;
+    }
+    #txt_qty {
+        /* left: 150px; */
+        position: absolute;
+        right: 70px;
+        top: 40px;
+
+    }
+    .letf {
+        position: absolute;
+        right: 100px;
+        top: 40px;
+    }
+    .product_delect {
+        top: 40px;
+    }
+    .result {
+        position: absolute;
+        right: 25px;
+        top: 105px;
+    }
+    .payment {
+        width: 150px;
+        height: 50px;
+        margin-top: 30px;
+        margin-left: 175px;
+
+    }
+
 }
