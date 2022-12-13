@@ -76,8 +76,12 @@
 }
 
 @media screen and (max-width: 480px){
-    .vi_link {
-        top: 42%;
+   vi_link {
+        top: 33%;
+    }
+    .vi_text {
+        top: 23%;
+        font-size: 31px;
     }
     .chae-sicku_banner{
         height: 120px;
