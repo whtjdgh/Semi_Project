@@ -16,12 +16,12 @@
 
 @media screen and (max-width: 820px){
 
-    .vi_text {
+/*     .vi_text {
         top: 15%;
     }
 .vi_link {
     top: 28%;
-}
+} */
     .chae-sicku_banner{
         height: 200px;
     }
@@ -37,9 +37,9 @@
 
 @media screen and (max-width: 768px){
 
-    .vi_text {
+/*     .vi_text {
         top: 15%;
-    }
+    } */
     .vi_link {
 /*         top: 23%; */
     }
