@@ -2,12 +2,15 @@
     .main {
         width: 100%;
     }
-    .vi_text {
-        font-size: 40px;
-        top: 20%;
-    }
+.vi_text {
+    font-size: 40px;
+    top: 24%;
+}
     .vi_link {
-        top: 33%;
+        top: 37%;
+    }
+    .md_product {
+    height: 400px;
     }
 }
 
