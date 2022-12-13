@@ -147,7 +147,7 @@
     <div class="main_bannr">
       <video src="<c:url value='/video/pexels-roman-odintsov-6666529.mp4'/>" autoplay loop muted> </video>
       <div class="vi_text">
-        <div>The value of nature,dkssud</div>
+        <div>The value of nature,</div>
         <div>the value of consumption</div>
       </div>
       <a  href="http://localhost:8080/egan/brand" class="vi_link">About us</a>
