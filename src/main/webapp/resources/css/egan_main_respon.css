@@ -105,6 +105,9 @@
     .md_product {
         height: 300px;
     }
+    .md_Pro {
+    gap: 6px;
+    }
 }
 
 @media screen and (max-width: 350px){
